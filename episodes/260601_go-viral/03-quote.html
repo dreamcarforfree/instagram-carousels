@@ -5,8 +5,17 @@
 <title>03 Quote · The contract</title>
 <link rel="stylesheet" href="../../styles/carousel.css">
 <style>
-  .q-body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-top: 80px; }
-  .quote { font-size: 60px; line-height: 1.24; }
+  .card-body { justify-content: center; padding-top: 52px; }
+  .quote-wrap {
+    border-left: 5px solid var(--accent);
+    background: var(--accent-bg);
+    border-radius: 0 18px 18px 0;
+    padding: 52px 56px;
+    margin-top: 8px;
+  }
+  .q-text { font-size: 56px; font-weight: 800; line-height: 1.26; letter-spacing: -0.02em; color: var(--text-primary); font-style: italic; }
+  .q-mark { font-family: 'Space Grotesk', sans-serif; font-size: 110px; line-height: 0.5; color: var(--accent); display: block; margin-bottom: 16px; }
+  .q-attr { font-size: 26px; font-weight: 600; color: var(--accent-soft); margin-top: 32px; }
 </style>
 </head>
 <body>
@@ -23,17 +32,15 @@
 
   <div class="page-number">03</div>
 
-  <section class="q-body">
+  <section class="card-body">
     <div class="eyebrow">Why #1 · The Game</div>
-    <div class="quote">
-      <span class="mark">&ldquo;</span>
-      Prove you can hold attention,<br>
-      and I will <span class="accent-grad">distribute you.</span>
+    <div class="quote-wrap">
+      <span class="q-mark">&ldquo;</span>
+      <p class="q-text">Prove you can hold attention,<br>and I will <span class="accent-grad">distribute you.</span></p>
+      <div class="q-attr">— the contract every platform offers</div>
     </div>
-    <div class="quote-attr">— the contract every platform offers</div>
+    <div class="bottom-banner">The algorithm is indifferent to follower count. It responds to performance signals.</div>
   </section>
-
-  <div class="bottom-banner">The algorithm is indifferent to follower count. It responds to performance signals.</div>
 </div>
 </body>
 </html>

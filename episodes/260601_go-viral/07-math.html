@@ -5,18 +5,19 @@
 <title>07 Math · The generalist principle</title>
 <link rel="stylesheet" href="../../styles/carousel.css">
 <style>
+  .card-body { padding-top: 48px; }
   .mt-title { margin-bottom: 44px; }
   .math-row {
     display: flex; align-items: center; gap: 28px;
-    padding: 34px 38px; border-radius: 22px; border: 1px solid var(--card-border);
-    background: var(--bg-card);
+    padding: 34px 38px; border-radius: 20px;
+    border: 1px solid var(--card-border); background: var(--bg-card);
   }
   .math-row + .math-row { margin-top: 22px; }
   .math-row.win { background: var(--accent-bg); border-color: var(--accent-border); }
   .math-row .figure {
     font-family: 'Space Grotesk', sans-serif; font-weight: 700;
-    font-size: 64px; letter-spacing: -0.04em; line-height: 1;
-    color: var(--text-primary); flex-shrink: 0; min-width: 300px;
+    font-size: 62px; letter-spacing: -0.04em; line-height: 1;
+    color: var(--text-secondary); flex-shrink: 0; min-width: 280px;
   }
   .math-row.win .figure { color: var(--accent); }
   .math-row .detail { font-size: 26px; font-weight: 600; color: var(--text-secondary); line-height: 1.36; }

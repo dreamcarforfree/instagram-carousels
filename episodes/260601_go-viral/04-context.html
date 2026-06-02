@@ -5,16 +5,19 @@
 <title>04 Context · Same topic, 900× views</title>
 <link rel="stylesheet" href="../../styles/carousel.css">
 <style>
-  .cmp-title { margin-bottom: 44px; }
-  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .compare .box { min-height: 452px; display: flex; flex-direction: column; }
-  .box-bad .content {
-    display: flex; align-items: center; justify-content: center; flex: 1;
-    font-size: 32px; color: var(--bad-text); font-weight: 700; text-align: center; line-height: 1.35;
-  }
-  .kv-list { margin-top: 4px; display: flex; flex-direction: column; gap: 22px; }
-  .kv .k { font-size: 24px; font-weight: 800; color: var(--good-text); display: block; margin-bottom: 7px; letter-spacing: 0.04em; }
-  .kv .v { font-size: 27px; font-weight: 600; color: #ECECF0; letter-spacing: -0.01em; line-height: 1.3; }
+  .card-body { padding-top: 48px; }
+  .cmp-title { margin-bottom: 40px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .compare .box { min-height: 444px; display: flex; flex-direction: column; }
+  .box .tag { font-size: 22px; font-weight: 800; letter-spacing: 0.06em; margin-bottom: 18px; display: inline-block; padding: 7px 16px; border-radius: 8px; }
+  .box-lo { background: var(--bg-card); border: 1px solid var(--card-border); border-radius: 22px; padding: 38px; }
+  .box-lo .tag { color: var(--text-secondary); background: rgba(255,255,255,0.05); }
+  .box-hi { background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 22px; padding: 38px; }
+  .box-hi .tag { color: var(--accent); background: var(--accent-strong); }
+  .box-lo .content { display: flex; align-items: center; justify-content: center; flex: 1; font-size: 32px; color: var(--text-secondary); font-weight: 700; text-align: center; line-height: 1.35; }
+  .kv-list { margin-top: 6px; display: flex; flex-direction: column; gap: 20px; }
+  .kv .k { font-size: 22px; font-weight: 800; color: var(--accent); display: block; margin-bottom: 6px; letter-spacing: 0.04em; }
+  .kv .v { font-size: 26px; font-weight: 600; color: #ECECF0; letter-spacing: -0.01em; line-height: 1.3; }
 </style>
 </head>
 <body>
@@ -37,11 +40,11 @@
     </h2>
 
     <div class="compare">
-      <div class="box box-bad">
+      <div class="box box-lo">
         <span class="tag">~10K VIEWS</span>
         <div class="content">"Top 5<br>Leasing Principles"</div>
       </div>
-      <div class="box box-good">
+      <div class="box box-hi">
         <span class="tag">9M VIEWS</span>
         <div class="kv-list">
           <div class="kv"><span class="k">REFRAME</span><span class="v">"How I Bought a Tesla for $78 a Month"</span></div>

@@ -88,7 +88,8 @@ html, body {
 .glow.tr { top: -260px; right: -220px; }
 .glow.bl { bottom: -300px; left: -240px; background: radial-gradient(circle, var(--accent-2) 0%, transparent 70%); }
 
-.card > * { position: relative; z-index: 1; }
+.card > *:not(.glow) { position: relative; z-index: 1; }
+.glow { position: absolute !important; }
 
 /* ---------------- Header ---------------- */
 .card-header {
