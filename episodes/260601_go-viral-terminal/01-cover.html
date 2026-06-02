@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover · Go Viral (Terminal)</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+  .cover-hero { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .cover-mark {
+    position: absolute; top: -10px; right: -30px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 280px; font-weight: 700; line-height: 0.9;
+    letter-spacing: -0.06em; color: rgba(56,189,132,0.06);
+    user-select: none; z-index: 0;
+  }
+  .cover-badge { align-self: flex-start; margin-bottom: 44px; }
+  .cover-title { font-size: 116px; font-weight: 900; line-height: 1.0; letter-spacing: -0.045em; color: var(--text-primary); }
+  .cover-title .accent::after {
+    content: ''; display: inline-block; width: 0.5ch; height: 0.86em;
+    background: var(--accent); margin-left: 12px; vertical-align: -0.06em;
+  }
+  .cover-sub { font-family: 'JetBrains Mono', monospace; font-size: 27px; font-weight: 400; color: var(--text-tertiary); margin-top: 40px; line-height: 1.5; max-width: 840px; }
+  .cover-meta { display: flex; gap: 14px; align-items: center; margin-top: 50px; font-family:'JetBrains Mono',monospace; font-size: 22px; color: var(--accent); }
+  .cover-meta .dot { color: var(--text-tertiary); }
+  .swipe-hint { margin-top: 46px; font-family:'JetBrains Mono',monospace; font-size: 22px; color: var(--text-tertiary); letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="cover-mark">/&gt;</div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#personalbrand</div>
+  </header>
+
+  <div class="page-number">01</div>
+
+  <section class="cover-hero">
+    <div class="cover-badge"><span class="badge">THE PLAYBOOK</span></div>
+    <h1 class="cover-title">
+      Go Viral<br>
+      <span class="accent">On Purpose</span>
+    </h1>
+    <p class="cover-sub">// the science of going viral — and how to do it consistently</p>
+    <div class="cover-meta">
+      <span>format</span><span class="dot">·</span>
+      <span>psychology</span><span class="dot">·</span>
+      <span>distribution</span>
+    </div>
+    <div class="swipe-hint">swipe →</div>
+  </section>
+</div>
+</body>
+</html>

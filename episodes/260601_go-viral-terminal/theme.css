@@ -1,0 +1,116 @@
+/* ============================================================
+   theme.css — "Terminal Green" episode override
+   Matches the ppt-maker reference deck aesthetic:
+   #38bd84 green accent · JetBrains Mono · grid + scanline bg
+   Layered on top of ../../styles/carousel.css
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #000000;
+  --bg-elevated: #0a0a0a;
+  --bg-card: #080808;
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #888888;
+  --text-tertiary: #555555;
+
+  /* Terminal green — single accent, no gradient pair */
+  --accent: #38bd84;
+  --accent-2: #38bd84;
+  --accent-soft: #5fd6a3;
+  --accent-bg: rgba(56, 189, 132, 0.08);
+  --accent-border: rgba(56, 189, 132, 0.30);
+  --accent-strong: rgba(56, 189, 132, 0.16);
+
+  --card-border: #1a1a1a;
+  --card-border-strong: rgba(56, 189, 132, 0.25);
+
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body { font-family: 'Inter', sans-serif; }
+
+/* Scanline + grid background on every card */
+.card::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.006) 2px, rgba(255,255,255,0.006) 4px),
+    linear-gradient(rgba(56,189,132,0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,132,0.022) 1px, transparent 1px);
+  background-size: 100% 4px, 48px 48px, 48px 48px;
+}
+
+/* Kill the soft blobs — terminal look is flat/sharp */
+.glow { display: none; }
+
+/* Brand dot → square terminal chip */
+.card-header-left .brand-dot {
+  border-radius: 7px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+.card-header, .card-header-right { font-family: var(--font-mono); font-weight: 500; }
+.card-header-right { color: var(--accent); letter-spacing: 0.04em; }
+.page-number { font-family: var(--font-mono); }
+
+/* Eyebrow as a terminal prompt */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.eyebrow::before { content: '> '; }
+
+/* Accent gradient text becomes flat green (mono accent) */
+.accent-grad {
+  background: none; -webkit-text-fill-color: currentColor; color: var(--accent);
+}
+
+/* Cards: square corners, terminal title bar */
+.box, .cell, .num-card, .math-row {
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+}
+.cell .big, .num-card .num, .quote .mark {
+  font-family: var(--font-mono);
+}
+
+/* Badges → mono pills */
+.badge {
+  background: var(--accent);
+  color: #000; border-radius: 8px;
+  font-family: var(--font-mono); font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.badge-soft { font-family: var(--font-mono); }
+
+/* Bottom banner → terminal callout */
+.bottom-banner {
+  border-radius: 8px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-soft);
+}
+
+/* Stat-grid accent cells */
+.cell.accent-cell { background: var(--accent-bg); border-color: var(--accent-border); }
+
+/* Quote attribution mono */
+.quote-attr { font-family: var(--font-mono); color: var(--accent); }
+
+/* CTA button → solid green, black text */
+.follow-btn {
+  background: var(--accent) !important;
+  color: #000 !important;
+  border-radius: 10px !important;
+  font-family: var(--font-mono);
+  box-shadow: 0 0 40px rgba(56,189,132,0.25) !important;
+}
+.course-banner { border-radius: 8px; }
