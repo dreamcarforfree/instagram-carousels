@@ -1,0 +1,288 @@
+/* ============================================================
+   carousel.css — shared design tokens + components
+   Instagram carousel system · 1080 × 1350 (4:5) · pure HTML/CSS
+   No frameworks. Only external resource allowed: Google Fonts.
+   Re-theme by overriding :root vars in a per-episode <style> block.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  /* Surfaces */
+  --bg: #0B0B0F;
+  --bg-elevated: #16161D;
+  --bg-card: #1B1B24;
+
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-secondary: #A8A8B3;
+  --text-tertiary: #62626E;
+
+  /* Accent — default "Aloha sunset" gradient pair (override per episode) */
+  --accent: #FF7A45;
+  --accent-2: #FF4D6D;
+  --accent-soft: #FFA47A;
+  --accent-bg: rgba(255, 122, 69, 0.10);
+  --accent-border: rgba(255, 122, 69, 0.34);
+  --accent-strong: rgba(255, 122, 69, 0.18);
+
+  /* Status families */
+  --bad-bg: rgba(220, 53, 69, 0.08);
+  --bad-border: rgba(255, 107, 107, 0.35);
+  --bad-text: #FF6B6B;
+
+  --good-bg: rgba(25, 135, 84, 0.10);
+  --good-border: rgba(74, 222, 128, 0.35);
+  --good-text: #4ADE80;
+
+  --info-bg: rgba(59, 130, 246, 0.08);
+  --info-border: rgba(96, 165, 250, 0.35);
+  --info-text: #60A5FA;
+
+  --cyan-bg: rgba(6, 182, 212, 0.08);
+  --cyan-border: rgba(103, 232, 249, 0.35);
+  --cyan-text: #67E8F9;
+
+  /* Borders */
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-strong: rgba(255, 255, 255, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1080px;
+  height: 1350px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------- Card shell ---------------- */
+.card {
+  width: 1080px;
+  height: 1350px;
+  padding: 64px 76px 76px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional ambient glow — drop into any card */
+.glow {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.22;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.glow.tr { top: -260px; right: -220px; }
+.glow.bl { bottom: -300px; left: -240px; background: radial-gradient(circle, var(--accent-2) 0%, transparent 70%); }
+
+.card > * { position: relative; z-index: 1; }
+
+/* ---------------- Header ---------------- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-header-left .brand-dot {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 800; color: #fff;
+}
+.card-header-left .label { color: #E8E8EE; letter-spacing: -0.01em; }
+.card-header-right {
+  color: var(--text-tertiary);
+  font-feature-settings: "tnum";
+  font-weight: 600;
+}
+
+/* ---------------- Page number ---------------- */
+.page-number {
+  position: absolute;
+  top: 132px; right: 76px;
+  font-size: 28px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-feature-settings: "tnum";
+  z-index: 2;
+}
+
+/* ---------------- Body ---------------- */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 44px;
+}
+
+/* ---------------- Labels / Titles ---------------- */
+.eyebrow {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.title-xxl { font-size: 104px; font-weight: 900; line-height: 1.02; letter-spacing: -0.04em; }
+.title-xl  { font-size: 78px;  font-weight: 800; line-height: 1.10; letter-spacing: -0.03em; }
+.title-lg  { font-size: 62px;  font-weight: 800; line-height: 1.16; letter-spacing: -0.025em; }
+.title-md  { font-size: 50px;  font-weight: 800; line-height: 1.22; letter-spacing: -0.02em; }
+
+.subtitle {
+  font-size: 31px; font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 26px; line-height: 1.45; letter-spacing: -0.01em;
+}
+
+.accent { color: var(--accent); }
+.accent-grad {
+  background: linear-gradient(110deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.text-dim { color: var(--text-secondary); }
+
+/* ---------------- Badges ---------------- */
+.badge {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(110deg, var(--accent), var(--accent-2));
+  color: #fff; border-radius: 12px;
+  font-size: 24px; font-weight: 800; letter-spacing: 0.02em;
+}
+.badge-soft {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  font-size: 22px; font-weight: 700; letter-spacing: 0.03em;
+}
+
+/* ---------------- Bottom banner ---------------- */
+.bottom-banner {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 22px;
+  padding: 34px 28px;
+  text-align: center;
+  color: var(--accent-soft);
+  font-size: 31px; font-weight: 700; letter-spacing: -0.01em;
+  margin-top: 48px;
+  line-height: 1.35;
+}
+
+/* ---------------- BAD / GOOD boxes ---------------- */
+.box {
+  border-radius: 22px;
+  border: 1px solid var(--card-border);
+  padding: 38px;
+  background: var(--bg-card);
+}
+.box-bad  { background: var(--bad-bg);  border-color: var(--bad-border); }
+.box-good { background: var(--good-bg); border-color: var(--good-border); }
+.box-bad .tag, .box-good .tag {
+  font-size: 22px; font-weight: 800; letter-spacing: 0.08em;
+  margin-bottom: 20px; display: inline-block;
+  padding: 7px 16px; border-radius: 9px;
+}
+.box-bad .tag  { color: var(--bad-text);  background: rgba(255,107,107,0.13); }
+.box-good .tag { color: var(--good-text); background: rgba(74,222,128,0.13); }
+
+/* ---------------- Numbered cards ---------------- */
+.num-card {
+  display: flex; gap: 30px; align-items: flex-start;
+  padding: 30px 34px; border-radius: 20px;
+  border: 1px solid var(--card-border); background: var(--bg-card);
+}
+.num-card + .num-card { margin-top: 20px; }
+.num-card .num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 40px; font-weight: 700; flex-shrink: 0;
+  width: 44px; text-align: center; line-height: 1; padding-top: 2px;
+}
+.num-card .body .t1 {
+  font-size: 33px; font-weight: 700; line-height: 1.3;
+  letter-spacing: -0.01em; color: var(--text-primary);
+}
+.num-card .body .t2 {
+  font-size: 23px; font-weight: 500; color: var(--text-secondary);
+  margin-top: 9px; line-height: 1.42;
+}
+.num-card.v1 { background: rgba(255,122,69,0.06);  border-color: rgba(255,122,69,0.26); }
+.num-card.v1 .num { color: var(--accent); }
+.num-card.v2 { background: rgba(96,165,250,0.06);  border-color: rgba(96,165,250,0.25); }
+.num-card.v2 .num { color: #60A5FA; }
+.num-card.v3 { background: rgba(103,232,249,0.06); border-color: rgba(103,232,249,0.25); }
+.num-card.v3 .num { color: #67E8F9; }
+.num-card.v4 { background: rgba(74,222,128,0.06);  border-color: rgba(74,222,128,0.25); }
+.num-card.v4 .num { color: #4ADE80; }
+
+/* ---------------- Stat grid cells ---------------- */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cell {
+  padding: 38px 34px; border-radius: 24px;
+  border: 1px solid var(--card-border); background: var(--bg-card);
+  min-height: 264px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.cell .org {
+  font-size: 22px; font-weight: 700; letter-spacing: 0.05em;
+  color: var(--text-secondary); text-transform: uppercase;
+}
+.cell .big {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 78px; font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1; color: var(--accent);
+  font-feature-settings: "tnum"; margin: 14px 0 6px;
+}
+.cell .vs { font-size: 21px; font-weight: 600; color: var(--text-tertiary); }
+.cell .desc {
+  font-size: 23px; font-weight: 600; color: #D8D8DE;
+  line-height: 1.4; letter-spacing: -0.01em; margin-top: 8px;
+}
+.cell.accent-cell { background: var(--accent-bg); border-color: var(--accent-border); }
+
+/* ---------------- Quote block ---------------- */
+.quote {
+  font-size: 46px; font-weight: 800; line-height: 1.3;
+  letter-spacing: -0.02em; color: var(--text-primary);
+}
+.quote .mark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 120px; line-height: 0.6; color: var(--accent);
+  display: block; margin-bottom: 8px;
+}
+.quote-attr {
+  font-size: 26px; font-weight: 600; color: var(--text-secondary);
+  margin-top: 36px;
+}
