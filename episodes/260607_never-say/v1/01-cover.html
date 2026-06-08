@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #FFE054;
+    --accent-2: #FFF59D;
+    --text-primary: #FFFFFF;
+    --text-secondary: #E2E8F0;
+    --text-tertiary: #94A3B8;
+  }
+  .card {
+    background-image: linear-gradient(135deg, rgba(26, 73, 216, 0.92) 0%, rgba(15, 23, 42, 0.96) 100%), url('cover_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 76px 84px 84px;
+  }
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+  }
+  .title-cover {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 82px;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    margin-top: 40px;
+  }
+  .subtitle-cover {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #E2E8F0;
+    margin-top: 24px;
+    letter-spacing: -0.01em;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
+      <svg viewBox="0 0 100 50" width="38" height="19" style="vertical-align: middle;">
+        <path d="M 10,50 A 40,40 0 0,1 90,50" fill="none" stroke="#FF4D6D" stroke-width="7" stroke-linecap="round" />
+        <path d="M 22,50 A 28,28 0 0,1 78,50" fill="none" stroke="#FF7A45" stroke-width="7" stroke-linecap="round" />
+        <path d="M 34,50 A 16,16 0 0,1 66,50" fill="none" stroke="#FFC72A" stroke-width="7" stroke-linecap="round" />
+        <path d="M 46,50 A 4,4 0 0,1 54,50" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" />
+      </svg>
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+    <div class="card-header-right" style="color: rgba(255,255,255,0.6); font-weight: 700; font-size: 22px;">#RealEstate</div>
+  </header>
+
+  <div class="page-number" style="color: rgba(255,255,255,0.4);">01</div>
+
+  <div class="card-body" style="padding-top: 0; justify-content: center; flex: 1;">
+    <div style="display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 999px; font-size: 22px; font-weight: 700; letter-spacing: 0.05em; color: #FFE054; margin-bottom: 24px; text-transform: uppercase;">
+      Buyer Strategy Guide
+    </div>
+    <h1 class="title-cover">
+      6 Things You Should<br>
+      <span style="color: #FFE054; text-shadow: 0 4px 24px rgba(255,224,84,0.35);">NEVER Say</span> to Your<br>
+      Real Estate Agent
+    </h1>
+    <p class="subtitle-cover">
+      Avoid costly negotiation slips and protect your budget when buying a home.
+    </p>
+  </div>
+
+  <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; margin-top: auto;">
+    <span style="font-size: 22px; font-weight: 600; color: rgba(255,255,255,0.6);">Home Buying Tips</span>
+    <span style="font-size: 22px; font-weight: 600; color: #FFE054; display: flex; align-items: center; gap: 8px;">
+      Next Slide <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </span>
+  </div>
+</div>
+</body>
+</html>
