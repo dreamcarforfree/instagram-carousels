@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>07 Raw In-House Reactions</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --accent-bg: rgba(26, 73, 216, 0.04);
+    --accent-border: rgba(26, 73, 216, 0.12);
+    --accent-strong: rgba(26, 73, 216, 0.08);
+
+    --bad-bg: rgba(239, 68, 68, 0.03);
+    --bad-border: rgba(239, 68, 68, 0.12);
+    --bad-text: #EF4444;
+
+    --good-bg: rgba(34, 197, 94, 0.03);
+    --good-border: rgba(34, 197, 94, 0.12);
+    --good-text: #22C55E;
+    
+    --card-border: #E2E8F0;
+  }
+  body {
+    background: #FFFFFF;
+    color: #0F172A;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 36px;
+  }
+  .cmp-box {
+    border-radius: 24px;
+    border: 1.5px solid var(--card-border);
+    padding: 38px 34px;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.01);
+  }
+  .cmp-box-bad {
+    background: var(--bad-bg);
+    border-color: var(--bad-border);
+  }
+  .cmp-box-good {
+    background: var(--good-bg);
+    border-color: var(--good-border);
+  }
+  .tag-bad, .tag-good {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 24px;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  .tag-bad {
+    color: var(--bad-text);
+    background: rgba(239, 68, 68, 0.1);
+  }
+  .tag-good {
+    color: var(--good-text);
+    background: rgba(34, 197, 94, 0.1);
+  }
+  .quote-text-bad {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #334155;
+    margin-bottom: 20px;
+  }
+  .quote-text-good {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0F172A;
+    margin-bottom: 20px;
+  }
+  .why-label {
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    margin-top: auto;
+  }
+  .why-label-bad {
+    color: var(--bad-text);
+  }
+  .why-label-good {
+    color: var(--good-text);
+  }
+  .desc-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
+      <svg viewBox="0 0 100 50" width="38" height="19" style="vertical-align: middle;">
+        <path d="M 10,50 A 40,40 0 0,1 90,50" fill="none" stroke="#FF4D6D" stroke-width="7" stroke-linecap="round" />
+        <path d="M 22,50 A 28,28 0 0,1 78,50" fill="none" stroke="#FF7A45" stroke-width="7" stroke-linecap="round" />
+        <path d="M 34,50 A 16,16 0 0,1 66,50" fill="none" stroke="#FFC72A" stroke-width="7" stroke-linecap="round" />
+        <path d="M 46,50 A 4,4 0 0,1 54,50" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" />
+      </svg>
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+    <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700; font-size: 22px;">#HomeBuying</div>
+  </header>
+
+  <div class="page-number">07</div>
+
+  <section class="card-body">
+    <span class="eyebrow" style="color: var(--accent); letter-spacing: 0.12em; font-weight: 800; font-size: 24px;">Mistake 06 / 06</span>
+    <h2 class="title-lg" style="margin-top: 12px; margin-bottom: 12px; font-weight: 800; font-size: 58px; letter-spacing: -0.03em;">
+      Raw In-House Reactions
+    </h2>
+    <p style="font-size: 24px; color: var(--text-secondary); font-weight: 500; line-height: 1.4;">
+      Walls have ears and eyes. Keep a firm poker face during physical tours.
+    </p>
+
+    <div class="compare-grid">
+      <div class="cmp-box cmp-box-bad">
+        <span class="tag-bad">Never Say</span>
+        <div class="quote-text-bad">"I love this! This is the one! (Inside the kitchen)"</div>
+        <div class="why-label why-label-bad">The Risk</div>
+        <div class="desc-text">Many sellers now have smart home cameras and active audio recordings (Ring, Nest). Saying you're in love can leak your negotiating hand to the seller.</div>
+      </div>
+
+      <div class="cmp-box cmp-box-good">
+        <span class="tag-good">Say This Instead</span>
+        <div class="quote-text-good">"Let's write down our notes and discuss in the car."</div>
+        <div class="why-label why-label-good">The Strategy</div>
+        <div class="desc-text">Always keep a completely neutral demeanor when inside a home. Save all excitement, criticisms, and offering strategy discussions for outside or in your car.</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner" style="margin-top: 40px; font-size: 26px; padding: 26px;">
+      Keep a strong poker face during property tours. Discuss details offsite.
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>09 Call To Action</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --accent-bg: rgba(26, 73, 216, 0.04);
+    --accent-border: rgba(26, 73, 216, 0.12);
+    --accent-strong: rgba(26, 73, 216, 0.08);
+
+    --card-border: #E2E8F0;
+  }
+  body {
+    background: #FFFFFF;
+    color: #0F172A;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 840px;
+    margin-top: 40px;
+  }
+  .cta-title {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: #0F172A;
+    margin-bottom: 24px;
+  }
+  .cta-subtitle {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+  }
+  .action-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 36px;
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1.5px solid var(--card-border);
+    background: var(--bg-card);
+    color: #334155;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.01);
+  }
+  .action-btn-primary {
+    background: var(--accent);
+    color: #FFFFFF;
+    border-color: var(--accent);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header" style="width: 100%;">
+    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
+      <svg viewBox="0 0 100 50" width="38" height="19" style="vertical-align: middle;">
+        <path d="M 10,50 A 40,40 0 0,1 90,50" fill="none" stroke="#FF4D6D" stroke-width="7" stroke-linecap="round" />
+        <path d="M 22,50 A 28,28 0 0,1 78,50" fill="none" stroke="#FF7A45" stroke-width="7" stroke-linecap="round" />
+        <path d="M 34,50 A 16,16 0 0,1 66,50" fill="none" stroke="#FFC72A" stroke-width="7" stroke-linecap="round" />
+        <path d="M 46,50 A 4,4 0 0,1 54,50" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" />
+      </svg>
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+    <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700; font-size: 22px;">#AlohaDreamLife</div>
+  </header>
+
+  <div class="page-number">09</div>
+
+  <div class="cta-content">
+    <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+      <!-- Giant Rainbow Logo for emphasis -->
+      <svg viewBox="0 0 100 50" width="160" height="80">
+        <path d="M 10,50 A 40,40 0 0,1 90,50" fill="none" stroke="#FF4D6D" stroke-width="7" stroke-linecap="round" />
+        <path d="M 22,50 A 28,28 0 0,1 78,50" fill="none" stroke="#FF7A45" stroke-width="7" stroke-linecap="round" />
+        <path d="M 34,50 A 16,16 0 0,1 66,50" fill="none" stroke="#FFC72A" stroke-width="7" stroke-linecap="round" />
+        <path d="M 46,50 A 4,4 0 0,1 54,50" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <h2 class="cta-title">
+      Ready to find your<br>
+      <span style="color: var(--accent);">dream life in paradise?</span>
+    </h2>
+    
+    <p class="cta-subtitle">
+      Visit <strong>AlohaDreamLife.com</strong> for modern real estate strategies, beautiful neighborhood guides, and authentic Hawaiian lifestyle inspiration.
+    </p>
+
+    <div class="action-buttons">
+      <div class="action-btn action-btn-primary">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        Subscribe Free
+      </div>
+      <div class="action-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        Follow Us
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer" style="width: 100%; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #E2E8F0; padding-top: 40px; margin-top: auto;">
+    <span style="font-size: 22px; font-weight: 600; color: var(--text-tertiary);">Designed by AlohaDreamLife</span>
+    <span style="font-size: 22px; font-weight: 600; color: var(--accent); display: flex; align-items: center; gap: 8px;">
+      Save This Post <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+    </span>
+  </div>
+</div>
+</body>
+</html>
