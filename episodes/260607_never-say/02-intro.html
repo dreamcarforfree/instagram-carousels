@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>02 Introduction</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --accent-bg: rgba(26, 73, 216, 0.04);
+    --accent-border: rgba(26, 73, 216, 0.12);
+    --accent-strong: rgba(26, 73, 216, 0.08);
+    --card-border: #E2E8F0;
+  }
+  body {
+    background: #FFFFFF;
+    color: #0F172A;
+    font-family: 'Poppins', 'Inter', sans-serif;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1080px;
+    height: 1350px;
+  }
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+  .intro-box {
+    border-radius: 24px;
+    border: 1.5px solid var(--card-border);
+    padding: 44px 40px;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 36px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.01);
+  }
+  .intro-p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+  .intro-highlight {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-primary);
+    border-left: 5px solid var(--accent);
+    padding-left: 20px;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.5px solid #F1F5F9;
+    padding-top: 24px;
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-logo {
+    height: 38px;
+    width: auto;
+  }
+  .brand-name {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.01em;
+  }
+  .footer-right {
+    font-size: 24px;
+    font-weight: 700;
+    color: #94A3B8;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header" style="border-bottom: 1.5px solid #F1F5F9; padding-bottom: 20px;">
+    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
+      <img src="logo.png" style="height: 38px; width: auto;" alt="Aloha Dream Life Logo">
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+    <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700; font-size: 22px;">#HomeBuying</div>
+  </header>
+
+  <div class="page-number" style="top: 132px; right: 84px;">02/10</div>
+
+  <section class="card-body" style="flex: 1; justify-content: center; display: flex; flex-direction: column;">
+    <span class="eyebrow" style="color: var(--accent); letter-spacing: 0.12em; font-weight: 800; font-size: 24px; text-transform: uppercase;">Introduction</span>
+    <h2 class="title-lg" style="margin-top: 12px; margin-bottom: 12px; font-weight: 800; font-size: 58px; letter-spacing: -0.03em;">
+      Buying a Home? Watch What You Say
+    </h2>
+
+    <div class="intro-box">
+      <p class="intro-p">
+        Buying a home is one of life’s biggest milestones—and often, one of the most emotional and financially significant journeys you’ll take.
+      </p>
+      <p class="intro-highlight">
+        Your real estate agent is there to guide you, but saying the wrong things to your agent can actually work against you and hurt your negotiating power.
+      </p>
+      <p class="intro-p">
+        Let’s break down six things you should <strong style="color: var(--accent);">never say</strong> to your real estate agent, along with what you should say instead to protect your interests like a pro.
+      </p>
+    </div>
+  </section>
+
+  <footer class="card-footer">
+    <div class="footer-left">
+      <img src="logo.png" class="brand-logo" alt="Aloha Dream Life Logo">
+      <span class="brand-name">AlohaDreamLife.com</span>
+    </div>
+    <div class="footer-right">02/10</div>
+  </footer>
+</div>
+</body>
+</html>

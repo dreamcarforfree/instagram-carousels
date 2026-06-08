@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>08 The New Buyer Law</title>
+<title>09 The New Buyer Law</title>
 <link rel="stylesheet" href="../../styles/carousel.css">
 <style>
   :root {
@@ -24,6 +24,7 @@
   body {
     background: #FFFFFF;
     color: #0F172A;
+    font-family: 'Poppins', 'Inter', sans-serif;
   }
   .card {
     background: #FFFFFF;
@@ -32,12 +33,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 1080px;
+    height: 1350px;
   }
-  .brand-logo-text {
-    font-size: 26px;
-    font-weight: 800;
-    color: #0F172A;
-    letter-spacing: -0.02em;
+  .card-top-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1.5px solid #F1F5F9;
+    padding-bottom: 20px;
   }
   .law-list {
     display: flex;
@@ -48,7 +54,7 @@
   .law-item {
     display: flex;
     gap: 24px;
-    padding: 28px 30px;
+    padding: 24px 30px;
     border-radius: 20px;
     border: 1.5px solid var(--card-border);
     background: var(--bg-card);
@@ -75,76 +81,97 @@
     flex: 1;
   }
   .law-item .body h3 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 800;
     color: #0F172A;
     line-height: 1.2;
     margin-bottom: 6px;
   }
   .law-item .body p {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.4;
     color: var(--text-secondary);
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.5px solid #F1F5F9;
+    padding-top: 24px;
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-logo {
+    height: 38px;
+    width: auto;
+  }
+  .brand-name {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.01em;
+  }
+  .footer-right {
+    font-size: 24px;
+    font-weight: 700;
+    color: #94A3B8;
+    font-family: 'Space Grotesk', sans-serif;
   }
 </style>
 </head>
 <body>
 <div class="card">
-  <header class="card-header">
-    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
-      <svg viewBox="0 0 100 50" width="38" height="19" style="vertical-align: middle;">
-        <path d="M 10,50 A 40,40 0 0,1 90,50" fill="none" stroke="#FF4D6D" stroke-width="7" stroke-linecap="round" />
-        <path d="M 22,50 A 28,28 0 0,1 78,50" fill="none" stroke="#FF7A45" stroke-width="7" stroke-linecap="round" />
-        <path d="M 34,50 A 16,16 0 0,1 66,50" fill="none" stroke="#FFC72A" stroke-width="7" stroke-linecap="round" />
-        <path d="M 46,50 A 4,4 0 0,1 54,50" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" />
-      </svg>
-      <span class="brand-logo-text">AlohaDreamLife.com</span>
-    </div>
-    <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700; font-size: 22px;">#RealEstateLaw</div>
-  </header>
-
-  <div class="page-number">08</div>
+  <div class="card-top-header">
+    Real Estate Industry Update
+  </div>
 
   <section class="card-body">
-    <span class="eyebrow" style="color: var(--accent); letter-spacing: 0.12em; font-weight: 800; font-size: 24px;">The New Rule</span>
+    <span class="eyebrow" style="color: var(--accent); letter-spacing: 0.12em; font-weight: 800; font-size: 24px; text-transform: uppercase;">The New Law</span>
     <h2 class="title-lg" style="margin-top: 12px; margin-bottom: 12px; font-weight: 800; font-size: 58px; letter-spacing: -0.03em;">
       Buyer Agency Agreements
     </h2>
     <p style="font-size: 24px; color: var(--text-secondary); font-weight: 500; line-height: 1.4;">
-      Since late 2024, the law permanently changed. Here is what you must know:
+      Since August 2024, the real estate landscape has permanently changed:
     </p>
 
     <div class="law-list">
       <div class="law-item">
         <div class="num">01</div>
         <div class="body">
-          <h3>Mandatory Prior Signing</h3>
-          <p>Real estate agents cannot legally show properties (either in-person or virtual) without a signed buyer representation agreement in place first.</p>
+          <h3>Mandatory Written Agreements</h3>
+          <p>Real estate agents are legally forbidden from showing you properties (either in-person or virtually) without a signed buyer representation agreement in place first.</p>
         </div>
       </div>
 
       <div class="law-item">
         <div class="num">02</div>
         <div class="body">
-          <h3>Full Transparency of Fees</h3>
-          <p>Commissions are no longer listed on the MLS. Written agreements specify the exact representation services and agent compensation up-front.</p>
+          <h3>Commission Transparency</h3>
+          <p>Buyer agent commission fees are no longer published in the MLS. Written agreements explicitly outline exactly who pays what up-front.</p>
         </div>
       </div>
 
       <div class="law-item">
         <div class="num">03</div>
         <div class="body">
-          <h3>Low-Risk & Easy Exit</h3>
-          <p>You do not need to sign a lifelong contract. Agreements can be tailored for single tours, and can be cancelled with a simple 1-day notice.</p>
+          <h3>Low-Risk Tailoring</h3>
+          <p>You do not need to commit to a lifelong exclusive contract. Agreements can be written for a single property tour, and can be cancelled with 1-day notice.</p>
         </div>
       </div>
     </div>
-
-    <div class="bottom-banner" style="margin-top: 40px; font-size: 26px; padding: 26px;">
-      The new rule is designed to protect you! Expect transparency from the start.
-    </div>
   </section>
+
+  <footer class="card-footer">
+    <div class="footer-left">
+      <img src="logo.png" class="brand-logo" alt="Aloha Dream Life Logo">
+      <span class="brand-name">AlohaDreamLife.com</span>
+    </div>
+    <div class="footer-right">09/10</div>
+  </footer>
 </div>
 </body>
 </html>
