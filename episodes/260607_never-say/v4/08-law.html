@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 The New Rules</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --accent-bg: rgba(26, 73, 216, 0.04);
+    --accent-border: rgba(26, 73, 216, 0.12);
+    --accent-strong: rgba(26, 73, 216, 0.08);
+
+    --card-border: #E2E8F0;
+  }
+  body {
+    background: #FFFFFF;
+    color: #0F172A;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+  .law-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 36px;
+  }
+  .law-item {
+    display: flex;
+    gap: 24px;
+    padding: 28px 30px;
+    border-radius: 20px;
+    border: 1.5px solid var(--card-border);
+    background: var(--bg-card);
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.01);
+  }
+  .law-item .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    background: var(--accent-bg);
+    border: 1px solid var(--accent-border);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .law-item .body {
+    flex: 1;
+  }
+  .law-item .body h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .law-item .body p {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left" style="display: flex; align-items: center; gap: 14px;">
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+    <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700; font-size: 22px;">#RealEstateLaw</div>
+  </header>
+
+  <div class="page-number">08</div>
+
+  <section class="card-body">
+    <span class="eyebrow" style="color: var(--accent); letter-spacing: 0.12em; font-weight: 800; font-size: 24px;">The New Rule</span>
+    <h2 class="title-lg" style="margin-top: 12px; margin-bottom: 12px; font-weight: 800; font-size: 58px; letter-spacing: -0.03em;">
+      Buyer Agency Agreements
+    </h2>
+    <p style="font-size: 24px; color: var(--text-secondary); font-weight: 500; line-height: 1.4;">
+      Since late 2024, the law permanently changed. Here is what you must know:
+    </p>
+
+    <div class="law-list">
+      <div class="law-item">
+        <div class="num">01</div>
+        <div class="body">
+          <h3>Mandatory Prior Signing</h3>
+          <p>Real estate agents cannot legally show properties—physically or virtually—without a signed buyer representation agreement in place first.</p>
+        </div>
+      </div>
+      <div class="law-item">
+        <div class="num">02</div>
+        <div class="body">
+          <h3>Full Transparency of Fees</h3>
+          <p>Commissions are no longer listed on the MLS. Written agreements specify the exact representation services and agent compensation up-front.</p>
+        </div>
+      </div>
+      <div class="law-item">
+        <div class="num">03</div>
+        <div class="body">
+          <h3>Low-Risk & Professional Protection</h3>
+          <p>This is not a barrier; it's designed to protect you. Agreements can be tailored for single tours and cancelled with a simple 1-day notice—retaining absolute flexibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
