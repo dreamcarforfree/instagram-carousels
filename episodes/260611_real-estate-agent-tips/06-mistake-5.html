@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 SHOWING YOUR CEILING</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #2563EB;
+    --accent-soft: #3B82F6;
+    --accent-bg: rgba(26, 73, 216, 0.06);
+    --accent-border: rgba(26, 73, 216, 0.18);
+    --accent-strong: rgba(26, 73, 216, 0.12);
+    --bad-bg: rgba(239, 68, 68, 0.03);
+    --bad-border: rgba(239, 68, 68, 0.12);
+    --bad-text: #EF4444;
+    --good-bg: rgba(34, 197, 94, 0.03);
+    --good-border: rgba(34, 197, 94, 0.12);
+    --good-text: #22C55E;
+    --card-border: #F1F5F9;
+    --card-border-strong: #E2E8F0;
+  }
+  html, body { background: #FFFFFF; }
+  .card { background: #FFFFFF; border: 1px solid #F1F5F9; }
+  .card-header { color: #475569; }
+  .card-header-left .label { color: #0F172A; }
+  .card-header-right { color: #94A3B8; }
+  .page-number { color: #CBD5E1; }
+  .glow { display: none; }
+  .brand-dot { background: linear-gradient(135deg, #1A49D8, #2563EB); }
+
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 5.32px;
+    margin-top: 20px;
+    flex-shrink: 0;
+  }
+  .footer-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #475569;
+  }
+
+
+  .card-body { justify-content: flex-start; padding-top: 32px; }
+  .mistake-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px; font-weight: 700; color: #1A49D8;
+    letter-spacing: 2.88px; text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .mistake-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 58px; font-weight: 300; line-height: 1.14;
+    letter-spacing: -1.92px; color: #0F172A;
+    text-transform: uppercase; margin-bottom: 18px;
+  }
+  .mistake-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px; font-weight: 400; line-height: 32px;
+    letter-spacing: -0.24px; color: #475569;
+    margin-bottom: 24px;
+  }
+  .cards-wrap { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+  .advice-card {
+    display: flex; flex-direction: column; align-items: flex-start;
+    gap: 16px; padding: 24px 32px; border-radius: 24px; flex: 1;
+  }
+  .advice-card.bad {
+    background: rgba(239,68,68,0.03);
+    border: 1px solid rgba(239,68,68,0.12);
+    box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01);
+  }
+  .advice-card.good {
+    background: rgba(34,197,94,0.03);
+    border: 1px solid rgba(34,197,94,0.12);
+    box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01);
+  }
+  .advice-pill {
+    display: inline-flex; align-items: center;
+    padding: 7px 16px; border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; font-weight: 800;
+    letter-spacing: 1.6px; text-transform: uppercase;
+  }
+  .bad .advice-pill { background: rgba(239,68,68,0.10); color: #EF4444; }
+  .good .advice-pill { background: rgba(34,197,94,0.10); color: #22C55E; }
+  .advice-quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px; font-weight: 700; line-height: 42px;
+    color: #0F172A;
+  }
+
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#RealEstateTips</div>
+  </header>
+  <div class="page-number">06</div>
+
+  <section class="card-body">
+    <div class="mistake-label">MISTAKE 5/6</div>
+    <h2 class="mistake-title">SHOWING YOUR CEILING</h2>
+    <p class="mistake-body">The moment you reveal your ultimate ceiling, your current bid loses structural integrity. Your maximum price instantly becomes the seller's baseline anchor.</p>
+
+    <div class="cards-wrap">
+      <div class="advice-card bad">
+        <div class="advice-pill">Never Say:</div>
+        <div class="advice-quote">"I am willing to go up to $X if we absolutely have to."</div>
+      </div>
+      <div class="advice-card good">
+        <div class="advice-pill">Say This Instead:</div>
+        <div class="advice-quote">"Our current offer is mathematically justified. We will evaluate budget adjustments only if the seller counters with an equally justified metric."</div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="card-footer">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABQJJREFUeAHtVV1sFFUU/u6dO7O7s/9lW9qlS2MpWqS1kgoBhVBiEDA+aRSiL/7EB6PGxPBgookvyouJJhpjfEBDNGrwAY0JNaYGNAqVAppitchPKP2hy5Ztu+3uzuzM3OuZbcFCCOp7T3JnZu+593zn++45d4FFW7RbGPsXP6eh/PFMQ0NTe1y7p07orSlNBAZK1vlhV/76pxYa7D571l649v+CaTS8l1fUZJ6rb9zXEjW7XFcyp+JCuoCUCkIwaIYGQ9dQcL1sdzb/5q7fz713de9/BRNdXV34EoXjCUPvKExZktmciwYFPa3AE4oeiimLKW+CscoQgyozFYxDhcIh3jN+eefWk2f33wz0RjDtrRWZVbtbl5/KTxZdZjMRud9T+irJQIxQIoUcNieUL1qIhkkR8+T6XsAZhQzWaGxC4UjToRMbyavTcG4GJg6uablvW33t4clxywu1Sc18gBCuUOZF8qZpaSMhxOaBLMLMKrAhCVQoUB3JO8nk9KeCazG4IhjIhr/rbVzI8CqY9nQmtXRv28rRK2NlGd3ucaNFQY2Tp40ir6X1HgV2CZzNK6N4NXEZYvCpoMetMmZ1ClPv6+AGc4saO5I+dHLzPI5iVz/c7eudqQkb0Y2eMFZJqBzN7hTwOIPgJQzOLsFXk8twoWLCoW0pUcEGM4/tS0Zg+LJGdbAfKJELEozOdvJtA6EaLo9Nzz67+fjpfT47H4j33H3H7vWJ8B4ZlFp0lws1TLNPUdZFiTIRePLcOliSoz6ch6aR38+RKcyWYxixIngkeQkvpQfg6mFovcTwIiVL1Tr1kVA1y0KMHTzCr8modmxQ+VFLJV+k05+giR2C5AGG3ACeIKD2+Dimp9I4feohFKfrCYxDD5aQzpzAyrZvMTWTQpi72NtyFNI0wT53wCLAbLcGNcHUT4XSaw/+9tce/kpz/dqy5cBoloz5ciQYZIqKQjh4nIA6akYwcPJh9B1+AUU3AS9SAQuXYBscIxfWoXv/OwgJG0Ul8MGlVrCCU01W5RTCWzw40wyb65K7fVL83kj4eXvWU8E1RH2SZtZxaGUbr17sUHeSbGcGtiF3aTWQnEb7YAFdvVlsOjaBTX05xCwLgWQOPV+/gZg5iS/yGcwoYhMlwSJUOFEFLaL8Dkk+2pyM8/awuUkSa61eVSsOdRzEEX2lBOPEzgdzohVsOXoZIVt6RqqpZAfFmUAsjbbBK5XanI1w/DJO9e1EMyX3ca4Z3KJza6FjmmXQb1PMth1sEZG7eFKIFKfWYzoBhVn1FEesKEw6g+xwhzTMAjJjZTg6l4478+OHn6wOf3Zg6+2/9L6+VE8uN1rPz5CkrMreMEroL8fn2qqW081CzUsk3IrCxni0hQobRrXPfQsSFt17o5UQTM1BqVgjoUskChUEIg385xPvPjbf0ug/dyCXy/9x2C9MYqw8z4BHBVWiqqUg1VigFycSLsVsMoMJTq2rzW2/0cgDLvxgguQVmgBj42ouxNwC6VVsmvQTZFUAn5Pf7Oqfi0nOf3vSc0Q8FNCV325Lab1N7waBWirfCN2spWIthLUc4WgIMbEMnhe6Li3TTJkxoxHBZAqOFUesMYYK9R4aDbDZALCEw2B+m9DloKsI6+zs1I1sViBzPa/h6jNz7UeNU+T92X7/f8udX+IDy850p5ltojvE35CZ27WBxsiCWKkhyb4ZGyth0RbtVvY32mYb2jykw/IAAAAASUVORK5CYII=" alt="ADL Logo" style="width:26.6px;height:26.6px;">
+    <span class="footer-text">alohadreamlife.com</span>
+  </footer>
+
+</div>
+</body>
+</html>
