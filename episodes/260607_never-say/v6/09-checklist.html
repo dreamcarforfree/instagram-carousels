@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>09 Smart Buyer Framework</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --card-border: #E2E8F0;
+  }
+  body { background: #FFFFFF; color: #0F172A; }
+  
+  .card {
+    width: 1080px;
+    height: 1350px;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+  }
+
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+
+  .page-number {
+    position: absolute;
+    top: 76px;
+    right: 84px;
+    font-size: 28px;
+    color: #94A3B8;
+    font-weight: 600;
+  }
+
+  /* Title */
+  .title-container {
+    margin-top: 40px; /* Space after header */
+    margin-bottom: 32px;
+  }
+
+  .title-text {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #0F172A;
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .check-item {
+    display: flex;
+    gap: 24px;
+    padding: 24px 32px;
+    border-radius: 18px;
+    border: 1.5px solid var(--card-border);
+    background: var(--bg-card);
+    align-items: center;
+  }
+
+  .check-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(34, 197, 94, 0.1);
+    color: #22C55E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .check-text {
+    font-size: 25px;
+    font-weight: 600;
+    color: #0F172A;
+    line-height: 1.4;
+  }
+
+  .card-footer {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1.5px solid #F1F5F9;
+    margin-top: auto; /* Push to bottom naturally */
+    padding-top: 16px;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    height: 32px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+  </header>
+
+  <div class="page-number">09</div>
+
+  <div class="title-container">
+    <h2 class="title-text">THE SMART BUYER'S FRAMEWORK (Action Checklist)</h2>
+  </div>
+
+  <div class="checklist">
+    <div class="check-item">
+      <div class="check-icon">✓</div>
+      <div class="check-text">Keep finances separate, only share lender pre-approvals,</div>
+    </div>
+    
+    <div class="check-item">
+      <div class="check-icon">✓</div>
+      <div class="check-text">Keep timeline motives private, shield your personal exit urgency,</div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-icon">✓</div>
+      <div class="check-text">Deploy data, not estimates, demand actual 90-day neighborhood CMA reports,</div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-icon">✓</div>
+      <div class="check-text">Maintain physical silence, discuss asset critiques and interest strictly off-site,</div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-icon">✓</div>
+      <div class="check-text">Secure written representation, sign a flexible 1-day notice representation agreement</div>
+    </div>
+  </div>
+
+  <footer class="card-footer">
+    <div class="footer-left">
+      <img src="logo.png" class="brand-logo" alt="Aloha Dream Life Logo">
+      <span class="brand-logo-text" style="font-size: 24px;">AlohaDreamLife.com</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 Representation Rules</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F8FAFC;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #3B82F6;
+    --accent-soft: #2563EB;
+    --card-border: #E2E8F0;
+  }
+  body { background: #FFFFFF; color: #0F172A; }
+  
+  .card {
+    width: 1080px;
+    height: 1350px;
+    padding: 76px 84px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    border: 1.5px solid #F1F5F9;
+  }
+
+  .brand-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+
+  .page-number {
+    position: absolute;
+    top: 76px;
+    right: 84px;
+    font-size: 28px;
+    color: #94A3B8;
+    font-weight: 600;
+  }
+
+  /* Title */
+  .title-container {
+    margin-top: 40px; /* Space after header */
+    margin-bottom: 12px;
+  }
+
+  .title-text {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #0F172A;
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  .intro-text {
+    font-size: 26px;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+
+  .law-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .law-item {
+    display: flex;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1.5px solid var(--card-border);
+    background: var(--bg-card);
+    align-items: flex-start;
+  }
+
+  .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--accent);
+    background: rgba(26, 73, 216, 0.04);
+    border: 1px solid rgba(26, 73, 216, 0.12);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .body-content h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0 0 8px;
+  }
+
+  .body-content p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  .card-footer {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1.5px solid #F1F5F9;
+    margin-top: auto; /* Push to bottom naturally */
+    padding-top: 16px;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    height: 32px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-logo-text">AlohaDreamLife.com</span>
+    </div>
+  </header>
+
+  <div class="page-number">08</div>
+
+  <div class="title-container">
+    <h2 class="title-text">THE NEW RULES — REPRESENTATION</h2>
+  </div>
+
+  <p class="intro-text">
+    Since the August 2024 NAR settlement, the law permanently changed. Here is what you must know:
+  </p>
+
+  <div class="law-list">
+    <div class="law-item">
+      <div class="num">01</div>
+      <div class="body-content">
+        <h3>Mandatory Prior Signing</h3>
+        <p>Real estate agents cannot legally show properties—physically or virtually—without a signed buyer representation agreement in place first.</p>
+      </div>
+    </div>
+    
+    <div class="law-item">
+      <div class="num">02</div>
+      <div class="body-content">
+        <h3>Full Transparency of Fees</h3>
+        <p>Commissions are no longer listed on the MLS. Written agreements specify the exact representation services and agent compensation up-front.</p>
+      </div>
+    </div>
+
+    <div class="law-item">
+      <div class="num">03</div>
+      <div class="body-content">
+        <h3>Low-Risk & Professional Protection</h3>
+        <p>This is not a barrier; it's designed to protect you. Agreements can be tailored for single tours and cancelled with a simple 1-day notice—retaining absolute flexibility.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="card-footer">
+    <div class="footer-left">
+      <img src="logo.png" class="brand-logo" alt="Aloha Dream Life Logo">
+      <span class="brand-logo-text" style="font-size: 24px;">AlohaDreamLife.com</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
