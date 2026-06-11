@@ -12,57 +12,46 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
   width: 1080px; height: 1350px;
   background: #FFF; border: 1px solid #F1F5F9;
   display: flex; flex-direction: column;
-  padding: 80px 85px 64px 85px;
+  padding: 100px 85px 80px 85px;
 }
 
-/* B. MISTAKE label */
 .mistake-label {
   color: #1A49D8;
   font-family: "Space Grotesk", sans-serif;
   font-size: 24px; font-weight: 700;
   letter-spacing: 2.88px; text-transform: uppercase;
-  margin-bottom: 20px;
-  flex-shrink: 0;
+  margin-bottom: 26px; flex-shrink: 0;
 }
 
-/* C. Main Title */
 .main-title {
   color: #0F172A;
   font-family: 'Poppins', sans-serif;
-  font-size: 64px; font-weight: 200;
+  font-size: 64px; font-weight: 300;
   line-height: 74.24px; letter-spacing: -1.92px;
-  margin-bottom: 28px;
-  flex-shrink: 0;
+  margin-bottom: 28px; flex-shrink: 0;
 }
 
-/* D. Body Text */
 .body-text {
-  width: 910px;
-  color: #475569;
+  width: 910px; color: #475569;
   font-family: 'Inter', sans-serif;
   font-size: 24px; font-weight: 400;
   line-height: 36px; letter-spacing: -0.24px;
-  margin-bottom: 48px;
-  flex-shrink: 0;
+  margin-bottom: 36px; flex-shrink: 0;
 }
 
-/* E. Red outer container */
+/* E exact Figma padding */
 .red-card {
   display: flex; width: 910px;
-  padding: 30px 41px 30px 40px;
+  padding: 30px 41px 159px 40px;
   flex-direction: column; align-items: flex-start; gap: 20px;
   border-radius: 24px;
   border: 1px solid rgba(239, 68, 68, 0.12);
   background: rgba(239, 68, 68, 0.03);
   box-shadow: 0 4px 20px 0 rgba(15, 23, 42, 0.01);
-  margin-bottom: 20px;
-  flex-shrink: 0;
+  margin-bottom: 50px; flex-shrink: 0;
 }
-
-/* E② Red pill */
 .red-pill {
-  display: flex; height: 40px;
-  padding: 8px 18px;
+  display: flex; height: 40px; padding: 8px 17.694px 8px 18px;
   justify-content: center; align-items: center;
   border-radius: 10px; background: rgba(239, 68, 68, 0.10);
 }
@@ -71,17 +60,16 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
   font-size: 20px; font-weight: 800;
   letter-spacing: 1.6px; text-transform: uppercase;
 }
-
-/* E④ Quote */
 .card-quote {
-  color: #0F172A; font-family: 'Inter', sans-serif;
+  width: 828px; color: #0F172A;
+  font-family: 'Inter', sans-serif;
   font-size: 35px; font-weight: 700; line-height: 50px;
 }
 
-/* F. Green outer container */
+/* F exact Figma padding */
 .green-card {
   display: flex; width: 910px;
-  padding: 30px 41px 30px 40px;
+  padding: 30px 41px 113.11px 40px;
   flex-direction: column; align-items: flex-start; gap: 20px;
   border-radius: 24px;
   border: 1px solid rgba(34, 197, 94, 0.12);
@@ -89,11 +77,8 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
   box-shadow: 0 4px 20px 0 rgba(15, 23, 42, 0.01);
   flex-shrink: 0;
 }
-
-/* F② Green pill */
 .green-pill {
-  display: flex; height: 40px;
-  padding: 8px 18px;
+  display: flex; height: 40px; padding: 8px 17.628px 8px 18px;
   justify-content: center; align-items: center;
   border-radius: 10px; background: rgba(34, 197, 94, 0.10);
 }
@@ -103,12 +88,9 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
   letter-spacing: 1.6px; text-transform: uppercase;
 }
 
-/* G. Footer */
 .footer {
   display: flex; flex-direction: row; align-items: center;
-  gap: 5.32px;
-  margin-top: auto; padding-top: 32px;
-  flex-shrink: 0;
+  gap: 5.32px; margin-top: auto; padding-top: 28px; flex-shrink: 0;
 }
 .footer-text {
   color: #475569; font-family: 'Inter', sans-serif;
@@ -118,7 +100,6 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
 </head>
 <body>
 <div class="slide">
-
   <div class="mistake-label">MISTAKE 1/6</div>
   <h1 class="main-title">Revealing Your Balance</h1>
   <p class="body-text">Your real estate agent doesn't need to know your salary, bank balance, or credit score—that's what your lender is for. Your agent is your transaction partner, not your private lender. Disclosing your liquid assets anchors their valuation expectations, potentially shifting recommendations toward higher-priced inventory.</p>
@@ -137,7 +118,6 @@ html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; 
     <span style="font-size:22px;">🌈</span>
     <span class="footer-text">AlohaDreamLife.com</span>
   </footer>
-
 </div>
 </body>
 </html>
