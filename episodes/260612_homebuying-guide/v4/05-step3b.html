@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>05 Step 3b</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F1F5F9;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #2563EB;
+    --accent-soft: #1A49D8;
+    --accent-bg: rgba(26, 73, 216, 0.05);
+    --accent-border: rgba(26, 73, 216, 0.15);
+    --accent-strong: rgba(26, 73, 216, 0.10);
+    --card-border: rgba(15, 23, 42, 0.08);
+    --card-border-strong: rgba(15, 23, 42, 0.15);
+  }
+
+  html, body, .card, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
+    font-family: 'Poppins', 'Inter', sans-serif !important;
+  }
+
+  .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important; /* Extra Light */
+    letter-spacing: -0.01em !important;
+    height: 150px !important;
+    display: block !important;
+    margin-bottom: 40px !important;
+  }
+
+  .card-header-left .brand-dot {
+    background: var(--accent) !important;
+    color: #FFFFFF !important;
+  }
+  .card-header-left .label {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+  }
+  .card-header-right {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+  }
+  .page-number {
+    color: var(--text-secondary) !important;
+    font-weight: 700 !important;
+  }
+
+  .num-card {
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    border-color: rgba(15, 23, 42, 0.08) !important;
+  }
+  .num-card.v2 { background: rgba(37, 99, 235, 0.03) !important; border-color: rgba(37, 99, 235, 0.12) !important; }
+  .num-card.v2 .num { color: var(--accent-2) !important; }
+
+  .bottom-banner {
+    color: var(--accent) !important;
+    background: var(--accent-bg) !important;
+    border-color: var(--accent-border) !important;
+    font-weight: 700 !important;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#realestate</div>
+  </header>
+
+  <div class="page-number">05</div>
+
+  <section class="card-body">
+    <h2 class="title-lg">
+      3. Additional Financial Considerations
+    </h2>
+
+    <p style="font-size: 23px; color: var(--text-secondary); margin-bottom: 20px; font-weight: 500;">
+      Most buyers spend a significant portion of their savings on:
+    </p>
+
+    <div class="num-list" style="display: flex; flex-direction: column; gap: 12px;">
+      <div class="num-card v2" style="padding: 14px 22px;">
+        <div class="num" style="font-size: 26px;">💵</div>
+        <div class="body">
+          <div class="t1" style="font-size: 25px;">Down payment (3%–20%)</div>
+        </div>
+      </div>
+      <div class="num-card v2" style="padding: 14px 22px;">
+        <div class="num" style="font-size: 26px;">📈</div>
+        <div class="body">
+          <div class="t1" style="font-size: 25px;">Loan points <span style="font-weight: 500; font-size: 21px; color: var(--text-secondary);">(used to buy down interest rates)</span></div>
+        </div>
+      </div>
+      <div class="num-card v2" style="padding: 14px 22px;">
+        <div class="num" style="font-size: 26px;">📝</div>
+        <div class="body">
+          <div class="t1" style="font-size: 25px;">Closing costs & acquisition fees</div>
+        </div>
+      </div>
+      <div class="num-card v2" style="padding: 14px 22px;">
+        <div class="num" style="font-size: 26px;">💼</div>
+        <div class="body">
+          <div class="t1" style="font-size: 25px;">Buyer’s representative fee (~3%)</div>
+        </div>
+      </div>
+      <div class="num-card v2" style="padding: 14px 22px;">
+        <div class="num" style="font-size: 26px;">🛡️</div>
+        <div class="body">
+          <div class="t1" style="font-size: 25px;">Lender-required reserves <span style="font-weight: 500; font-size: 21px; color: var(--text-secondary);">(1%–3% of purchase price annually)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size: 22px; color: var(--text-secondary); line-height: 1.45; margin-top: 20px; font-weight: 500;">
+      Since these costs add up quickly, many buyers negotiate for the seller to pay their agent’s commission, wrapping it into financing. However, reserves are always the buyer’s responsibility.
+    </p>
+
+    <div class="bottom-banner" style="margin-top: 20px !important; padding: 22px !important; font-size: 26px !important;">
+      Reserves are always the buyer’s responsibility.
+    </div>
+  </section>
+</div>
+</body>
+</html>
