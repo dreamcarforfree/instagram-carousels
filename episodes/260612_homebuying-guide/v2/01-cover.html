@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>01 Cover</title>
-<link rel="stylesheet" href="../../styles/carousel.css">
+<link rel="stylesheet" href="../../../styles/carousel.css">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
   :root {
     --bg: #FFFFFF;
@@ -24,12 +24,18 @@
     --card-border-strong: rgba(15, 23, 42, 0.15);
   }
 
-  html, body, .card, .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
+  html, body, .card, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
     font-family: 'Poppins', 'Inter', sans-serif !important;
   }
 
+  .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important; /* Extra Light */
+    letter-spacing: -0.01em !important;
+  }
+
   .card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.95) 70%, #FFFFFF 100%), url('home_cover.jpg') !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.95) 70%, #FFFFFF 100%), url('home_cover_v2.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
   }
@@ -53,7 +59,7 @@
 
   .cover-hero { flex: 1; display: flex; flex-direction: column; justify-content: center; }
   .cover-badge { align-self: flex-start; margin-bottom: 46px; }
-  .cover-title { font-size: 88px; font-weight: 900; line-height: 1.1; letter-spacing: -0.04em; color: var(--text-primary); }
+  .cover-title { font-size: 88px; line-height: 1.1; color: var(--text-primary); }
   .cover-sub { font-size: 34px; font-weight: 500; color: var(--text-secondary); margin-top: 34px; line-height: 1.45; }
   .cover-meta { display: flex; gap: 14px; align-items: center; margin-top: 54px; font-size: 22px; color: var(--text-tertiary); font-weight: 600; }
   .cover-meta .dot { color: rgba(15, 23, 42, 0.15); }
@@ -75,7 +81,7 @@
   <section class="cover-hero">
     <div class="cover-badge"><span class="badge">GUIDE</span></div>
     <h1 class="cover-title">
-      <span class="accent">10 Things</span><br>
+      <span class="accent" style="font-weight: 700;">10 Things</span><br>
       You Must Know<br>
       Before Buying a Home
     </h1>

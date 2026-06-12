@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>03 Step 2</title>
-<link rel="stylesheet" href="../../styles/carousel.css">
+<title>06 Step 5</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
   :root {
     --bg: #FFFFFF;
@@ -24,8 +24,14 @@
     --card-border-strong: rgba(15, 23, 42, 0.15);
   }
 
-  html, body, .card, .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
+  html, body, .card, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
     font-family: 'Poppins', 'Inter', sans-serif !important;
+  }
+
+  .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important; /* Extra Light */
+    letter-spacing: -0.01em !important;
   }
 
   .card-header-left .brand-dot {
@@ -45,14 +51,23 @@
     font-weight: 700 !important;
   }
 
-  .hd-title { margin-bottom: 50px; color: var(--text-primary); }
+  .hd-title { margin-bottom: 40px; color: var(--text-primary); }
+
+  .quote {
+    font-size: 38px; font-weight: 800; line-height: 1.35;
+    color: var(--text-primary); margin-bottom: 24px;
+  }
+  .quote .mark {
+    font-size: 90px; line-height: 0.6; color: var(--accent);
+    display: block; margin-bottom: 4px;
+  }
 
   .num-card {
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
     border-color: rgba(15, 23, 42, 0.08) !important;
   }
-  .num-card.v2 { background: rgba(37, 99, 235, 0.03) !important; border-color: rgba(37, 99, 235, 0.12) !important; }
-  .num-card.v2 .num { color: var(--accent-2) !important; }
+  .num-card.v1 { background: rgba(26, 73, 216, 0.03) !important; border-color: rgba(26, 73, 216, 0.12) !important; }
+  .num-card.v1 .num { color: var(--accent) !important; }
 
   .bottom-banner {
     color: var(--accent) !important;
@@ -72,38 +87,29 @@
     <div class="card-header-right">#realestate</div>
   </header>
 
-  <div class="page-number">03</div>
+  <div class="page-number">06</div>
 
   <section class="card-body">
     <h2 class="title-lg hd-title">
-      2. Check Your Financial <span class="accent">Readiness</span>
+      5. Work with a Knowledgeable Agent
     </h2>
 
+    <div class="quote">
+      <span class="mark">&ldquo;</span>
+      Choose your agent based on <span class="accent" style="font-weight: 700;">experience, market knowledge, and communication skills</span>—never personal relationships.
+    </div>
+
     <div class="num-list">
-      <div class="num-card v2">
-        <div class="num">📊</div>
+      <div class="num-card v1">
+        <div class="num">⚠️</div>
         <div class="body">
-          <div class="t1">Know your credit score</div>
-          <div class="t2">Request your credit report and resolve any errors before applying for a mortgage.</div>
-        </div>
-      </div>
-      <div class="num-card v2">
-        <div class="num">📝</div>
-        <div class="body">
-          <div class="t1">Get pre-approved</div>
-          <div class="t2">Search lenders, compare rates, and submit W-2s/statements to show sellers you are serious.</div>
-        </div>
-      </div>
-      <div class="num-card v2">
-        <div class="num">💸</div>
-        <div class="body">
-          <div class="t1">Factor in all costs</div>
-          <div class="t2">Prepare for property taxes, homeowners insurance, monthly maintenance, and potential HOA fees.</div>
+          <div class="t1">The market truth</div>
+          <div class="t2">There are far more bad agents than good ones. Work with an expert who truly cares about your long-term well-being.</div>
         </div>
       </div>
     </div>
 
-    <div class="bottom-banner">Homeownership is about much more than just the purchase price.</div>
+    <div class="bottom-banner">Hire an agent who supports you even after escrow is over.</div>
   </section>
 </div>
 </body>
