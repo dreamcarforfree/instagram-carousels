@@ -59,25 +59,23 @@
     padding: 38px 44px; border-radius: 20px;
     border: 1px solid var(--card-border) !important;
     background: var(--bg-card) !important;
-    min-height: 240px;
-    display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 40px;
+    min-height: 280px;
+    display: flex; flex-direction: column; justify-content: center;
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
   }
-  .cell-left { flex-shrink: 0; min-width: 320px; }
-  .cell-right { flex: 1; }
   .cell .org {
     font-size: 20px; font-weight: 700; letter-spacing: 0.05em;
     color: var(--text-secondary); text-transform: uppercase;
   }
   .cell .big {
-    font-size: 80px; font-weight: 800; letter-spacing: -0.04em;
+    font-size: 64px; font-weight: 800; letter-spacing: -0.04em;
     line-height: 1; color: var(--accent) !important;
-    font-feature-settings: "tnum"; margin: 4px 0 8px;
+    font-feature-settings: "tnum"; margin: 10px 0;
   }
   .cell .vs { font-size: 20px; font-weight: 600; color: var(--text-tertiary); }
   .cell .desc {
-    font-size: 26px; font-weight: 500; color: var(--text-secondary);
-    line-height: 1.4; letter-spacing: -0.01em; margin-top: 0;
+    font-size: 22px; font-weight: 500; color: var(--text-secondary);
+    line-height: 1.4; letter-spacing: -0.01em; margin-top: 14px;
   }
   .cell.accent-cell {
     background: var(--accent-bg) !important;
@@ -111,24 +109,18 @@
 
     <div class="grid">
       <div class="cell accent-cell">
-        <div class="cell-left">
-          <div class="org">Housing DTI</div>
-          <div class="big">&lt; 28%</div>
-          <div class="vs">of gross monthly income</div>
+        <div class="org">Housing DTI</div>
+        <div>
+          <span class="big">&lt; 28%</span> <span class="vs">of gross monthly income</span>
         </div>
-        <div class="cell-right">
-          <div class="desc">Your monthly housing payments (mortgage, tax, insurance) should never exceed 28% of gross income.</div>
-        </div>
+        <div class="desc">Your monthly housing payments (mortgage, tax, insurance) should never exceed 28% of gross income.</div>
       </div>
       <div class="cell accent-cell">
-        <div class="cell-left">
-          <div class="org">Overall DTI</div>
-          <div class="big">&lt; 36%</div>
-          <div class="vs">total monthly debt payments</div>
+        <div class="org">Overall DTI</div>
+        <div>
+          <span class="big">&lt; 36%</span> <span class="vs">total monthly debt payments</span>
         </div>
-        <div class="cell-right">
-          <div class="desc">Your total monthly debt obligations (housing + auto + cards) should stay safely under 36% of gross income.</div>
-        </div>
+        <div class="desc">Your total monthly debt obligations (housing + auto + cards) should stay safely under 36% of gross income.</div>
       </div>
     </div>
 
