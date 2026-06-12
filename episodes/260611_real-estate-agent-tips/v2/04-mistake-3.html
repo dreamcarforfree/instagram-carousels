@@ -3,114 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <title>04-mistake-3.html</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Space+Grotesk:wght@700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@200;300;400;700;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 <style>
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../../../fonts/suisse-intl/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: 400; font-style: normal;
+}
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../../../fonts/suisse-intl/SuisseIntl-Bold.otf') format('opentype');
+  font-weight: 700; font-style: normal;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; }
-.slide {
-  width: 1080px; height: 1350px;
-  background: #FFF; border: 1px solid #F1F5F9;
-  position: relative; overflow: hidden;
-}
-.mistake-label {
-  position: absolute; left: 84.22px; top: 100px;
-  color: #1A49D8;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 24px; font-weight: 700;
-  letter-spacing: 2.88px; text-transform: uppercase;
-  line-height: normal;
-}
-.main-title {
-  position: absolute; left: 85px; top: 171px;
-  width: 854.886px; height: 77px;
-  display: flex; flex-direction: column; justify-content: center;
-  color: #0F172A;
-  font-family: 'Poppins', sans-serif;
-  font-size: 64px; font-weight: 300;
-  line-height: 74.24px; letter-spacing: -1.92px;
-}
-.body-text {
-  position: absolute; left: 85px; top: 278px;
-  width: 910px;
-  color: #475569;
-  font-family: 'Inter', sans-serif;
-  font-size: 24px; font-weight: 400;
-  line-height: 36px; letter-spacing: -0.24px;
-}
-.red-card {
-  position: absolute; left: 85px; top: 548px;
-  width: 910px; height: 300px;
-  padding: 30px 41px 159px 40px;
-  display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
-  border-radius: 24px;
-  border: 1px solid rgba(239,68,68,0.12);
-  background: rgba(239,68,68,0.03);
-  box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01);
-  overflow: hidden;
-}
-.red-pill {
-  display: flex; height: 40px;
-  padding: 8px 17.694px 8px 18px;
-  justify-content: center; align-items: center;
-  border-radius: 10px; background: rgba(239,68,68,0.10);
-  flex-shrink: 0;
-}
-.red-pill span {
-  color: #EF4444; font-family: 'Inter', sans-serif;
-  font-size: 20px; font-weight: 800;
-  letter-spacing: 1.6px; text-transform: uppercase;
-}
-.green-card {
-  position: absolute; left: 85px; top: 903px;
-  width: 910px; height: 300px;
-  padding: 30px 41px 113.11px 40px;
-  display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
-  border-radius: 24px;
-  border: 1px solid rgba(34,197,94,0.12);
-  background: rgba(34,197,94,0.03);
-  box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01);
-  overflow: hidden;
-}
-.green-pill {
-  display: flex; height: 40px;
-  padding: 8px 17.628px 8px 18px;
-  justify-content: center; align-items: center;
-  border-radius: 10px; background: rgba(34,197,94,0.10);
-  flex-shrink: 0;
-}
-.green-pill span {
-  color: #22C55E; font-family: 'Inter', sans-serif;
-  font-size: 20px; font-weight: 800;
-  letter-spacing: 1.6px; text-transform: uppercase;
-}
-.card-quote {
-  width: 828px;
-  color: #0F172A; font-family: 'Inter', sans-serif;
-  font-size: 35px; font-weight: 700; line-height: 50px;
-}
-.footer {
-  position: absolute; left: 96.91px; top: 1273.95px;
-  display: flex; flex-direction: row; align-items: center; gap: 5.32px;
-}
-.footer img { width: 26.598px; height: 26.598px; }
-.footer-text {
-  color: #475569; font-family: 'Inter', sans-serif;
-  font-size: 20px; font-weight: 400;
-}
+.slide { width: 1080px; height: 1350px; background: #FFF; border: 1px solid #F1F5F9; position: relative; overflow: hidden; }
+.footer { position: absolute; left: 96.91px; top: 1273.95px; display: flex; flex-direction: row; align-items: center; gap: 5.32px; width: 229.918px; height: 26.598px; }
+.footer img { width: 26.598px; height: 26.598px; aspect-ratio: 1/1; }
+.footer-text { color: #475569; font-family: 'SuisseIntl', sans-serif; font-size: 20px; font-weight: 400; line-height: normal; }
+
+.label { position: absolute; left: 84.22px; top: 100px; color: #1A49D8; font-family: "Space Grotesk", sans-serif; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: 2.88px; text-transform: uppercase; }
+.title { position: absolute; left: 85px; top: 171px; width: 854.886px; height: 77px; display: flex; flex-direction: column; justify-content: center; color: #0F172A; leading-trim: both; text-edge: cap; font-family: 'Poppins', sans-serif; font-size: 64px; font-style: normal; font-weight: 275; line-height: 74.24px; letter-spacing: -1.92px; }
+.body { position: absolute; left: 85px; top: 278px; width: 910px; color: #475569; font-family: 'SuisseIntl', sans-serif; font-size: 24px; font-style: normal; font-weight: 400; line-height: 36px; letter-spacing: -0.24px; }
+.red-card { position: absolute; left: 85px; top: 548px; width: 910px; height: 300px; display: flex; flex-direction: column; align-items: flex-start; gap: 30px; padding: 30px 41px 159px 40px; border-radius: 24px; border: 1px solid rgba(239,68,68,0.12); background: rgba(239,68,68,0.03); box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01); overflow: hidden; }
+.red-pill { display: flex; width: 172.11px; height: 40px; padding: 8px 17.694px 8px 18px; justify-content: center; align-items: center; border-radius: 10px; background: rgba(239,68,68,0.10); flex-shrink: 0; }
+.red-pill span { display: flex; width: 136.416px; height: 24px; flex-direction: column; justify-content: center; flex-shrink: 0; color: #EF4444; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 800; line-height: normal; letter-spacing: 1.6px; text-transform: uppercase; }
+.red-quote { display: flex; width: 828px; height: 41px; flex-direction: column; justify-content: center; color: #0F172A; font-family: 'SuisseIntl', sans-serif; font-size: 35px; font-weight: 700; line-height: 50px; }
+.green-card { position: absolute; left: 85px; top: 903px; width: 910px; height: 300px; display: flex; flex-direction: column; align-items: flex-start; gap: 30px; padding: 30px 41px 113.11px 40px; border-radius: 24px; border: 1px solid rgba(34,197,94,0.12); background: rgba(34,197,94,0.03); box-shadow: 0 4px 20px 0 rgba(15,23,42,0.01); overflow: hidden; }
+.green-pill { display: flex; width: 257.66px; height: 40px; padding: 8px 17.628px 8px 18px; justify-content: center; align-items: center; border-radius: 10px; background: rgba(34,197,94,0.10); flex-shrink: 0; }
+.green-pill span { display: flex; width: 222.032px; height: 24px; flex-direction: column; justify-content: center; flex-shrink: 0; color: #22C55E; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 800; line-height: normal; letter-spacing: 1.6px; text-transform: uppercase; }
+.green-quote { display: flex; width: 828px; height: 86.89px; flex-direction: column; justify-content: center; color: #0F172A; font-family: 'SuisseIntl', sans-serif; font-size: 35px; font-weight: 700; line-height: 50px; }
 </style>
 </head>
 <body>
 <div class="slide">
-  <div class="mistake-label">MISTAKE 3/6</div>
-  <h1 class="main-title">Agent Shopping</h1>
-  <p class="body-text">Agents only get paid when a sale closes. If they know you have no commitment to them, they will stop sending you off-market deals or devoting their time. Top-tier market operators prioritize clients who commit. Treating representation as a non-exclusive commodity signals low commitment, yielding automated MLS dumps instead of premium, off-market inventory.</p>
+  <div class="label">MISTAKE 3/6</div>
+  <h1 class="title">Agent Shopping</h1>
+  <p class="body">Agents only get paid when a sale closes. If they know you have no commitment to them, they will stop sending you off-market deals or devoting their time. Top-tier market operators prioritize clients who commit. Treating representation as a non-exclusive commodity signals low commitment, yielding automated MLS dumps instead of premium, off-market inventory.</p>
   <div class="red-card">
     <div class="red-pill"><span>Never Say:</span></div>
-    <div class="card-quote">I'm working with multiple agents in this market right now.</div>
+    <div class="red-quote">I'm working with multiple agents in this market right now.</div>
   </div>
   <div class="green-card">
     <div class="green-pill"><span>Say This Instead:</span></div>
-    <div class="card-quote">I am interviewing to commit to one exclusive buy-side partner who understands my investment thesis.</div>
+    <div class="green-quote">I am interviewing to commit to one exclusive buy-side partner who understands my investment thesis.</div>
   </div>
   <footer class="footer">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABQJJREFUeAHtVV1sFFUU/u6dO7O7s/9lW9qlS2MpWqS1kgoBhVBiEDA+aRSiL/7EB6PGxPBgookvyouJJhpjfEBDNGrwAY0JNaYGNAqVAppitchPKP2hy5Ztu+3uzuzM3OuZbcFCCOp7T3JnZu+593zn++45d4FFW7RbGPsXP6eh/PFMQ0NTe1y7p07orSlNBAZK1vlhV/76pxYa7D571l649v+CaTS8l1fUZJ6rb9zXEjW7XFcyp+JCuoCUCkIwaIYGQ9dQcL1sdzb/5q7fz713de9/BRNdXV34EoXjCUPvKExZktmciwYFPa3AE4oeiimLKW+CscoQgyozFYxDhcIh3jN+eefWk2f33wz0RjDtrRWZVbtbl5/KTxZdZjMRud9T+irJQIxQIoUcNieUL1qIhkkR8+T6XsAZhQzWaGxC4UjToRMbyavTcG4GJg6uablvW33t4clxywu1Sc18gBCuUOZF8qZpaSMhxOaBLMLMKrAhCVQoUB3JO8nk9KeCazG4IhjIhr/rbVzI8CqY9nQmtXRv28rRK2NlGd3ucaNFQY2Tp40ir6X1HgV2CZzNK6N4NXEZYvCpoMetMmZ1ClPv6+AGc4saO5I+dHLzPI5iVz/c7eudqQkb0Y2eMFZJqBzN7hTwOIPgJQzOLsFXk8twoWLCoW0pUcEGM4/tS0Zg+LJGdbAfKJELEozOdvJtA6EaLo9Nzz67+fjpfT47H4j33H3H7vWJ8B4ZlFp0lws1TLNPUdZFiTIRePLcOliSoz6ch6aR38+RKcyWYxixIngkeQkvpQfg6mFovcTwIiVL1Tr1kVA1y0KMHTzCr8modmxQ+VFLJV+k05+giR2C5AGG3ACeIKD2+Dimp9I4feohFKfrCYxDD5aQzpzAyrZvMTWTQpi72NtyFNI0wT53wCLAbLcGNcHUT4XSaw/+9tce/kpz/dqy5cBoloz5ciQYZIqKQjh4nIA6akYwcPJh9B1+AUU3AS9SAQuXYBscIxfWoXv/OwgJG0Ul8MGlVrCCU01W5RTCWzw40wyb65K7fVL83kj4eXvWU8E1RH2SZtZxaGUbr17sUHeSbGcGtiF3aTWQnEb7YAFdvVlsOjaBTX05xCwLgWQOPV+/gZg5iS/yGcwoYhMlwSJUOFEFLaL8Dkk+2pyM8/awuUkSa61eVSsOdRzEEX2lBOPEzgdzohVsOXoZIVt6RqqpZAfFmUAsjbbBK5XanI1w/DJO9e1EMyX3ca4Z3KJza6FjmmXQb1PMth1sEZG7eFKIFKfWYzoBhVn1FEesKEw6g+xwhzTMAjJjZTg6l4478+OHn6wOf3Zg6+2/9L6+VE8uN1rPz5CkrMreMEroL8fn2qqW081CzUsk3IrCxni0hQobRrXPfQsSFt17o5UQTM1BqVgjoUskChUEIg385xPvPjbf0ug/dyCXy/9x2C9MYqw8z4BHBVWiqqUg1VigFycSLsVsMoMJTq2rzW2/0cgDLvxgguQVmgBj42ouxNwC6VVsmvQTZFUAn5Pf7Oqfi0nOf3vSc0Q8FNCV325Lab1N7waBWirfCN2spWIthLUc4WgIMbEMnhe6Li3TTJkxoxHBZAqOFUesMYYK9R4aDbDZALCEw2B+m9DloKsI6+zs1I1sViBzPa/h6jNz7UeNU+T92X7/f8udX+IDy850p5ltojvE35CZ27WBxsiCWKkhyb4ZGyth0RbtVvY32mYb2jykw/IAAAAASUVORK5CYII=" alt="ADL Logo">

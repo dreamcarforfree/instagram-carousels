@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@200;300;400;700;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../../../fonts/suisse-intl/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: 400; font-style: normal;
+}
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../../../fonts/suisse-intl/SuisseIntl-Bold.otf') format('opentype');
+  font-weight: 700; font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #FFF; }
+.slide { width: 1080px; height: 1350px; background: #FFF; border: 1px solid #F1F5F9; position: relative; overflow: hidden; }
+.footer { position: absolute; left: 96.91px; top: 1273.95px; display: flex; flex-direction: row; align-items: center; gap: 5.32px; width: 229.918px; height: 26.598px; }
+.footer img { width: 26.598px; height: 26.598px; aspect-ratio: 1/1; }
+.footer-text { color: #475569; font-family: 'SuisseIntl', sans-serif; font-size: 20px; font-weight: 400; line-height: normal; }
+
+.cover-badge { position: absolute; left: 85px; top: 100px; display: inline-flex; height: 40px; padding: 8px 20px; align-items: center; border-radius: 10px; background: rgba(26,73,216,0.08); }
+.cover-badge span { color: #1A49D8; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; }
+.cover-num { position: absolute; right: 60px; top: 80px; font-family: 'Poppins', sans-serif; font-size: 380px; font-weight: 900; line-height: 1; color: rgba(26,73,216,0.05); letter-spacing: -0.05em; user-select: none; }
+.cover-title { position: absolute; left: 85px; top: 190px; width: 850px; color: #0F172A; font-family: 'Poppins', sans-serif; font-size: 80px; font-style: normal; font-weight: 700; line-height: 88px; letter-spacing: -2.5px; }
+.cover-title span { color: #1A49D8; }
+.cover-sub { position: absolute; left: 85px; top: 610px; width: 700px; color: #475569; font-family: 'SuisseIntl', sans-serif; font-size: 30px; font-weight: 400; line-height: 44px; letter-spacing: -0.3px; }
+.cover-line { position: absolute; left: 85px; top: 740px; width: 80px; height: 4px; background: #1A49D8; border-radius: 99px; }
+.cover-swipe { position: absolute; left: 85px; top: 780px; color: #94A3B8; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="cover-num">6</div>
+  <div class="cover-badge"><span>#RealEstateTips</span></div>
+  <h1 class="cover-title">6 Things You Should <span>NEVER Say</span> to Your Real Estate Agent</h1>
+  <p class="cover-sub">Learn what to say instead — and protect your negotiating power from the very first conversation.</p>
+  <div class="cover-line"></div>
+  <div class="cover-swipe">swipe to learn →</div>
+  <footer class="footer">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABQJJREFUeAHtVV1sFFUU/u6dO7O7s/9lW9qlS2MpWqS1kgoBhVBiEDA+aRSiL/7EB6PGxPBgookvyouJJhpjfEBDNGrwAY0JNaYGNAqVAppitchPKP2hy5Ztu+3uzuzM3OuZbcFCCOp7T3JnZu+593zn++45d4FFW7RbGPsXP6eh/PFMQ0NTe1y7p07orSlNBAZK1vlhV/76pxYa7D571l649v+CaTS8l1fUZJ6rb9zXEjW7XFcyp+JCuoCUCkIwaIYGQ9dQcL1sdzb/5q7fz713de9/BRNdXV34EoXjCUPvKExZktmciwYFPa3AE4oeiimLKW+CscoQgyozFYxDhcIh3jN+eefWk2f33wz0RjDtrRWZVbtbl5/KTxZdZjMRud9T+irJQIxQIoUcNieUL1qIhkkR8+T6XsAZhQzWaGxC4UjToRMbyavTcG4GJg6uablvW33t4clxywu1Sc18gBCuUOZF8qZpaSMhxOaBLMLMKrAhCVQoUB3JO8nk9KeCazG4IhjIhr/rbVzI8CqY9nQmtXRv28rRK2NlGd3ucaNFQY2Tp40ir6X1HgV2CZzNK6N4NXEZYvCpoMetMmZ1ClPv6+AGc4saO5I+dHLzPI5iVz/c7eudqQkb0Y2eMFZJqBzN7hTwOIPgJQzOLsFXk8twoWLCoW0pUcEGM4/tS0Zg+LJGdbAfKJELEozOdvJtA6EaLo9Nzz67+fjpfT47H4j33H3H7vWJ8B4ZlFp0lws1TLNPUdZFiTIRePLcOliSoz6ch6aR38+RKcyWYxixIngkeQkvpQfg6mFovcTwIiVL1Tr1kVA1y0KMHTzCr8modmxQ+VFLJV+k05+giR2C5AGG3ACeIKD2+Dimp9I4feohFKfrCYxDD5aQzpzAyrZvMTWTQpi72NtyFNI0wT53wCLAbLcGNcHUT4XSaw/+9tce/kpz/dqy5cBoloz5ciQYZIqKQjh4nIA6akYwcPJh9B1+AUU3AS9SAQuXYBscIxfWoXv/OwgJG0Ul8MGlVrCCU01W5RTCWzw40wyb65K7fVL83kj4eXvWU8E1RH2SZtZxaGUbr17sUHeSbGcGtiF3aTWQnEb7YAFdvVlsOjaBTX05xCwLgWQOPV+/gZg5iS/yGcwoYhMlwSJUOFEFLaL8Dkk+2pyM8/awuUkSa61eVSsOdRzEEX2lBOPEzgdzohVsOXoZIVt6RqqpZAfFmUAsjbbBK5XanI1w/DJO9e1EMyX3ca4Z3KJza6FjmmXQb1PMth1sEZG7eFKIFKfWYzoBhVn1FEesKEw6g+xwhzTMAjJjZTg6l4478+OHn6wOf3Zg6+2/9L6+VE8uN1rPz5CkrMreMEroL8fn2qqW081CzUsk3IrCxni0hQobRrXPfQsSFt17o5UQTM1BqVgjoUskChUEIg385xPvPjbf0ug/dyCXy/9x2C9MYqw8z4BHBVWiqqUg1VigFycSLsVsMoMJTq2rzW2/0cgDLvxgguQVmgBj42ouxNwC6VVsmvQTZFUAn5Pf7Oqfi0nOf3vSc0Q8FNCV325Lab1N7waBWirfCN2spWIthLUc4WgIMbEMnhe6Li3TTJkxoxHBZAqOFUesMYYK9R4aDbDZALCEw2B+m9DloKsI6+zs1I1sViBzPa/h6jNz7UeNU+T92X7/f8udX+IDy850p5ltojvE35CZ27WBxsiCWKkhyb4ZGyth0RbtVvY32mYb2jykw/IAAAAASUVORK5CYII=" alt="ADL Logo">
+    <span class="footer-text">AlohaDreamLife.com</span>
+  </footer>
+</div>
+</body>
+</html>
