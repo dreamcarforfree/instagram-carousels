@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 Step 5</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --bg: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-card: #F1F5F9;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --accent: #1A49D8;
+    --accent-2: #2563EB;
+    --accent-soft: #1A49D8;
+    --accent-bg: rgba(26, 73, 216, 0.05);
+    --accent-border: rgba(26, 73, 216, 0.15);
+    --accent-strong: rgba(26, 73, 216, 0.10);
+    --card-border: rgba(15, 23, 42, 0.08);
+    --card-border-strong: rgba(15, 23, 42, 0.15);
+  }
+
+  html, body, .card, .title-xxl, .title-xl, .title-lg, .title-md, .cover-title, .cta-title, .page-number, .eyebrow, .brand-dot, .brand-label, .num, .t1, .big {
+    font-family: 'Poppins', 'Inter', sans-serif !important;
+  }
+
+  .card-header-left .brand-dot {
+    background: var(--accent) !important;
+    color: #FFFFFF !important;
+  }
+  .card-header-left .label {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+  }
+  .card-header-right {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+  }
+  .page-number {
+    color: var(--text-secondary) !important;
+    font-weight: 700 !important;
+  }
+
+  .hd-title { margin-bottom: 40px; color: var(--text-primary); }
+
+  .quote {
+    font-size: 38px; font-weight: 800; line-height: 1.35;
+    color: var(--text-primary); margin-bottom: 30px;
+  }
+  .quote .mark {
+    font-size: 90px; line-height: 0.6; color: var(--accent);
+    display: block; margin-bottom: 4px;
+  }
+
+  .num-card {
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    border-color: rgba(15, 23, 42, 0.08) !important;
+  }
+  .num-card.v1 { background: rgba(26, 73, 216, 0.03) !important; border-color: rgba(26, 73, 216, 0.12) !important; }
+  .num-card.v1 .num { color: var(--accent) !important; }
+
+  .bottom-banner {
+    color: var(--accent) !important;
+    background: var(--accent-bg) !important;
+    border-color: var(--accent-border) !important;
+    font-weight: 700 !important;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#realestate</div>
+  </header>
+
+  <div class="page-number">06</div>
+
+  <section class="card-body">
+    <h2 class="title-lg hd-title">
+      5. Work with a Knowledgeable Agent
+    </h2>
+
+    <div class="quote">
+      <span class="mark">&ldquo;</span>
+      Choose your agent based on <span class="accent">experience, market knowledge, and communication skills</span>—never personal relationships.
+    </div>
+
+    <div class="num-list">
+      <div class="num-card v1">
+        <div class="num">⚠️</div>
+        <div class="body">
+          <div class="t1">The market truth</div>
+          <div class="t2">There are far more bad agents than good ones. Work with an expert who truly cares about your long-term well-being.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Hire an agent who supports you even after escrow is over.</div>
+  </section>
+</div>
+</body>
+</html>
