@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 Afternoon Execution · Match the work to the window</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  .card-body { padding-top: 48px; }
+  .cmp-title { margin-bottom: 40px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .compare .box { min-height: 480px; display: flex; flex-direction: column; }
+  .box .tag { font-size: 22px; font-weight: 800; letter-spacing: 0.06em; margin-bottom: 18px; display: inline-block; padding: 7px 16px; border-radius: 8px; }
+  .box-lo { background: var(--bg-card); border: 1px solid var(--card-border); border-radius: 22px; padding: 38px; }
+  .box-lo .tag { color: var(--text-secondary); background: rgba(255,255,255,0.05); }
+  .box-hi { background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 22px; padding: 38px; }
+  .box-hi .tag { color: var(--accent); background: var(--accent-strong); }
+  .kv-list { margin-top: 6px; display: flex; flex-direction: column; gap: 20px; }
+  .kv .k { font-size: 22px; font-weight: 800; color: var(--text-secondary); display: block; margin-bottom: 6px; letter-spacing: 0.04em; }
+  .box-hi .kv .k { color: var(--accent); }
+  .kv .v { font-size: 25px; font-weight: 600; color: #ECECF0; letter-spacing: -0.01em; line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#productivity</div>
+  </header>
+
+  <div class="page-number">08</div>
+
+  <section class="card-body">
+    <div class="eyebrow">Why #3 · Practical Allocation</div>
+    <h2 class="title-xl cmp-title">
+      Your afternoon<br>
+      is for <span class="accent">execution</span>
+    </h2>
+
+    <div class="compare">
+      <div class="box box-lo">
+        <span class="tag">CONTENT CREATORS</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">MORNING: THINK</span><span class="v">Write scripts, outline narratives, research deeply, structure core visual hooks.</span></div>
+          <div class="kv"><span class="k">AFTERNOON: EXECUTE</span><span class="v">Film videos, edit video timelines, process audio, design graphics on autopilot.</span></div>
+        </div>
+      </div>
+      <div class="box box-hi">
+        <span class="tag">BUSINESS OWNERS</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">MORNING: THINK</span><span class="v">Financial modeling, strategic planning, product design, high-stakes decisions.</span></div>
+          <div class="kv"><span class="k">AFTERNOON: EXECUTE</span><span class="v">Client calls, follow-up messages, team syncs, clearing inbox, administration.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">The afternoon isn't downtime — it's implementation time under lower cognitive load.</div>
+  </section>
+</div>
+</body>
+</html>
