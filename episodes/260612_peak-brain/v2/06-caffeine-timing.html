@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 Caffeine Timing · The Timing Error</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  .card-body { padding-top: 48px; }
+  .cmp-title { margin-bottom: 40px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .compare .box { min-height: 480px; display: flex; flex-direction: column; }
+  .box .tag { font-size: 22px; font-weight: 800; letter-spacing: 0.06em; margin-bottom: 18px; display: inline-block; padding: 7px 16px; border-radius: 8px; }
+  .box-lo { background: var(--bg-card); border: 1px solid var(--card-border); border-radius: 22px; padding: 38px; }
+  .box-lo .tag { color: var(--text-secondary); background: rgba(255,255,255,0.05); }
+  .box-hi { background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 22px; padding: 38px; }
+  .box-hi .tag { color: var(--accent); background: var(--accent-strong); }
+  .kv-list { margin-top: 6px; display: flex; flex-direction: column; gap: 20px; }
+  .kv .k { font-size: 22px; font-weight: 800; color: var(--text-secondary); display: block; margin-bottom: 6px; letter-spacing: 0.04em; }
+  .box-hi .kv .k { color: var(--accent); }
+  .kv .v { font-size: 25px; font-weight: 600; color: #ECECF0; letter-spacing: -0.01em; line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#productivity</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Why #6 · Energy Management</div>
+    <h2 class="title-xl cmp-title">
+      The caffeine<br>
+      <span class="accent">timing error</span>
+    </h2>
+
+    <div class="compare">
+      <div class="box box-lo">
+        <span class="tag">COFFEE WITH MEAL</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">WASTED ALERTNESS</span><span class="v">Caffeine stacks on already naturally elevated morning cortisol.</span></div>
+          <div class="kv"><span class="k">THE 11AM SLUMP</span><span class="v">Glucose drop and caffeine clearance overlap, triggering a hard combined crash.</span></div>
+        </div>
+      </div>
+      <div class="box box-hi">
+        <span class="tag">EAT, WAIT 30 MINS, DRINK</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">DECOUPLED PEAKS</span><span class="v">Ride the natural glucose peak first, then introduce caffeine.</span></div>
+          <div class="kv"><span class="k">EXTENDED FOCUS</span><span class="v">Caffeine peaks exactly as glucose levels start to fall, sustaining energy.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">The 30-minute wait decouples cortisol and glucose peaks so they don't crash in tandem.</div>
+  </section>
+</div>
+</body>
+</html>
