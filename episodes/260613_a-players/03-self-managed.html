@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Greatest People Are Self-Managing</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.bl {
+    bottom: -300px; left: -240px;
+    background: radial-gradient(circle, var(--accent-2) 0%, transparent 70%);
+  }
+
+  .q-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .quote { color: var(--text-primary); }
+  .quote-attr { color: var(--text-secondary); }
+
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow bl"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="q-body">
+    <div class="eyebrow">Self-Management</div>
+    <div class="quote">
+      <span class="mark">&ldquo;</span>
+      The greatest people are <span class="accent-grad">self-managing</span>. They don&rsquo;t need to be managed. Once they know what to do, they&rsquo;ll go figure out how to do it.
+    </div>
+    <div class="quote-attr">— Steve Jobs</div>
+  </section>
+
+  <div class="bottom-banner">They don't need managers. They need a shared vision to run towards.</div>
+</div>
+</body>
+</html>

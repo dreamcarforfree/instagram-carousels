@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Only Job of a Leader</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.tr {
+    top: -260px; right: -220px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  }
+
+  .st-title { margin-bottom: 48px; color: var(--text-primary); }
+  
+  .grid .cell {
+    background: #FFFFFF;
+    border-color: rgba(0, 91, 255, 0.08);
+  }
+  .grid .cell.accent-cell {
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+  }
+  .grid .cell .org {
+    color: var(--text-tertiary);
+  }
+  .grid .cell .desc {
+    color: var(--text-secondary);
+  }
+
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Leadership Role</div>
+    <h2 class="title-xl st-title">
+      The Only Job<br>
+      of a <span class="accent">Leader</span>
+    </h2>
+
+    <div class="grid">
+      <div class="cell accent-cell">
+        <div class="org">RECRUITING</div>
+        <div><div class="big">100%</div><div class="vs">focus priority</div></div>
+        <div class="desc">Recruiting is the single most important job of a CEO.</div>
+      </div>
+      <div class="cell accent-cell">
+        <div class="org">HIGH LEVERAGE</div>
+        <div><div class="big">10×</div><div class="vs">productivity leap</div></div>
+        <div class="desc">A-players are exponentially more leveraged than normal staff.</div>
+      </div>
+      <div class="cell">
+        <div class="org">VISION ALIGNMENT</div>
+        <div><div class="big">1</div><div class="vs">common vision</div></div>
+        <div class="desc">Leadership is building deep consensus around a shared target.</div>
+      </div>
+      <div class="cell">
+        <div class="org">SELF-POLICING</div>
+        <div><div class="big">10</div><div class="vs">core group size</div></div>
+        <div class="desc">Get 10 great people, and they will keep the bar insanely high.</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Great leaders don't manage people. They align them under one vision.</div>
+  </section>
+</div>
+</body>
+</html>

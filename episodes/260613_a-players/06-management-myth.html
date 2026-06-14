@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Who Makes the Best Managers?</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+
+    --bad-bg: rgba(239, 68, 68, 0.03);
+    --bad-border: rgba(239, 68, 68, 0.12);
+    --bad-text: #EF4444;
+
+    --good-bg: rgba(16, 185, 129, 0.03);
+    --good-border: rgba(16, 185, 129, 0.12);
+    --good-text: #10B981;
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .cmp-title { margin-bottom: 46px; color: var(--text-primary); }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .compare .box { min-height: 440px; display: flex; flex-direction: column; background: #FFFFFF; }
+  
+  .box-bad { background: var(--bad-bg); border-color: var(--bad-border); }
+  .box-good { background: var(--good-bg); border-color: var(--good-border); }
+  
+  .box-bad .tag { color: var(--bad-text); background: rgba(239, 68, 68, 0.08); }
+  .box-good .tag { color: var(--good-text); background: rgba(16, 185, 129, 0.08); }
+
+  .kv-list { margin-top: 4px; display: flex; flex-direction: column; gap: 20px; }
+  .kv .k { font-size: 25px; font-weight: 800; display: block; margin-bottom: 6px; }
+  .kv .v { font-size: 27px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; line-height: 1.35; }
+  
+  .box-bad .kv .k { color: var(--bad-text); }
+  .box-good .kv .k { color: var(--good-text); }
+
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Management Theory</div>
+    <h2 class="title-xl cmp-title">
+      Who makes the<br>
+      <span class="accent">best managers</span>?
+    </h2>
+
+    <div class="compare">
+      <div class="box box-bad">
+        <span class="tag">THE MYTH</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">PROFESSIONALS</span><span class="v">People who went to business school and know how to manage.</span></div>
+          <div class="kv"><span class="k">THE PROBLEM</span><span class="v">They know how to manage, but don't know how to do anything.</span></div>
+        </div>
+      </div>
+      <div class="box box-good">
+        <span class="tag">THE REALITY</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">INDIVIDUALS</span><span class="v">The great individual contributors who never want to be a manager.</span></div>
+          <div class="kv"><span class="k">THE TRIGGER</span><span class="v">They step up because no one else can do as good of a job.</span></div>
+          <div class="kv"><span class="k">LEARNABLE</span><span class="v">Great people only work for people they can learn from.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">If you can't build, you can't lead A-players.</div>
+  </section>
+</div>
+</body>
+</html>
