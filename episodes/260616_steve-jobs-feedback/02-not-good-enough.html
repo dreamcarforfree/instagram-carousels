@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>When Work is Not Good Enough</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.tr {
+    top: -260px; right: -220px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  }
+
+  .hd-title { margin-bottom: 50px; color: var(--text-primary); }
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+
+  /* Comparison adjustments for light mode */
+  .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 30px; }
+  .box { padding: 34px; border-radius: 20px; }
+  .box-bad { background: rgba(220, 53, 69, 0.02); border-color: rgba(220, 53, 69, 0.12); }
+  .box-bad .tag { background: rgba(220, 53, 69, 0.08); color: #DC3545; }
+  .box-good { background: rgba(0, 91, 255, 0.02); border-color: rgba(0, 91, 255, 0.12); }
+  .box-good .tag { background: rgba(0, 91, 255, 0.08); color: var(--accent); }
+  
+  .box-title { font-size: 30px; font-weight: 800; color: var(--text-primary); margin-bottom: 12px; }
+  .box-desc { font-size: 22px; font-weight: 500; color: var(--text-secondary); line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">THE REALITY</div>
+    <h2 class="title-xl hd-title">
+      When Work is<br>
+      <span class="accent">Not Good Enough</span>
+    </h2>
+
+    <div class="comparison-grid">
+      <div class="box box-bad">
+        <span class="tag">THE POLITE TRAP</span>
+        <div class="box-title">Sugarcoating Feedback</div>
+        <div class="box-desc">Wrapping criticism in polite compliments dilutes the standard. It leaves massive room for misinterpretation and fosters mediocrity.</div>
+      </div>
+
+      <div class="box box-good">
+        <span class="tag">THE ELITE STANDARD</span>
+        <div class="box-title">Direct & Clear Critique</div>
+        <div class="box-desc">Point out substandard work explicitly. It is not a personal attack; it is an objective assessment to protect the team’s collective goal.</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">
+      Elite performers value direct truth over polite mediocrity.
+    </div>
+  </section>
+</div>
+</body>
+</html>

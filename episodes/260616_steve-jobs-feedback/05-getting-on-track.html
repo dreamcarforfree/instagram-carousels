@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How to Get Back on Track</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.tr {
+    top: -260px; right: -220px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  }
+
+  .hd-title { margin-bottom: 50px; color: var(--text-primary); }
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+
+  /* Numbered card list adjustments */
+  .num-card { border-color: rgba(0, 91, 255, 0.08); background: #FFFFFF; }
+  .num-card.v2 { background: rgba(0, 91, 255, 0.02); border-color: rgba(0, 91, 255, 0.12); }
+  .num-card.v2 .num { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">EXECUTION MATRIX</div>
+    <h2 class="title-xl hd-title">
+      How to Get<br>
+      <span class="accent">Back on Track</span>
+    </h2>
+
+    <div class="num-list">
+      <div class="num-card v2">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="t1">Articulate the Specific Gap</div>
+          <div class="t2">Explicitly define exactly why and where the output falls short of the team's standard,</div>
+        </div>
+      </div>
+      <div class="num-card v2">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="t1">Provide Direct Alignment</div>
+          <div class="t2">Immediately direct their energy back onto the correct execution path with high-status clarity,</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">
+      Truth is the only mechanism that reliably repairs speed and quality.
+    </div>
+  </section>
+</div>
+</body>
+</html>

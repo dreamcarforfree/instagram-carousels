@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Why You Don't Baby Egos</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.tr {
+    top: -260px; right: -220px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  }
+
+  .hd-title { margin-bottom: 50px; color: var(--text-primary); }
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+
+  .quote-container {
+    padding: 20px 0;
+    max-width: 880px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">THE EGO MYTH</div>
+    <h2 class="title-xl hd-title">
+      Why You Don't<br>
+      <span class="accent">Baby Egos</span>
+    </h2>
+
+    <div class="quote-container">
+      <div class="quote">
+        <span class="mark">“</span>
+        When you get really good people, they know they're really good. And you don't have to baby people's ego so much. And what really matters is the work, and everybody knows that's all that matters.
+      </div>
+      <div class="quote-attr">— Steve Jobs</div>
+    </div>
+
+    <div class="bottom-banner">
+      When the work is all that matters, babying egos is a waste of time.
+    </div>
+  </section>
+</div>
+</body>
+</html>
