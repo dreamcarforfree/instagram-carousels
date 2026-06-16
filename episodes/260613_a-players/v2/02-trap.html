@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Hidden Trap of Scaling</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAFCFF;
+    --bg-elevated: #FFFFFF;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-tertiary: #6B7280;
+
+    --accent: #005BFF;
+    --accent-2: #00D2FF;
+    --accent-soft: #005BFF;
+    --accent-bg: rgba(0, 91, 255, 0.04);
+    --accent-border: rgba(0, 91, 255, 0.12);
+    --accent-strong: rgba(0, 91, 255, 0.08);
+
+    --card-border: rgba(0, 91, 255, 0.08);
+    --card-border-strong: rgba(0, 91, 255, 0.15);
+  }
+
+  .card-header-left .brand-dot {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .card-header-left .label {
+    color: var(--text-primary);
+  }
+
+  .glow {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow.tr {
+    top: -260px; right: -220px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  }
+
+  .hd-title { margin-bottom: 50px; color: var(--text-primary); }
+  .bottom-banner {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 700;
+  }
+
+  .num-card { background: #FFFFFF; border-color: rgba(0, 91, 255, 0.08); }
+  .num-card.v1 { background: rgba(0, 91, 255, 0.03); }
+  .num-card.v1 .num { color: var(--accent); }
+  .num-card.v2 { background: rgba(59, 130, 246, 0.03); }
+  .num-card.v2 .num { color: #3B82F6; }
+  .num-card.v3 { background: rgba(6, 182, 212, 0.03); }
+  .num-card.v3 .num { color: #0891B2; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#talentstrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">The Core Reality</div>
+    <h2 class="title-xl hd-title">
+      The Hidden <span class="accent">Trap</span><br>
+      of Scaling
+    </h2>
+
+    <div class="num-list">
+      <div class="num-card v2">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="t1">Bozos Hire Bozos</div>
+          <div class="t2">A-players hire A-players. But B-players hire C-players, and C-players hire D-players. Quickly, the bar collapses.</div>
+        </div>
+      </div>
+      <div class="num-card v2">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="t1">"Country of Midgets"</div>
+          <div class="t2">If you work with people who aren't as good as you, you become a country of midgets. If you work with better people, you grow.</div>
+        </div>
+      </div>
+      <div class="num-card v2">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="t1">The Management Trap</div>
+          <div class="t2">Large companies hire "professional managers." They know how to manage, but can't do anything. Real talents hate them.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">The standard of your team is determined by the floor, not the ceiling.</div>
+  </section>
+</div>
+</body>
+</html>

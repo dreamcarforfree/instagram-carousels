@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Why A-Players Only Work With A-Players</title>
-<link rel="stylesheet" href="../../styles/carousel.css">
+<link rel="stylesheet" href="../../../styles/carousel.css">
 <style>
   :root {
     --bg: #FAFCFF;
@@ -59,12 +59,47 @@
     letter-spacing: -0.08em; color: var(--accent-bg);
     user-select: none; z-index: 0;
   }
-  .cover-badge { align-self: flex-start; margin-bottom: 46px; }
-  .cover-title { font-size: 100px; font-weight: 900; line-height: 1.04; letter-spacing: -0.04em; color: var(--text-primary); }
-  .cover-sub { font-size: 34px; font-weight: 500; color: var(--text-secondary); margin-top: 34px; line-height: 1.4; }
-  .cover-meta { display: flex; gap: 14px; align-items: center; margin-top: 54px; font-size: 22px; color: var(--text-tertiary); }
+  .cover-badge { align-self: flex-start; margin-bottom: 46px; position: relative; z-index: 2; }
+  .cover-title {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    max-width: 680px;
+    position: relative;
+    z-index: 2;
+  }
+  .cover-sub {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-top: 34px;
+    line-height: 1.4;
+    max-width: 620px;
+    position: relative;
+    z-index: 2;
+  }
+  .cover-meta {
+    display: flex; gap: 14px; align-items: center; margin-top: 54px; font-size: 22px; color: var(--text-tertiary);
+    position: relative;
+    z-index: 2;
+  }
   .cover-meta .dot { color: rgba(0,91,255,0.2); }
-  .swipe-hint { margin-top: 50px; font-size: 22px; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.02em; }
+  .swipe-hint {
+    margin-top: 50px; font-size: 22px; color: var(--text-tertiary); font-weight: 600; letter-spacing: 0.02em;
+    position: relative;
+    z-index: 2;
+  }
+  .steve-image {
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    width: 640px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body>
@@ -72,6 +107,7 @@
   <div class="glow tr"></div>
   <div class="glow bl"></div>
   <div class="cover-mark">TALENT</div>
+  <img src="../steve-jobs.png" class="steve-image" alt="Steve Jobs">
 
   <header class="card-header">
     <div class="card-header-left">
