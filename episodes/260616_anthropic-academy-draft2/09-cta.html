@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>09 · Real Servers</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 30px; }
+.primitives-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 10px; }
+.prim-box {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 24px 20px;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prim-title { font-size: 23px; font-weight: 800; color: var(--accent); }
+.prim-controlled { font-size: 17px; font-weight: 700; text-transform: uppercase; color: var(--text-tertiary); margin: 6px 0; }
+.prim-desc { font-size: 18px; font-weight: 500; color: var(--text-secondary); line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIeducation</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE MCP PROTOCOL</div>
+    <h2 class="title-xl hd-title">
+      You build real,<br>
+      <span style="color:#005BFF">working servers.</span>
+    </h2>
+
+    <p class="subtitle" style="font-size:26px; line-height:1.45; color:var(--text-secondary); margin-bottom: 24px;">
+      Not sandbox simulations. Not trivial mock tutorials. You deploy production-grade integration infrastructure using the Python SDK.
+    </p>
+
+    <div class="primitives-grid">
+      <div class="prim-box">
+        <div class="prim-title">Tools</div>
+        <div class="prim-controlled">By Claude</div>
+        <div class="prim-desc">Dynamic functions Claude triggers based on intent.</div>
+      </div>
+      
+      <div class="prim-box">
+        <div class="prim-title">Resources</div>
+        <div class="prim-controlled">By App</div>
+        <div class="prim-desc">File, database, and API read-only data inputs.</div>
+      </div>
+      
+      <div class="prim-box">
+        <div class="prim-title">Prompts</div>
+        <div class="prim-controlled">By You</div>
+        <div class="prim-desc">Reusable template patterns you explicitly dictate.</div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04 · Track 1</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 36px; }
+.feature-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+.feature-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--accent-border);
+  padding: 24px 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIeducation</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">TRACK 01</div>
+    <h2 class="title-xl hd-title">
+      Everyday Users:<br>
+      <span style="color:#005BFF">Claude 101.</span>
+    </h2>
+
+    <p class="subtitle" style="font-size:30px; line-height:1.5; color:var(--text-secondary);">
+      Designed to teach non-technical professionals how to master the baseline operational mechanics of Claude.
+    </p>
+
+    <div class="feature-row">
+      <div class="feature-card">💡 Advanced Prompting</div>
+      <div class="feature-card">📂 Projects Management</div>
+      <div class="feature-card">🎨 Artifact Controls</div>
+      <div class="feature-card">🔬 Research Mode</div>
+    </div>
+
+    <div class="bottom-banner" style="margin-top: 40px; font-size: 26px;">
+      **No coding required.** Immediate daily leverage for your workflow.
+    </div>
+  </section>
+</div>
+</body>
+</html>
