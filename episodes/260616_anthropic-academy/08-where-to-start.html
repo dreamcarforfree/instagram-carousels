@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 · Where to Start</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --card-border: rgba(0, 0, 0, 0.07);
+}
+.hd-title { margin-bottom: 46px; color: #0A0F1E; }
+
+.path-card {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 28px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,91,255,0.14);
+  background: #F4F8FF;
+  margin-bottom: 20px;
+}
+.path-card:last-child { margin-bottom: 0; }
+.path-card.hl {
+  background: rgba(0,91,255,0.08);
+  border-color: rgba(0,91,255,0.28);
+}
+
+.path-icon {
+  width: 58px; height: 58px; border-radius: 16px;
+  background: linear-gradient(135deg, #005BFF, #0080FF);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; flex-shrink: 0;
+}
+.path-icon.soft {
+  background: rgba(0,91,255,0.12);
+}
+
+.path-text { display: flex; flex-direction: column; gap: 5px; flex: 1; }
+.path-who {
+  font-size: 21px;
+  font-weight: 700;
+  color: #8A93A8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.path-course {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0A0F1E;
+  letter-spacing: -0.02em;
+}
+.path-arrow {
+  font-size: 28px;
+  color: #005BFF;
+  font-weight: 700;
+}
+.bottom-banner { background: rgba(0,91,255,0.07); border-color: rgba(0,91,255,0.22); color: #005BFF; margin-top: 36px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background:linear-gradient(135deg,#005BFF,#0080FF)">A</span>
+      <span class="label" style="color:#0A0F1E">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color:#8A93A8">#AIeducation</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">YOUR ENTRY POINT</div>
+    <h2 class="title-lg hd-title">Don't start at Course 1.<br>Start where you <span style="color:#005BFF">actually are.</span></h2>
+
+    <div class="path-card hl">
+      <div class="path-icon">👤</div>
+      <div class="path-text">
+        <div class="path-who">Non-technical</div>
+        <div class="path-course">→ Claude 101</div>
+      </div>
+    </div>
+
+    <div class="path-card">
+      <div class="path-icon soft">💻</div>
+      <div class="path-text">
+        <div class="path-who">Engineer / Coder</div>
+        <div class="path-course">→ Claude Code 101</div>
+      </div>
+    </div>
+
+    <div class="path-card">
+      <div class="path-icon soft">🔌</div>
+      <div class="path-text">
+        <div class="path-who">Integration Builder</div>
+        <div class="path-course">→ Intro to MCP</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">All 19 courses live at anthropic.skilljar.com</div>
+  </section>
+</div>
+</body>
+</html>

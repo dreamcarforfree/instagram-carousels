@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>02 · Hook</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+.hd-title { margin-bottom: 48px; }
+.num-card { background: #F4F8FF; border-color: rgba(0,91,255,0.12); }
+.num-card .body .t1 { color: #0A0F1E; }
+.num-card .body .t2 { color: #4B5675; }
+.num-card.v1 { background: rgba(0,91,255,0.07); border-color: rgba(0,91,255,0.22); }
+.num-card.v1 .num { color: #005BFF; }
+.num-card.v2 { background: rgba(0,128,255,0.06); border-color: rgba(0,128,255,0.20); }
+.num-card.v2 .num { color: #0080FF; }
+.num-card.v3 { background: rgba(0,91,255,0.04); border-color: rgba(0,91,255,0.15); }
+.num-card.v3 .num { color: #005BFF; }
+.bottom-banner { background: rgba(0,91,255,0.07); border-color: rgba(0,91,255,0.22); color: #005BFF; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background:linear-gradient(135deg,#005BFF,#0080FF)">A</span>
+      <span class="label" style="color:#0A0F1E">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color:#8A93A8">#AIeducation</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">WAKE-UP CALL</div>
+    <h2 class="title-xl hd-title" style="color:#0A0F1E">
+      Most people use Claude<br>
+      at <span style="color:#005BFF">10%</span> of its potential.
+    </h2>
+
+    <div class="num-list">
+      <div class="num-card v1">
+        <div class="num">✓</div>
+        <div class="body">
+          <div class="t1">No registration fees</div>
+          <div class="t2">Access every course with a free account — no trial, no credit card.</div>
+        </div>
+      </div>
+      <div class="num-card v2">
+        <div class="num">✓</div>
+        <div class="body">
+          <div class="t1">No paywalls</div>
+          <div class="t2">Every lesson, every module, open from day one.</div>
+        </div>
+      </div>
+      <div class="num-card v3">
+        <div class="num">✓</div>
+        <div class="body">
+          <div class="t1">No charge for certificates</div>
+          <div class="t2">Graded assessments included. Shareable proof of completion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Anthropic just removed every excuse to change that.</div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 · What Is It</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+.q-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.quote { color: #0A0F1E; font-size: 52px; }
+.quote .mark { color: #005BFF; font-size: 120px; }
+.quote-attr { color: #4B5675; }
+.bottom-banner { background: rgba(0,91,255,0.07); border-color: rgba(0,91,255,0.22); color: #005BFF; }
+
+.meta-row {
+  display: flex;
+  gap: 18px;
+  margin-top: 46px;
+  flex-wrap: wrap;
+}
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,91,255,0.22);
+  background: rgba(0,91,255,0.06);
+  font-size: 24px;
+  font-weight: 700;
+  color: #005BFF;
+  letter-spacing: -0.01em;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow bl"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background:linear-gradient(135deg,#005BFF,#0080FF)">A</span>
+      <span class="label" style="color:#0A0F1E">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color:#8A93A8">#AIeducation</div>
+  </header>
+
+  <section class="q-body">
+    <div class="eyebrow" style="color:#005BFF">ANTHROPIC ACADEMY</div>
+    <div class="quote">
+      <span class="mark">&ldquo;</span>
+      19 courses.<br>Zero cost.<br>
+      Built by the team<br>that <span style="color:#005BFF">built Claude.</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-pill">Self-paced</span>
+      <span class="meta-pill">Graded assessments</span>
+      <span class="meta-pill">Free certificates</span>
+    </div>
+  </section>
+
+  <div class="bottom-banner">Hosted at anthropic.skilljar.com — live and accessible now.</div>
+</div>
+</body>
+</html>

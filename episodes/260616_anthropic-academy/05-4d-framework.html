@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>05 · The 4D Framework</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --card-border: rgba(0, 0, 0, 0.07);
+}
+.fw-title { margin-bottom: 44px; color: #0A0F1E; }
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.d-card {
+  border-radius: 24px;
+  padding: 36px 30px;
+  border: 1px solid rgba(0,91,255,0.16);
+  background: #F4F8FF;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 220px;
+}
+.d-card .d-letter {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #005BFF;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.d-card .d-word {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0A0F1E;
+  letter-spacing: -0.02em;
+}
+.d-card .d-desc {
+  font-size: 22px;
+  font-weight: 500;
+  color: #4B5675;
+  line-height: 1.4;
+}
+.d-card.hl { background: rgba(0,91,255,0.08); border-color: rgba(0,91,255,0.28); }
+.bottom-banner { background: rgba(0,91,255,0.07); border-color: rgba(0,91,255,0.22); color: #005BFF; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background:linear-gradient(135deg,#005BFF,#0080FF)">A</span>
+      <span class="label" style="color:#0A0F1E">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color:#8A93A8">#AIeducation</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE FRAMEWORK</div>
+    <h2 class="title-lg fw-title">One model for<br>every AI interaction.</h2>
+
+    <div class="d-grid">
+      <div class="d-card hl">
+        <div class="d-letter">D1</div>
+        <div class="d-word">Delegation</div>
+        <div class="d-desc">What to hand off to Claude</div>
+      </div>
+      <div class="d-card">
+        <div class="d-letter">D2</div>
+        <div class="d-word">Description</div>
+        <div class="d-desc">How to specify your instructions</div>
+      </div>
+      <div class="d-card">
+        <div class="d-letter">D3</div>
+        <div class="d-word">Discernment</div>
+        <div class="d-desc">How to audit output quality</div>
+      </div>
+      <div class="d-card hl">
+        <div class="d-letter">D4</div>
+        <div class="d-word">Diligence</div>
+        <div class="d-desc">How to verify accuracy</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Repeatable across every tool — not just Claude.</div>
+  </section>
+</div>
+</body>
+</html>

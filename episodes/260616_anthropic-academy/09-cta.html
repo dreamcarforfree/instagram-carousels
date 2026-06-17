@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>09 · CTA</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --card-border: rgba(0, 0, 0, 0.07);
+}
+.cta-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cta-title {
+  font-size: 92px;
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  color: #0A0F1E;
+}
+.cta-title .accent-grad {
+  background: linear-gradient(110deg, #005BFF, #0080FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta-sub {
+  font-size: 30px;
+  font-weight: 500;
+  color: #4B5675;
+  margin-top: 28px;
+  line-height: 1.5;
+}
+.cta-links {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.cta-link-primary {
+  display: block;
+  padding: 30px 40px;
+  background: linear-gradient(110deg, #005BFF, #0080FF);
+  color: #fff;
+  border-radius: 18px;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  box-shadow: 0 16px 40px rgba(0,91,255,0.28);
+}
+.cta-link-secondary {
+  display: block;
+  padding: 26px 40px;
+  background: rgba(0,91,255,0.07);
+  color: #005BFF;
+  border: 1px solid rgba(0,91,255,0.22);
+  border-radius: 18px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.cta-tagline {
+  margin-top: 52px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #8A93A8;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+  <div class="glow bl"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background:linear-gradient(135deg,#005BFF,#0080FF)">A</span>
+      <span class="label" style="color:#0A0F1E">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color:#8A93A8">#AIeducation</div>
+  </header>
+
+  <section class="cta-body">
+    <h2 class="cta-title">
+      19 courses.<br>
+      <span class="accent-grad">Free.</span><br>
+      Live now.
+    </h2>
+    <p class="cta-sub">The compounding leverage is<br>yours to capture.</p>
+
+    <div class="cta-links">
+      <span class="cta-link-primary">anthropic.skilljar.com</span>
+      <span class="cta-link-secondary">AlohaDreamLife.com</span>
+    </div>
+
+    <div class="cta-tagline">"Vision without action is a daydream."</div>
+  </section>
+</div>
+</body>
+</html>
