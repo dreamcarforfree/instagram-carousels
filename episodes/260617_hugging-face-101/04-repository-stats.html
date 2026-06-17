@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04 · Repository Stats</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 40px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 10px; }
+.cell {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 30px;
+  border-radius: 20px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cell .big {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+}
+.cell .desc {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: 12px;
+}
+.cell.full-width {
+  grid-column: span 2;
+  min-height: 140px;
+  flex-direction: row;
+  align-items: center;
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+.cell.full-width .text-block {
+  flex: 1;
+}
+.cell.full-width .big-label {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE REPOSITORY</div>
+    <h2 class="title-xl hd-title">
+      The world's largest<br>
+      <span style="color:#005BFF">open library for AI.</span>
+    </h2>
+
+    <div class="grid">
+      <div class="cell">
+        <div class="big">2.4M</div>
+        <div class="desc">Open-Source<br>AI Models</div>
+      </div>
+      
+      <div class="cell">
+        <div class="big">730K+</div>
+        <div class="desc">Structured Datasets<br>for Training</div>
+      </div>
+      
+      <div class="cell full-width">
+        <div class="text-block">
+          <div class="big-label">1 Million+ Interactive Demos</div>
+          <p class="desc" style="margin-top: 6px; font-size: 20px;">
+            Google, Meta, Mistral, and major global research labs publish their bleeding-edge open-source AI models here first.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

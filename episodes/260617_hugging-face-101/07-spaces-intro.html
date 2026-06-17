@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>07 · Spaces Intro</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 48px; }
+.feature-row { display: flex; gap: 20px; margin-top: 36px; }
+.feature-card {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1px solid var(--accent-border);
+  padding: 34px 28px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--accent);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE APPLICATIONS</div>
+    <h2 class="title-xl hd-title">
+      Beyond rankings:<br>
+      <span style="color:#005BFF">Meet Spaces.</span>
+    </h2>
+
+    <p class="subtitle" style="font-size:30px; line-height:1.5; color:var(--text-secondary);">
+      Spaces are **free, browser-based applications** built directly on top of open-source AI models. They allow you to run models live without any local setup.
+    </p>
+
+    <div class="feature-row">
+      <div class="feature-card">❌ No Downloads</div>
+      <div class="feature-card">❌ No Credit Cards</div>
+      <div class="feature-card">❌ No Coding</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

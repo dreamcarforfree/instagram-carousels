@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 · Spaces Tools</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 36px; }
+.tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.tool-box {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 26px 28px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.tool-emoji { font-size: 32px; }
+.tool-label { font-size: 22px; font-weight: 700; color: var(--text-primary); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE FREE TOOLKIT</div>
+    <h2 class="title-xl hd-title">
+      What you can test<br>
+      <span style="color:#005BFF">on Spaces right now:</span>
+    </h2>
+
+    <div class="tool-grid">
+      <div class="tool-box">
+        <span class="tool-emoji">🖼️</span>
+        <span class="tool-label">Text-to-Image generators</span>
+      </div>
+      
+      <div class="tool-box">
+        <span class="tool-emoji">🎙️</span>
+        <span class="tool-label">Voice transcription tools</span>
+      </div>
+      
+      <div class="tool-box">
+        <span class="tool-emoji">🧼</span>
+        <span class="tool-label">Background removers</span>
+      </div>
+      
+      <div class="tool-box">
+        <span class="tool-emoji">📄</span>
+        <span class="tool-label">Document summarizers</span>
+      </div>
+    </div>
+
+    <div class="bottom-banner" style="margin-top: 36px;">
+      All available at **zero cost**, often running the same day a model releases — using the same underlying architecture as tools charging monthly fees.
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 · Leaderboards</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 36px; }
+.board-list { display: flex; flex-direction: column; gap: 16px; }
+.board-card {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 24px 30px;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.board-icon {
+  font-size: 38px;
+  flex-shrink: 0;
+  width: 50px;
+  text-align: center;
+}
+.board-body { flex: 1; }
+.board-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.board-desc {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE DIRECTORIES</div>
+    <h2 class="title-xl hd-title">
+      Three leaderboards<br>
+      <span style="color:#005BFF">worth tracking.</span>
+    </h2>
+
+    <div class="board-list">
+      <div class="board-card">
+        <div class="board-icon">🏆</div>
+        <div class="board-body">
+          <div class="board-title">Open LLM Leaderboard</div>
+          <div class="board-desc">Standardized academic benchmarks. Check this raw scorecard before you trust any new model.</div>
+        </div>
+      </div>
+      
+      <div class="board-card">
+        <div class="board-icon">🎨</div>
+        <div class="board-body">
+          <div class="board-title">Image Arena</div>
+          <div class="board-desc">Blind human preference votes for text-to-image. The honest way to compare visual generators.</div>
+        </div>
+      </div>
+      
+      <div class="board-card">
+        <div class="board-icon">⚡</div>
+        <div class="board-body">
+          <div class="board-title">Trending Scorecard</div>
+          <div class="board-desc">Real-time download velocity. See what the actual AI developer community is downloading today.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

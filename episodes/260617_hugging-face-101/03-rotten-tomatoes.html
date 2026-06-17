@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 · Rotten Tomatoes</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.quote {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.34;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-top: 20px;
+}
+.quote .mark {
+  color: var(--accent);
+  font-size: 150px;
+  line-height: 0.2;
+  margin-bottom: 30px;
+}
+.bottom-banner {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--accent);
+  font-size: 26px;
+  line-height: 1.45;
+  margin-top: 60px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE EQUIVALENT</div>
+    
+    <div class="quote">
+      <span class="mark">“</span>
+      Hugging Face is the closest thing the AI world has to <span style="color:var(--accent)">Rotten Tomatoes.</span>
+    </div>
+
+    <p class="subtitle" style="margin-top:40px; font-size:26px; color:var(--text-secondary); line-height:1.5;">
+      It is where the global AI community goes to separate verified, raw performance from corporate marketing budgets. 
+    </p>
+
+    <div class="bottom-banner">
+      A transparent, public platform where thousands of AI models are ranked, tested, and audited by independent experts in real time.
+    </div>
+  </section>
+</div>
+</body>
+</html>

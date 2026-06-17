@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>11 · Getting Started</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 30px; }
+.steps-container { display: flex; flex-direction: column; gap: 14px; }
+.step-item {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 18px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.step-num-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.step-text .subtext {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE DIRECT METHOD</div>
+    <h2 class="title-xl hd-title">
+      How to start —<br>
+      <span style="color:#005BFF">Takes only 5 minutes.</span>
+    </h2>
+
+    <div class="steps-container">
+      <div class="step-item">
+        <div class="step-num-badge">1</div>
+        <div class="step-text">Go to <span style="color:var(--accent)">huggingface.co</span> <span class="subtext">— browse completely free without an account.</span></div>
+      </div>
+      
+      <div class="step-item">
+        <div class="step-num-badge">2</div>
+        <div class="step-text">Click <span style="color:var(--accent)">Spaces</span> <span class="subtext">— find and run free AI tools right in your browser.</span></div>
+      </div>
+      
+      <div class="step-item">
+        <div class="step-num-badge">3</div>
+        <div class="step-text">Check <span style="color:var(--accent)">Leaderboards</span> <span class="subtext">— see which models are winning independent tests.</span></div>
+      </div>
+      
+      <div class="step-item">
+        <div class="step-num-badge">4</div>
+        <div class="step-text">Look at <span style="color:var(--accent)">Trending</span> <span class="subtext">— see what is coming next. Create an account to save.</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>09 · Why It Matters</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #F4F8FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.05);
+  --accent-border: rgba(0, 91, 255, 0.15);
+  --accent-strong: rgba(0, 91, 255, 0.10);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.hd-title { margin-bottom: 36px; }
+.step-list { display: flex; flex-direction: column; gap: 16px; }
+.step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  padding: 24px 30px;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+}
+.step-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+}
+.step-body { flex: 1; }
+.step-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.step-desc {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  line-height: 1.42;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AIindustry</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">THE VALUE STREAM</div>
+    <h2 class="title-xl hd-title">
+      Why this matters<br>
+      <span style="color:#005BFF">even if you never visit:</span>
+    </h2>
+
+    <div class="step-list">
+      <div class="step-card">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <div class="step-title">The Foundation of Paid Apps</div>
+          <div class="step-desc">Most AI tools you already pay for — writing assistants, background removers, customer support bots — are wrappers built on top of open-source models first published here.</div>
+        </div>
+      </div>
+      
+      <div class="step-card">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <div class="step-title">The Downstream Cascade</div>
+          <div class="step-desc">When a better open-source model drops on Hugging Face, it cascade-updates into commercial products within weeks or months. This is where innovation starts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
