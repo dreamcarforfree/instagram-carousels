@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 · Cover</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+}
+
+.card {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('cover-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(255,255,255,0.76) 0%,
+    rgba(240,246,255,0.70) 45%,
+    rgba(195,220,255,0.50) 100%
+  );
+  z-index: 1;
+}
+
+.cover-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 76px 76px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 600;
+  color: #4B5675;
+}
+.card-header-left { display: flex; align-items: center; gap: 16px; }
+.brand-dot {
+  width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, #005BFF, #0080FF);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 800; color: #fff;
+}
+.label { color: #0A0F1E; letter-spacing: -0.01em; }
+.card-header-right { color: #8A93A8; font-weight: 600; }
+
+.cover-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.cover-badge {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(110deg, #005BFF, #0080FF);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 38px;
+  align-self: flex-start;
+}
+
+.cover-title {
+  font-size: 88px;
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  color: #0A0F1E;
+}
+
+.cover-title .accent {
+  color: #005BFF;
+}
+
+.cover-sub {
+  font-size: 30px;
+  font-weight: 500;
+  color: #4B5675;
+  margin-top: 30px;
+  line-height: 1.45;
+}
+
+.swipe-hint {
+  margin-top: 46px;
+  font-size: 22px;
+  color: #8A93A8;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="cover-bg"></div>
+  <div class="cover-overlay"></div>
+  <div class="cover-inner">
+
+    <header class="card-header">
+      <div class="card-header-left">
+        <span class="brand-dot">A</span>
+        <span class="label">Aloha Dream Life</span>
+      </div>
+      <div class="card-header-right">#MemoryScience</div>
+    </header>
+
+    <div class="cover-body">
+      <span class="cover-badge">ACTIVE MEMORY SYSTEMS</span>
+      <h1 class="cover-title">
+        The Science of<br>
+        Active Memory<br>
+        <span class="accent">Recall.</span>
+      </h1>
+      <p class="cover-sub">How to align your learning with how memory actually forms —<br>and how to automate it with AI.</p>
+      <div class="swipe-hint">Swipe →</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>10 · Compare Frameworks</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F4F8FF;
+  --bg-card: #EEF3FF;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4B5675;
+  --text-tertiary: #8A93A8;
+  --accent: #005BFF;
+  --accent-2: #0080FF;
+  --accent-soft: #3399FF;
+  --accent-bg: rgba(0, 91, 255, 0.08);
+  --accent-border: rgba(0, 91, 255, 0.22);
+  --accent-strong: rgba(0, 91, 255, 0.14);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-border-strong: rgba(0, 0, 0, 0.13);
+  
+  --bad-bg: rgba(220, 53, 69, 0.04);
+  --bad-border: rgba(220, 53, 69, 0.15);
+  --bad-text: #DC3545;
+  
+  --good-bg: rgba(0, 91, 255, 0.05);
+  --good-border: rgba(0, 91, 255, 0.2);
+  --good-text: #005BFF;
+}
+
+.hd-title { margin-bottom: 24px; }
+.split-boxes { display: flex; flex-direction: column; gap: 24px; margin-top: 20px; }
+.box { padding: 34px 38px; border-radius: 20px; border: 1px solid var(--card-border); }
+.box-title { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+.box-desc { font-size: 23px; font-weight: 500; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#MemoryScience</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color:#005BFF">TRADITIONAL VS AI</div>
+    <h2 class="title-xl hd-title" style="font-size: 64px;">
+      Traditional vs.<br>
+      <span style="color:#005BFF">AI-Augmented Learning.</span>
+    </h2>
+
+    <div class="split-boxes">
+      <div class="box box-bad">
+        <span class="tag">THE TEXTBOOK TRAP</span>
+        <div class="box-desc" style="color:var(--text-secondary)">
+          • Passive re-reading<br>
+          • Highlighting static pages<br>
+          • Block-studying single topics<br>
+          • Memorizing generic data
+        </div>
+      </div>
+      
+      <div class="box box-good">
+        <span class="tag" style="background:rgba(0, 91, 255, 0.1); color:var(--good-text)">ACTIVE SIMULATOR</span>
+        <div class="box-desc" style="color:var(--text-secondary)">
+          • Synaptic retrieval quizzes<br>
+          • Multi-sensory format switching<br>
+          • Interleaving adjacent subjects<br>
+          • Interest-based scaffolding
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
