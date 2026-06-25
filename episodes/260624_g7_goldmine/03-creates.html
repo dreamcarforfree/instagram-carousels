@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 Creates</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #0052FF;
+    --accent-soft: rgba(0, 82, 255, 0.1);
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #FAFAFC;
+    font-family: 'Inter', sans-serif;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+  }
+  .card {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: #FAFAFC;
+  }
+  .card-header {
+    position: absolute;
+    top: 54px;
+    left: 76px;
+    right: 76px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand-logo {
+    height: 44px;
+    width: auto;
+  }
+  .brand-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+  }
+  .tag {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .horizon {
+    position: absolute;
+    top: 675px;
+    left: 0;
+    width: 1080px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 82, 255, 0.15) 15%, #0052FF 50%, rgba(0, 82, 255, 0.15) 85%, transparent 100%);
+    z-index: 50;
+  }
+  .horizon::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #0052FF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 82, 255, 0.12);
+  }
+  .half {
+    position: absolute;
+    left: 0;
+    width: 1080px;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 130px 76px 60px;
+  }
+  .top {
+    top: 0;
+    background: #FFFFFF;
+  }
+  .bottom {
+    top: 675px;
+    background: #F8FAFC;
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #0052FF;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .bottom .eyebrow {
+    color: #64748B;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .col-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 82, 255, 0.1);
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 82, 255, 0.02);
+  }
+  .bottom .col-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.01);
+  }
+  .col-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0052FF;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .bottom .col-title {
+    color: #64748B;
+  }
+  .col-text {
+    font-size: 19px;
+    line-height: 1.4;
+    color: #334155;
+    font-weight: 500;
+  }
+  .footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #94A3B8;
+    letter-spacing: 0.05em;
+    z-index: 100;
+  }
+  .page-number {
+    position: absolute;
+    bottom: 40px;
+    right: 76px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #94A3B8;
+    z-index: 100;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="brand-lockup">
+      <img src="assets/adl-logo.svg" class="brand-logo" alt="ADL Logo">
+      <span class="brand-name">Aloha Dream Life</span>
+    </div>
+    <div class="tag">#G7GOLDMINE</div>
+  </header>
+  
+  <div class="horizon"></div>
+
+  <section class="half top">
+    <div class="eyebrow">Storytelling Creates</div>
+    <div class="columns">
+      <div class="col-card">
+        <div class="col-title">Connection</div>
+        <div class="col-text">"I recognize myself in your structural friction."</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Clarity</div>
+        <div class="col-text">"I see the exact architecture of my solution."</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Conversion</div>
+        <div class="col-text">"I choose to invest in your proven path."</div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="half bottom">
+    <div class="eyebrow">Telling Stories Creates</div>
+    <div class="columns">
+      <div class="col-card">
+        <div class="col-title">Confusion</div>
+        <div class="col-text">"Why are you broadcasting this to me?"</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Indifference</div>
+        <div class="col-text">"A nice story, but completely irrelevant to my needs."</div>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Crickets</div>
+        <div class="col-text">"Unfiltered rambling. I am moving on."</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">@alohadreamlife</div>
+  <div class="page-number">03</div>
+</div>
+</body>
+</html>
