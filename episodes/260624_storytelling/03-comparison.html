@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 · Comparison</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #FF7A45;
+    --accent-2: #FF4D6D;
+  }
+  .card-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .split-col {
+    padding: 34px 30px; border-radius: 20px; border: 1px solid var(--card-border);
+    background: var(--bg-elevated); display: flex; flex-direction: column; gap: 28px;
+  }
+  .split-col.accent-col {
+    border-color: var(--accent-border);
+    background: rgba(255, 122, 69, 0.03);
+  }
+  .split-header {
+    font-size: 24px; font-weight: 800; letter-spacing: 0.1em;
+    padding-bottom: 16px; border-bottom: 1px solid var(--card-border);
+  }
+  .split-col.accent-col .split-header {
+    color: var(--accent); border-bottom-color: var(--accent-border);
+  }
+  .split-col:not(.accent-col) .split-header {
+    color: var(--text-secondary);
+  }
+  .item-list { display: flex; flex-direction: column; gap: 24px; }
+  .comparison-item { display: flex; flex-direction: column; gap: 4px; }
+  .item-title { font-size: 26px; font-weight: 800; color: var(--text-primary); }
+  .split-col.accent-col .item-title { color: var(--accent-soft); }
+  .item-desc { font-size: 20px; font-weight: 500; color: var(--text-secondary); line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow bl"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+
+  <div class="page-number">03</div>
+
+  <section class="card-body">
+    <div class="eyebrow">THE RESULTS GAP</div>
+    <h2 class="title-xl">
+      What does your<br>
+      content <span class="accent-grad">generate?</span>
+    </h2>
+
+    <div class="split-grid">
+      <!-- Telling Stories Column -->
+      <div class="split-col">
+        <div class="split-header">TELLING STORIES</div>
+        <div class="item-list">
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--bad-text);">Confusion</div>
+            <div class="item-desc">"Ugh, why are you telling me this random story?"</div>
+          </div>
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--bad-text);">"That's nice..."</div>
+            <div class="item-desc">"...But so what? How does this affect me?"</div>
+          </div>
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--bad-text);">Crickets</div>
+            <div class="item-desc">"I'll skip this rambling post next time."</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Storytelling Column -->
+      <div class="split-col accent-col">
+        <div class="split-header">STORYTELLING</div>
+        <div class="item-list">
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--good-text);">Connection</div>
+            <div class="item-desc">"I feel completely related. This is exactly my situation."</div>
+          </div>
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--good-text);">Clarity</div>
+            <div class="item-desc">"Ah! Now I see exactly how to solve my problem."</div>
+          </div>
+          <div class="comparison-item">
+            <div class="item-title" style="color: var(--good-text);">Clients</div>
+            <div class="item-desc">"I trust this person's expertise and want to support them."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Storytelling converts attention. Telling stories repels it.</div>
+  </section>
+</div>
+</body>
+</html>

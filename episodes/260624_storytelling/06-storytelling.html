@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 · Storytelling</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #FF7A45;
+    --accent-2: #FF4D6D;
+  }
+  .card-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .bullet-container { display: flex; flex-direction: column; gap: 20px; margin-top: 40px; }
+  .bullet-item {
+    display: flex; gap: 24px; padding: 30px 34px; border-radius: 20px;
+    border: 1px solid var(--accent-border);
+    background: rgba(255, 122, 69, 0.03);
+    align-items: center;
+  }
+  .bullet-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px; font-weight: 700; color: var(--accent);
+    width: 50px; flex-shrink: 0;
+  }
+  .bullet-content { font-size: 26px; font-weight: 600; color: var(--text-primary); line-height: 1.4; }
+  .bullet-content span { color: var(--text-secondary); font-weight: 400; font-size: 22px; display: block; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow tr"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+
+  <div class="page-number">06</div>
+
+  <section class="card-body">
+    <div class="eyebrow">THE STORYTELLER'S EDGE</div>
+    <h2 class="title-xl">
+      How Storytelling<br>
+      builds a <span class="accent-grad">real brand</span>
+    </h2>
+
+    <div class="bullet-container">
+      <div class="bullet-item">
+        <span class="bullet-num">01</span>
+        <div class="bullet-content">
+          Gives them the lesson they need
+          <span>It shifts the spotlight from your ego to their direct education.</span>
+        </div>
+      </div>
+
+      <div class="bullet-item">
+        <span class="bullet-num">02</span>
+        <div class="bullet-content">
+          Says: &ldquo;This happened to me so it doesn't have to happen to you.&rdquo;
+          <span>It turns your unique struggle into a valuable protective map.</span>
+        </div>
+      </div>
+
+      <div class="bullet-item">
+        <span class="bullet-num">03</span>
+        <div class="bullet-content">
+          Builds authority &amp; gets people to buy
+          <span>It builds a powerful, high-converting bridge of connection.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Trust is built when you turn your wounds into wisdom for others.</div>
+  </section>
+</div>
+</body>
+</html>
