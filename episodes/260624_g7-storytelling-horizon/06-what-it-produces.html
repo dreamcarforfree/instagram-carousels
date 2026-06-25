@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 What It Produces</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+
+:root {
+  --bg: #F8F6EF;
+  --bg-elevated: #FFFFFF;
+  --bg-card: rgba(255,255,255,0.74);
+  --text-primary: #10141D;
+  --text-secondary: #50596C;
+  --text-tertiary: #8D94A3;
+  --accent: #0047FF;
+  --accent-2: #00A3FF;
+  --accent-soft: #1F6BFF;
+  --accent-bg: rgba(0,71,255,0.075);
+  --accent-border: rgba(0,71,255,0.22);
+  --accent-strong: rgba(0,71,255,0.14);
+  --bad-bg: rgba(17,20,29,0.04);
+  --bad-border: rgba(17,20,29,0.16);
+  --bad-text: #2F3645;
+  --good-bg: rgba(0,71,255,0.075);
+  --good-border: rgba(0,71,255,0.24);
+  --good-text: #0047FF;
+  --card-border: rgba(17,20,29,0.10);
+  --card-border-strong: rgba(17,20,29,0.16);
+}
+html, body { background:#F8F6EF; }
+.card {
+  padding: 54px 70px 58px;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(0,163,255,.16), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(0,71,255,.09), transparent 31%),
+    linear-gradient(180deg, #FBFAF5 0%, #F4F0E7 100%);
+}
+.card::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(16,20,29,.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,20,29,.026) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity:.72;
+  pointer-events:none;
+}
+.card::after {
+  content:'';
+  position:absolute; inset:0;
+  background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(255,255,255,.18) 56%, rgba(0,71,255,.035) 100%);
+  pointer-events:none;
+}
+.card > *:not(.glow) { position: relative; z-index: 2; }
+.glow { opacity:.10; }
+.card-header { height:48px; color:var(--text-secondary); font-size:20px; }
+.card-header-left { gap:14px; }
+.brand-dot { width:36px; height:36px; background:transparent; overflow:hidden; border-radius:0; }
+.brand-dot img { width:100%; height:100%; object-fit:contain; display:block; }
+.card-header-left .label { color:var(--text-primary); font-weight:750; }
+.card-header-right { color:var(--text-tertiary); font-size:18px; }
+.horizon { position:absolute; left:70px; right:70px; top:675px; height:1px; background:linear-gradient(90deg, transparent, rgba(0,71,255,.46), transparent); z-index:3; }
+.horizon::before { content:''; position:absolute; left:50%; top:-5px; width:11px; height:11px; margin-left:-5px; border-radius:999px; background:var(--accent); box-shadow:0 0 0 8px rgba(0,71,255,.08); }
+.split { flex:1; display:grid; grid-template-rows: 1fr 1fr; margin-top:34px; min-height:1110px; }
+.half { display:flex; flex-direction:column; justify-content:center; padding:34px 0; }
+.half.top { padding-bottom:50px; }
+.half.bottom { padding-top:58px; }
+.kicker { font-family:'Space Grotesk','Inter',sans-serif; font-size:24px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); margin-bottom:22px; }
+.kicker.dark { color:var(--text-tertiary); }
+.title-main { font-size:74px; font-weight:930; line-height:1.03; letter-spacing:-.05em; color:var(--text-primary); }
+.title-main .blue { color:var(--accent); }
+.statement { font-size:48px; line-height:1.12; letter-spacing:-.035em; font-weight:880; color:var(--text-primary); max-width:870px; }
+.statement .blue { color:var(--accent); }
+.statement.small { font-size:42px; line-height:1.17; }
+.copy { font-size:29px; line-height:1.36; color:var(--text-secondary); font-weight:590; max-width:830px; margin-top:22px; }
+.copy strong { color:var(--text-primary); font-weight:850; }
+.highlight { display:inline; background:linear-gradient(transparent 56%, rgba(255,223,91,.66) 56%); padding:0 .05em; }
+.list { display:grid; gap:14px; margin-top:20px; }
+.item { padding:20px 24px; border-radius:18px; border:1px solid var(--card-border); background:rgba(255,255,255,.56); display:grid; grid-template-columns: 150px 1fr; gap:20px; align-items:start; }
+.item .label { font-size:20px; color:var(--accent); font-weight:900; letter-spacing:.07em; text-transform:uppercase; }
+.item .body { font-size:27px; color:var(--text-primary); font-weight:760; line-height:1.22; }
+.item.dark .label { color:var(--text-tertiary); }
+.footer { position:absolute; left:0; right:0; bottom:26px; text-align:center; font-size:20px; font-weight:800; color:var(--text-tertiary); letter-spacing:.02em; z-index:4; }
+.badge { border-radius:999px; padding:12px 20px; background:var(--accent-bg); border:1px solid var(--accent-border); color:var(--accent); font-size:18px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+
+.statement.small{font-size:35px;margin-bottom:14px}.item{grid-template-columns:128px 1fr;padding:13px 18px}.item .label{font-size:17px}.item .body{font-size:22px}.list{gap:9px;margin-top:14px}.half{padding-top:20px;padding-bottom:28px}.half.bottom{padding-top:38px}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left"><span class="brand-dot"><img src="assets/adl-logo.svg" alt="Aloha Dream Life"></span><span class="label">Aloha Dream Life</span></div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+  <div class="horizon"></div>
+
+  <section class="split">
+    <div class="half top">
+      <div class="kicker">Storytelling</div>
+      <div class="statement small">Gives them the lesson they need.</div>
+      <div class="list">
+        <div class="item"><div class="label">Trust</div><div class="body">Builds connection and authority.</div></div>
+        <div class="item"><div class="label">Signal</div><div class="body">“I learned this so you don’t have to repeat the mistake.”</div></div>
+        <div class="item"><div class="label">Outcome</div><div class="body">Turns attention into buyers.</div></div>
+      </div>
+    </div>
+    <div class="half bottom">
+      <div class="kicker dark">Telling Stories</div>
+      <div class="statement small">Gives the play-by-play they didn’t ask for.</div>
+      <div class="list">
+        <div class="item dark"><div class="label">Reaction</div><div class="body">“Cool story, but what do you actually do?”</div></div>
+        <div class="item dark"><div class="label">Signal</div><div class="body">“Let me tell you about my day.”</div></div>
+        <div class="item dark"><div class="label">Outcome</div><div class="body">Gets likes. Not leverage.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">@alohadreamlife</div>
+</div>
+</body>
+</html>
