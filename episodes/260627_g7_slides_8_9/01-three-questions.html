@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 8 — Three Questions</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;700;800;900&family=Space+Grotesk:wght@700;800&display=swap');
+  :root{
+    --bg:#F7FBFF; --bg-elevated:#FFFFFF; --bg-card:#FFFFFF;
+    --text-primary:#06265E; --text-secondary:#496B96; --text-tertiary:#8BA4C5;
+    --accent:#0057FF; --accent-2:#00A3FF; --accent-soft:#1F6FFF;
+    --accent-bg:rgba(0,87,255,.075); --accent-border:rgba(0,87,255,.22); --accent-strong:rgba(0,87,255,.14);
+    --card-border:rgba(0,87,255,.14); --card-border-strong:rgba(0,87,255,.30);
+    --paper:#F7FBFF; --paper-2:#EAF4FF; --ink:#0057FF; --ink-dark:#06265E;
+  }
+  html,body{background:var(--paper);}
+  .card{padding:64px 76px 72px;background:
+    radial-gradient(circle at 7% 12%, rgba(0,87,255,.08), transparent 30%),
+    radial-gradient(circle at 88% 86%, rgba(0,163,255,.10), transparent 35%),
+    linear-gradient(180deg,var(--paper),var(--paper-2));}
+  .card::before{content:"";position:absolute;inset:0;opacity:.43;pointer-events:none;background-image:radial-gradient(rgba(0,62,186,.10) .75px, transparent .9px);background-size:22px 22px;mix-blend-mode:multiply;}
+  .card::after{content:"";position:absolute;left:76px;right:76px;top:142px;height:1px;background:linear-gradient(90deg,rgba(0,87,255,.30),transparent);opacity:.65;}
+  .card-header-left .label{color:var(--ink-dark);} .card-header-right{color:var(--text-tertiary);} .brand-dot{background:linear-gradient(135deg,var(--accent),var(--accent-2))!important;}
+  .body{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:38px;}
+  .kicker{font-family:'Space Grotesk','Inter',sans-serif;font-size:24px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:28px;}
+  .headline{font-family:'Space Grotesk','Inter',sans-serif;font-size:78px;font-weight:800;line-height:.98;letter-spacing:-.055em;color:var(--ink-dark);max-width:880px;margin-bottom:54px;}
+  .headline .blue{color:var(--accent);}
+  .question-stack{display:grid;grid-template-columns:1fr;gap:20px;}
+  .q-card{display:grid;grid-template-columns:76px 1fr;gap:26px;align-items:flex-start;background:rgba(255,255,255,.72);border:1px solid var(--card-border);border-radius:28px;padding:30px 34px;box-shadow:0 22px 55px rgba(0,87,255,.055);}
+  .q-num{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;font-family:'Space Grotesk','Inter',sans-serif;font-weight:800;font-size:25px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(0,87,255,.18);}
+  .q-text{font-size:39px;font-weight:820;line-height:1.14;letter-spacing:-.028em;color:var(--ink-dark);}
+  .q-text .muted{color:var(--accent);font-weight:800;}
+  .ready{margin-top:50px;border-radius:26px;border:1px solid var(--accent-border);background:rgba(0,87,255,.075);padding:32px 38px;font-size:34px;font-weight:850;line-height:1.24;letter-spacing:-.025em;color:var(--ink-dark);}
+  .ready .blue{color:var(--accent);}
+  .ghost{position:absolute;right:18px;bottom:10px;font-family:'Space Grotesk','Inter',sans-serif;font-size:168px;font-weight:800;letter-spacing:-.08em;color:rgba(0,87,255,.055);z-index:0;pointer-events:none;text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left"><span class="brand-dot">A</span><span class="label">Aloha Dream Life</span></div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+  <section class="body">
+    <div class="kicker">Before posting</div>
+    <h1 class="headline">Ask three <span class="blue">structural</span> questions.</h1>
+    <div class="question-stack">
+      <div class="q-card"><div class="q-num">01</div><div class="q-text">What does this <span class="muted">prove?</span></div></div>
+      <div class="q-card"><div class="q-num">02</div><div class="q-text">What decision does this <span class="muted">clarify?</span></div></div>
+      <div class="q-card"><div class="q-num">03</div><div class="q-text">What can the audience apply <span class="muted">without being me?</span></div></div>
+    </div>
+    <div class="ready">If you cannot answer, <span class="blue">the story is not ready.</span></div>
+  </section>
+  <div class="ghost">ask</div>
+</div>
+</body>
+</html>
