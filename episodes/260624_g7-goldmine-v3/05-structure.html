@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>05 Structure</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap');
+  :root { --accent:#0052FF; --bg:#F8FAFC; --text-primary:#0F172A; --text-secondary:#475569; --text-tertiary:#94A3B8; }
+  html,body{width:1080px;height:1350px;margin:0;padding:0;background:#F8FAFC;font-family:'Inter',sans-serif;overflow:hidden;}
+  .card{width:1080px;height:1350px;position:relative;background:#F8FAFC;overflow:hidden;box-sizing:border-box;}
+  .card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#F8FAFC 0%,#F1F5F9 100%);z-index:0;}
+  .card-header{position:absolute;top:56px;left:80px;right:80px;z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  .brand-lockup{display:flex;align-items:center;gap:16px;}
+  .brand-logo{height:48px;width:auto;}
+  .brand-name{font-size:24px;font-weight:800;color:#0F172A;letter-spacing:-0.02em;}
+  .tag{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:0.12em;}
+  .half{position:absolute;left:0;width:1080px;height:675px;display:flex;flex-direction:column;justify-content:center;padding:120px 80px 80px;box-sizing:border-box;}
+  .top{top:0;background:#FFFFFF;}
+  .bottom{top:675px;background:#F1F5F9;}
+  .horizon{position:absolute;top:674px;left:0;width:1080px;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,82,255,0.2) 20%,#0052FF 50%,rgba(0,82,255,0.2) 80%,transparent 100%);z-index:5;}
+  .horizon::after{content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:14px;height:14px;background:#0052FF;border-radius:50%;box-shadow:0 0 0 8px rgba(0,82,255,0.12);}
+  .half-title{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:800;color:#0F172A;margin-bottom:36px;}
+  .half-title span{color:#0052FF;}
+  .bottom .half-title span{color:#64748B;}
+  .arc-wrap{position:relative;height:180px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 20px;}
+  .arc-line{position:absolute;bottom:0;left:40px;right:40px;height:4px;background:#0052FF;border-radius:2px;}
+  .arc-curve{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:600px;height:140px;border-top:4px solid #0052FF;border-left:4px solid transparent;border-right:4px solid transparent;border-radius:50% 50% 0 0 / 100% 100% 0 0;}
+  .arc-point{position:absolute;display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2;}
+  .arc-dot{width:18px;height:18px;background:#0052FF;border-radius:50%;border:4px solid #FFFFFF;box-shadow:0 0 0 4px rgba(0,82,255,0.2);}
+  .arc-label{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#0F172A;text-align:center;white-space:nowrap;}
+  .timeline-wrap{position:relative;height:120px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;}
+  .timeline-line{position:absolute;top:50%;left:40px;right:40px;height:4px;background:#94A3B8;border-radius:2px;transform:translateY(-50%);}
+  .timeline-point{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px;z-index:2;}
+  .timeline-dot{width:18px;height:18px;background:#64748B;border-radius:50%;border:4px solid #F1F5F9;}
+  .timeline-label{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#475569;text-align:center;white-space:nowrap;}
+  .footer{position:absolute;bottom:48px;left:0;right:0;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;letter-spacing:0.1em;text-transform:uppercase;z-index:10;}
+  .page-number{position:absolute;top:56px;right:80px;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;z-index:10;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="brand-lockup"><img src="assets/logo.png" class="brand-logo" alt="Logo"><span class="brand-name">Aloha Dream Life</span></div>
+    <div class="tag">#G7GOLDMINE</div>
+  </header>
+  <div class="page-number">05</div>
+  <div class="horizon"></div>
+  <section class="half top">
+    <div class="half-title"><span>Storytelling</span> has a clear structure:</div>
+    <div class="arc-wrap">
+      <div class="arc-curve"></div>
+      <div class="arc-line"></div>
+      <div class="arc-point" style="left:8%;bottom:18%;"><div class="arc-label">Target<br>Audience</div><div class="arc-dot"></div></div>
+      <div class="arc-point" style="left:26%;bottom:52%;"><div class="arc-label">Challenge /<br>Problem</div><div class="arc-dot"></div></div>
+      <div class="arc-point" style="left:50%;bottom:92%;"><div class="arc-label">Journey for<br>Problem Solving</div><div class="arc-dot"></div></div>
+      <div class="arc-point" style="left:74%;bottom:62%;"><div class="arc-label">Transformation</div><div class="arc-dot"></div></div>
+      <div class="arc-point" style="left:90%;bottom:28%;"><div class="arc-label">Application</div><div class="arc-dot"></div></div>
+    </div>
+  </section>
+  <section class="half bottom">
+    <div class="half-title"><span>Telling Stories</span> is just:</div>
+    <div class="timeline-wrap">
+      <div class="timeline-line"></div>
+      <div class="timeline-point" style="left:10%;"><div class="timeline-dot"></div><div class="timeline-label">This happened</div></div>
+      <div class="timeline-point" style="left:38%;"><div class="timeline-dot"></div><div class="timeline-label">Then this happened</div></div>
+      <div class="timeline-point" style="left:66%;"><div class="timeline-dot"></div><div class="timeline-label">Also this happened</div></div>
+      <div class="timeline-point" style="left:90%;"><div class="timeline-dot"></div><div class="timeline-label">The end</div></div>
+    </div>
+  </section>
+  <div class="footer">@alohadreamlife</div>
+</div>
+</body>
+</html>

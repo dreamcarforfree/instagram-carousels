@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap');
+  :root { --accent:#0052FF; --accent-2:#00C8FF; --accent-soft:#E6F0FF; --bg:#F8FAFC; --bg-card:#FFFFFF; --text-primary:#0F172A; --text-secondary:#475569; --text-tertiary:#94A3B8; }
+  html,body{width:1080px;height:1350px;margin:0;padding:0;background:#F8FAFC;font-family:'Inter',sans-serif;overflow:hidden;}
+  .card{width:1080px;height:1350px;position:relative;background:#F8FAFC;overflow:hidden;box-sizing:border-box;}
+  .card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#F8FAFC 0%,#F1F5F9 100%);z-index:0;}
+  .card-header{position:absolute;top:56px;left:80px;right:80px;z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  .brand-lockup{display:flex;align-items:center;gap:16px;}
+  .brand-logo{height:48px;width:auto;}
+  .brand-name{font-size:24px;font-weight:800;color:#0F172A;letter-spacing:-0.02em;}
+  .tag{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:0.12em;}
+  .hero-wrap{position:absolute;top:50%;left:80px;right:80px;transform:translateY(-50%);z-index:2;}
+  .hero-line{font-family:'Space Grotesk',sans-serif;font-size:108px;font-weight:800;line-height:0.95;letter-spacing:-0.06em;color:#0F172A;text-transform:uppercase;}
+  .hero-line span{display:block;}
+  .vs-line{display:inline-block !important;font-size:42px;font-weight:700;color:#FFFFFF;background:#0052FF;padding:8px 28px;letter-spacing:0.08em;margin:18px 0 22px;border-radius:4px;}
+  .subtitle{font-family:'Space Grotesk',sans-serif;font-size:46px;font-weight:700;line-height:1.15;letter-spacing:-0.03em;color:#0F172A;margin-top:40px;}
+  .subtitle .accent{color:#0052FF;}
+  .ghost{position:absolute;right:-20px;bottom:120px;font-family:'Space Grotesk',sans-serif;font-size:220px;font-weight:800;line-height:0.85;letter-spacing:-0.08em;color:rgba(0,82,255,0.035);text-transform:uppercase;z-index:1;pointer-events:none;}
+  .footer{position:absolute;bottom:48px;left:0;right:0;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;letter-spacing:0.1em;text-transform:uppercase;z-index:10;}
+  .page-number{position:absolute;top:56px;right:80px;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;z-index:10;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="brand-lockup"><img src="assets/logo.png" class="brand-logo" alt="Logo"><span class="brand-name">Aloha Dream Life</span></div>
+    <div class="tag">#G7GOLDMINE</div>
+  </header>
+  <div class="page-number">01</div>
+  <div class="ghost">Story</div>
+  <div class="hero-wrap">
+    <div class="hero-line"><span>Story</span><span>Telling</span><span class="vs-line">vs.</span><span>Telling</span><span>Story</span></div>
+    <div class="subtitle">Are You a <span class="accent">Brand</span><br>or a Wannabe?</div>
+  </div>
+  <div class="footer">@alohadreamlife</div>
+</div>
+</body>
+</html>
