@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>01 Cover - Prism Background</title>
-<link rel="stylesheet" href="../../styles/carousel.css">
+<title>01 Cover - Solid Background (4:5 Portrait)</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
 <link rel="stylesheet" href="theme.css">
 <style>
-  .card {
-    background-image: url('assets/nvidia_free_models_bg_1.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  body {
+    background: var(--bg);
   }
 </style>
 </head>
 <body>
-<div class="card">
-  <header class="card-header">
+<div class="card card-solid">
+  <div class="grid-overlay"></div>
+  
+  <header class="card-header" style="position: relative; z-index: 2;">
     <div class="card-header-left">
       <img src="assets/logo.png" alt="Logo" style="height: 38px; width: auto; object-fit: contain;">
       <span class="label" style="color: #111111; font-weight: 700; font-family: 'Space Grotesk', sans-serif;">Aloha Dream Life</span>
@@ -32,7 +31,7 @@
       Free AI Stack<br>
       <span class="accent">For Creators</span>
     </h1>
-    <p style="font-size: 28px; color: var(--text-secondary); margin-top: 30px; font-weight: 500; line-height: 1.4; max-width: 800px;">
+    <p style="font-size: 28px; color: var(--text-secondary); margin-top: 30px; font-weight: 500; line-height: 1.45; max-width: 800px;">
       100+ enterprise-grade AI models available for $0. No credit card required.
     </p>
     <div class="swipe-hint">swipe →</div>
