@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>11 Blueprint</title>
+  <link rel="stylesheet" href="../../../styles/carousel.css">
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    /* Compact multi-column layout for 6 items in small height */
+    .blueprint-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .blueprint-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: var(--bg-elevated);
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      font-family: 'SuisseIntl', sans-serif;
+      font-size: 15px;
+    }
+    .blueprint-item .rule-trigger {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .blueprint-item .rule-job {
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top-empty-area">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="bottom-content-area">
+      <div class="card-header">
+        <div class="card-header-left">
+          <div class="brand-dot">🧂</div>
+          <span class="label">AlohaDreamLife.com</span>
+        </div>
+        <div class="page-number">11</div>
+      </div>
+
+      <div class="card-body">
+        <div class="eyebrow">THE VISUAL BRAND BLUEPRINT</div>
+        <h1 class="title-xl">Assign Every Choice a <span class="accent">Job</span></h1>
+        
+        <div class="blueprint-grid">
+          <div class="blueprint-item">
+            <span class="rule-trigger">Space</span>
+            <span class="rule-job">Focus</span>
+          </div>
+          <div class="blueprint-item">
+            <span class="rule-trigger">Texture</span>
+            <span class="rule-job">Trust</span>
+          </div>
+          <div class="blueprint-item">
+            <span class="rule-trigger">Asymmetry</span>
+            <span class="rule-job">Tension</span>
+          </div>
+          <div class="blueprint-item">
+            <span class="rule-trigger">Mystery</span>
+            <span class="rule-job">Pull</span>
+          </div>
+          <div class="blueprint-item">
+            <span class="rule-trigger">Restraint</span>
+            <span class="rule-job">Authority</span>
+          </div>
+          <div class="blueprint-item">
+            <span class="rule-trigger">Stillness</span>
+            <span class="rule-job">Memory</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-banner">
+        When each element has a role, the design starts <strong>feeling structured</strong>.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
