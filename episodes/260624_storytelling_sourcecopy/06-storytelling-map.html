@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 Storytelling</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@700;800&display=swap');
+  :root{
+    --paper:#F6FAFF;
+    --paper-2:#EEF6FF;
+    --ink:#0057FF;
+    --ink-dark:#003EBA;
+    --ink-soft:#2B77FF;
+    --marker:#D9ECFF;
+    --marker-strong:#C3E0FF;
+    --ghost:#6F87A8;
+    --white:#FFFFFF;
+  }
+  html,body{width:1080px;height:1350px;margin:0;overflow:hidden;background:var(--paper);font-family:'Inter',Arial,sans-serif;color:var(--ink-dark);}
+  .card{width:1080px;height:1350px;position:relative;overflow:hidden;padding:0;background:
+    radial-gradient(circle at 10% 12%, rgba(0,87,255,.045), transparent 26%),
+    radial-gradient(circle at 88% 92%, rgba(0,200,255,.055), transparent 31%),
+    linear-gradient(180deg,var(--paper),var(--paper-2));display:block;}
+  .card::before{content:"";position:absolute;inset:0;opacity:.52;pointer-events:none;background-image:
+    radial-gradient(rgba(0,62,186,.10) .7px, transparent .8px),
+    linear-gradient(90deg, transparent 0 49.8%, rgba(0,87,255,.08) 50%, transparent 50.2% 100%);
+    background-size:22px 22px, 100% 100%;mix-blend-mode:multiply;}
+  .card::after{content:"";position:absolute;left:-80px;right:-80px;top:666px;height:18px;background:linear-gradient(90deg,transparent,rgba(0,87,255,.18),rgba(0,87,255,.34),rgba(0,87,255,.15),transparent);filter:blur(4px);opacity:.42;}
+  .paper-fold{position:absolute;left:0;right:0;top:674px;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,87,255,.25) 22%,rgba(0,87,255,.38) 50%,rgba(0,87,255,.18) 76%,transparent 100%);z-index:2;}
+  .ghost-text{position:absolute;left:96px;right:120px;top:738px;font-family:Georgia,serif;font-style:italic;font-size:28px;line-height:1.18;color:var(--ghost);opacity:.115;z-index:1;transform:rotate(-1deg);}
+  .footer{position:absolute;left:0;right:0;bottom:42px;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:800;letter-spacing:.16em;color:var(--ink);z-index:5;text-transform:uppercase;}
+  .footer.left{text-align:left;left:84px;right:auto;}
+  .content{position:absolute;left:84px;right:84px;top:120px;bottom:132px;z-index:4;}
+  .marker{display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone;background:linear-gradient(transparent 12%, var(--marker) 12% 89%, transparent 89%);padding:0 .10em;}
+  .label-marker{display:inline-block;background:var(--marker);padding:8px 15px 10px;font-family:'Space Grotesk',sans-serif;font-weight:800;color:var(--ink);line-height:1;}
+  h1,h2,p{margin:0;}
+  .blue{color:var(--ink);}
+  .small-note{font-size:26px;line-height:1.34;color:var(--ink-dark);opacity:.86;}
+  .big-title{font-family:'Space Grotesk',sans-serif;font-weight:800;text-transform:uppercase;color:var(--ink);letter-spacing:-.075em;line-height:.86;}
+  .section-title{font-family:'Space Grotesk',sans-serif;font-size:44px;line-height:1.04;font-weight:800;color:var(--ink);letter-spacing:-.03em;}
+  .body-text{font-size:36px;line-height:1.28;font-weight:500;color:var(--ink-dark);letter-spacing:-.018em;}
+  .body-text strong{font-weight:900;font-style:italic;color:var(--ink);}
+  .question-line{font-family:'Inter',sans-serif;font-size:46px;font-weight:500;line-height:1.18;color:var(--ink-dark);letter-spacing:-.03em;}
+  .canvas-note{position:absolute;font-family:Georgia,serif;font-style:italic;color:rgba(0,62,186,.11);font-size:28px;line-height:1.15;}
+  svg{overflow:visible;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="paper-fold"></div>
+  <section class="map">
+    <div class="stem v1"></div><div class="stem v2"></div><div class="stem h1"></div><div class="stem h2"></div>
+    <div class="center-node">STORY<br>TELLING</div>
+    <div class="ring n">Gives them<br>the lesson<br>they need</div>
+    <div class="ring e">Builds trust,<br>connection,<br>and authority</div>
+    <div class="ring s">“This happened to me<br>so it doesn’t have<br>to happen to you.”</div>
+    <div class="ring w">Gets people to buy</div>
+  </section>
+  <style>
+  .map{position:absolute;left:130px;right:130px;top:148px;bottom:178px;}
+  .center-node{position:absolute;left:50%;top:50%;width:202px;height:202px;transform:translate(-50%,-50%);border-radius:50%;background:var(--ink);color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:800;letter-spacing:.03em;line-height:1.05;z-index:4;box-shadow:0 18px 46px rgba(0,87,255,.18);}
+  .ring{position:absolute;width:210px;height:210px;border:7px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:19px;font-weight:800;line-height:1.13;letter-spacing:-.02em;color:var(--ink-dark);background:rgba(246,250,255,.82);z-index:3;}
+  .ring.n{left:50%;top:0;transform:translateX(-50%)}.ring.e{right:0;top:50%;transform:translateY(-50%)}.ring.s{left:50%;bottom:0;transform:translateX(-50%)}.ring.w{left:0;top:50%;transform:translateY(-50%)}
+  .stem{position:absolute;background:var(--ink);z-index:2;border-radius:999px;opacity:.9}.stem.v1{left:50%;top:210px;width:7px;height:285px;transform:translateX(-50%)}.stem.v2{left:50%;bottom:210px;width:7px;height:285px;transform:translateX(-50%)}.stem.h1{left:210px;top:50%;height:7px;width:255px;transform:translateY(-50%)}.stem.h2{right:210px;top:50%;height:7px;width:255px;transform:translateY(-50%)}
+</style>
+  <div class="footer">@ALOHADREAMLIFE</div>
+</div>
+</body>
+</html>

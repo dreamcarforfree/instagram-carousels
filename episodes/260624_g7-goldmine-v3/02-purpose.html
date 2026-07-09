@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>02 Purpose</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap');
+  :root { --accent:#0052FF; --bg:#F8FAFC; --text-primary:#0F172A; --text-secondary:#475569; --text-tertiary:#94A3B8; }
+  html,body{width:1080px;height:1350px;margin:0;padding:0;background:#F8FAFC;font-family:'Inter',sans-serif;overflow:hidden;}
+  .card{width:1080px;height:1350px;position:relative;background:#F8FAFC;overflow:hidden;box-sizing:border-box;}
+  .card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#F8FAFC 0%,#F1F5F9 100%);z-index:0;}
+  .card-header{position:absolute;top:56px;left:80px;right:80px;z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  .brand-lockup{display:flex;align-items:center;gap:16px;}
+  .brand-logo{height:48px;width:auto;}
+  .brand-name{font-size:24px;font-weight:800;color:#0F172A;letter-spacing:-0.02em;}
+  .tag{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:0.12em;}
+  .content{position:absolute;top:50%;left:80px;right:80px;transform:translateY(-50%);z-index:2;}
+  .block{margin-bottom:64px;}
+  .block:last-child{margin-bottom:0;}
+  .label{font-family:'Space Grotesk',sans-serif;display:inline-block;font-size:22px;font-weight:800;color:#FFFFFF;background:#0052FF;padding:10px 22px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:18px;border-radius:4px;}
+  .label.negative{background:#64748B;}
+  .statement{font-size:48px;font-weight:800;line-height:1.22;letter-spacing:-0.03em;color:#0F172A;max-width:860px;}
+  .statement .emph{font-style:italic;color:#0052FF;}
+  .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Space Grotesk',sans-serif;font-size:260px;font-weight:800;color:rgba(0,82,255,0.025);text-transform:uppercase;z-index:1;pointer-events:none;white-space:nowrap;}
+  .footer{position:absolute;bottom:48px;left:0;right:0;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;letter-spacing:0.1em;text-transform:uppercase;z-index:10;}
+  .page-number{position:absolute;top:56px;right:80px;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;z-index:10;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="brand-lockup"><img src="assets/logo.png" class="brand-logo" alt="Logo"><span class="brand-name">Aloha Dream Life</span></div>
+    <div class="tag">#G7GOLDMINE</div>
+  </header>
+  <div class="page-number">02</div>
+  <div class="ghost">Purpose</div>
+  <div class="content">
+    <div class="block">
+      <div class="label">Storytelling</div>
+      <div class="statement"><span class="emph">gives your story a purpose.</span></div>
+    </div>
+    <div class="block">
+      <div class="label negative">Telling Stories</div>
+      <div class="statement">is just… telling people what happened to you today <span class="emph">without a specific reason.</span></div>
+    </div>
+  </div>
+  <div class="footer">@alohadreamlife</div>
+</div>
+</body>
+</html>

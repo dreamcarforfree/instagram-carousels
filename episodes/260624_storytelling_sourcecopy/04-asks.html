@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04 Asks</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@700;800&display=swap');
+  :root{
+    --paper:#F6FAFF;
+    --paper-2:#EEF6FF;
+    --ink:#0057FF;
+    --ink-dark:#003EBA;
+    --ink-soft:#2B77FF;
+    --marker:#D9ECFF;
+    --marker-strong:#C3E0FF;
+    --ghost:#6F87A8;
+    --white:#FFFFFF;
+  }
+  html,body{width:1080px;height:1350px;margin:0;overflow:hidden;background:var(--paper);font-family:'Inter',Arial,sans-serif;color:var(--ink-dark);}
+  .card{width:1080px;height:1350px;position:relative;overflow:hidden;padding:0;background:
+    radial-gradient(circle at 10% 12%, rgba(0,87,255,.045), transparent 26%),
+    radial-gradient(circle at 88% 92%, rgba(0,200,255,.055), transparent 31%),
+    linear-gradient(180deg,var(--paper),var(--paper-2));display:block;}
+  .card::before{content:"";position:absolute;inset:0;opacity:.52;pointer-events:none;background-image:
+    radial-gradient(rgba(0,62,186,.10) .7px, transparent .8px),
+    linear-gradient(90deg, transparent 0 49.8%, rgba(0,87,255,.08) 50%, transparent 50.2% 100%);
+    background-size:22px 22px, 100% 100%;mix-blend-mode:multiply;}
+  .card::after{content:"";position:absolute;left:-80px;right:-80px;top:666px;height:18px;background:linear-gradient(90deg,transparent,rgba(0,87,255,.18),rgba(0,87,255,.34),rgba(0,87,255,.15),transparent);filter:blur(4px);opacity:.42;}
+  .paper-fold{position:absolute;left:0;right:0;top:674px;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,87,255,.25) 22%,rgba(0,87,255,.38) 50%,rgba(0,87,255,.18) 76%,transparent 100%);z-index:2;}
+  .ghost-text{position:absolute;left:96px;right:120px;top:738px;font-family:Georgia,serif;font-style:italic;font-size:28px;line-height:1.18;color:var(--ghost);opacity:.115;z-index:1;transform:rotate(-1deg);}
+  .footer{position:absolute;left:0;right:0;bottom:42px;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:800;letter-spacing:.16em;color:var(--ink);z-index:5;text-transform:uppercase;}
+  .footer.left{text-align:left;left:84px;right:auto;}
+  .content{position:absolute;left:84px;right:84px;top:120px;bottom:132px;z-index:4;}
+  .marker{display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone;background:linear-gradient(transparent 12%, var(--marker) 12% 89%, transparent 89%);padding:0 .10em;}
+  .label-marker{display:inline-block;background:var(--marker);padding:8px 15px 10px;font-family:'Space Grotesk',sans-serif;font-weight:800;color:var(--ink);line-height:1;}
+  h1,h2,p{margin:0;}
+  .blue{color:var(--ink);}
+  .small-note{font-size:26px;line-height:1.34;color:var(--ink-dark);opacity:.86;}
+  .big-title{font-family:'Space Grotesk',sans-serif;font-weight:800;text-transform:uppercase;color:var(--ink);letter-spacing:-.075em;line-height:.86;}
+  .section-title{font-family:'Space Grotesk',sans-serif;font-size:44px;line-height:1.04;font-weight:800;color:var(--ink);letter-spacing:-.03em;}
+  .body-text{font-size:36px;line-height:1.28;font-weight:500;color:var(--ink-dark);letter-spacing:-.018em;}
+  .body-text strong{font-weight:900;font-style:italic;color:var(--ink);}
+  .question-line{font-family:'Inter',sans-serif;font-size:46px;font-weight:500;line-height:1.18;color:var(--ink-dark);letter-spacing:-.03em;}
+  .canvas-note{position:absolute;font-family:Georgia,serif;font-style:italic;color:rgba(0,62,186,.11);font-size:28px;line-height:1.15;}
+  svg{overflow:visible;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="paper-fold"></div>
+  <div class="ghost-text">The question you ask before posting decides whether the story becomes useful or becomes noise.</div>
+  <section class="content" style="display:flex;flex-direction:column;justify-content:center;gap:104px;">
+    <div><div class="label-marker" style="font-size:44px;margin-bottom:24px;">Storytelling asks:</div><p class="question-line">How does this help my target audience?</p></div>
+    <div><div class="label-marker" style="font-size:44px;margin-bottom:24px;">Telling Stories asks:</div><p class="question-line">What do I post today?</p></div>
+  </section>
+  <div class="footer">@ALOHADREAMLIFE</div>
+</div>
+</body>
+</html>

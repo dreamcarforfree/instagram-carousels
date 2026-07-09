@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Storytelling Architecture</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@700;800&display=swap');
+  :root{
+    --bg:#F6FAFF;
+    --bg-elevated:#FFFFFF;
+    --bg-card:#FFFFFF;
+    --text-primary:#003EBA;
+    --text-secondary:#4E6F9E;
+    --text-tertiary:#87A0C4;
+    --accent:#0057FF;
+    --accent-2:#00A3FF;
+    --accent-soft:#2B77FF;
+    --accent-bg:rgba(0,87,255,.075);
+    --accent-border:rgba(0,87,255,.24);
+    --accent-strong:rgba(0,87,255,.16);
+    --card-border:rgba(0,87,255,.14);
+    --card-border-strong:rgba(0,87,255,.30);
+    --paper:#F6FAFF;
+    --paper-2:#EAF4FF;
+    --ink:#0057FF;
+    --ink-dark:#003EBA;
+    --ghost:#6F87A8;
+  }
+  html,body{background:var(--paper);}
+  .card{
+    background:
+      radial-gradient(circle at 11% 10%, rgba(0,87,255,.07), transparent 28%),
+      radial-gradient(circle at 91% 92%, rgba(0,163,255,.09), transparent 32%),
+      linear-gradient(180deg,var(--paper),var(--paper-2));
+    padding:64px 76px 62px;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0;opacity:.52;pointer-events:none;background-image:
+      radial-gradient(rgba(0,62,186,.10) .75px, transparent .85px),
+      linear-gradient(90deg, transparent 0 49.8%, rgba(0,87,255,.08) 50%, transparent 50.2% 100%);
+    background-size:22px 22px,100% 100%;mix-blend-mode:multiply;
+  }
+  .card-header{color:var(--text-secondary);}
+  .card-header-left .label{color:var(--ink-dark);}
+  .brand-dot{background:linear-gradient(135deg,var(--accent),var(--accent-2))!important;}
+  .card-body{padding-top:38px;justify-content:flex-start;}
+  .eyebrow{color:var(--accent);font-size:22px;margin-bottom:22px;}
+  .title-block{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:26px;}
+  .side-title{font-family:'Space Grotesk','Inter',sans-serif;font-weight:800;text-transform:uppercase;color:var(--accent);letter-spacing:-.045em;line-height:.92;font-size:51px;}
+  .side-title.bad{color:var(--ink-dark);opacity:.88;}
+  .graph-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch;}
+  .panel{height:825px;border:1px solid var(--card-border);background:rgba(255,255,255,.62);border-radius:32px;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(0,87,255,.055);}
+  .panel::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.46),rgba(255,255,255,.16));pointer-events:none;}
+  .panel-label{position:absolute;left:34px;top:30px;font-family:'Space Grotesk','Inter',sans-serif;font-size:20px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);}
+  .panel.bad .panel-label{color:var(--ink-dark);opacity:.72;}
+  svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;}
+  .axis{stroke:rgba(0,62,186,.18);stroke-width:3;stroke-linecap:round;}
+  .gridline{stroke:rgba(0,87,255,.065);stroke-width:1.5;}
+  .path-good{stroke:var(--accent);stroke-width:9;fill:none;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(0,87,255,.18));}
+  .path-bad{stroke:var(--ink-dark);stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0;filter:drop-shadow(0 10px 14px rgba(0,62,186,.13));}
+  .node{fill:var(--paper);stroke:var(--accent);stroke-width:7;}
+  .node.bad{stroke:var(--ink-dark);}
+  .node.hot{fill:var(--accent);stroke:var(--accent);}
+  .node.drop{fill:var(--ink-dark);stroke:var(--ink-dark);}
+  .label-text{font-family:'Inter',sans-serif;font-size:23px;font-weight:900;fill:var(--ink-dark);letter-spacing:-.025em;}
+  .label-text.small{font-size:20px;font-weight:800;}
+  .label-text.bad{fill:var(--ink-dark);}
+  .callout{position:absolute;font-size:20px;font-weight:800;line-height:1.16;color:var(--ink-dark);background:rgba(255,255,255,.88);border:1px solid var(--accent-border);border-radius:18px;padding:13px 16px;box-shadow:0 12px 30px rgba(0,87,255,.07);}
+  .callout.good-1{left:26px;bottom:182px}.callout.good-2{left:112px;bottom:325px}.callout.good-3{left:222px;bottom:438px}.callout.good-4{right:110px;top:180px}.callout.good-5{right:20px;top:90px}
+  .callout.bad-1{left:28px;top:385px}.callout.bad-2{left:150px;top:350px}.callout.bad-3{left:62px;top:162px;max-width:340px;border-color:rgba(0,62,186,.25)}.callout.bad-4{right:32px;bottom:92px;background:rgba(0,62,186,.92);color:#fff;border-color:rgba(0,62,186,.92)}
+  .bottom-banner{margin-top:30px;background:rgba(0,87,255,.08);color:var(--ink-dark);border-color:var(--accent-border);font-size:26px;padding:25px 28px;border-radius:20px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">STRUCTURE VS. NOISE</div>
+    <div class="title-block">
+      <h1 class="side-title">Storytelling<br>is architecture</h1>
+      <h1 class="side-title bad">Telling stories<br>is an unorganized timeline</h1>
+    </div>
+
+    <div class="graph-wrap">
+      <div class="panel good">
+        <div class="panel-label">Built to move forward</div>
+        <svg viewBox="0 0 448 825" aria-label="Storytelling architecture graph">
+          <path class="gridline" d="M70 160H395M70 300H395M70 440H395M70 580H395M70 720H395"/>
+          <path class="axis" d="M56 735H405M62 735V126"/>
+          <path class="path-good" d="M72 690 C132 640, 155 542, 214 510 S304 373, 344 262 S372 182, 397 122"/>
+          <circle class="node" cx="72" cy="690" r="15"/>
+          <circle class="node" cx="153" cy="560" r="15"/>
+          <circle class="node" cx="238" cy="477" r="15"/>
+          <circle class="node" cx="335" cy="288" r="15"/>
+          <circle class="node hot" cx="397" cy="122" r="17"/>
+        </svg>
+        <div class="callout good-1">Audience</div>
+        <div class="callout good-2">Problem</div>
+        <div class="callout good-3">Process</div>
+        <div class="callout good-4">Shift</div>
+        <div class="callout good-5">Application</div>
+      </div>
+
+      <div class="panel bad">
+        <div class="panel-label">The listener gets lost</div>
+        <svg viewBox="0 0 448 825" aria-label="Unorganized timeline graph">
+          <path class="gridline" d="M58 160H390M58 300H390M58 440H390M58 580H390M58 720H390"/>
+          <path class="axis" d="M54 735H405M60 735V126"/>
+          <path class="path-bad" d="M72 420 C146 410, 202 408, 258 406 C324 398, 346 315, 286 250 C232 191, 148 212, 135 286 C123 358, 190 387, 258 406 C330 426, 363 544, 380 710"/>
+          <circle class="node bad" cx="72" cy="420" r="14"/>
+          <circle class="node bad" cx="258" cy="406" r="14"/>
+          <circle class="node bad" cx="135" cy="286" r="14"/>
+          <circle class="node drop" cx="380" cy="710" r="17"/>
+        </svg>
+        <div class="callout bad-1">This happened</div>
+        <div class="callout bad-2">Then this happened</div>
+        <div class="callout bad-3">Oh, forgot to say<br>but this happened too</div>
+        <div class="callout bad-4">The end</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">A story is not a timeline. It is a designed path from recognition to action.</div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>05 · Structure</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #FF7A45;
+    --accent-2: #FF4D6D;
+  }
+  .card-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .struct-container { display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px; margin-top: 36px; }
+  .struct-card {
+    padding: 34px 30px; border-radius: 20px; border: 1px solid var(--card-border);
+    background: var(--bg-elevated); display: flex; flex-direction: column;
+  }
+  .struct-card.accent-card {
+    border-color: var(--accent-border);
+    background: rgba(255, 122, 69, 0.03);
+  }
+  .struct-title {
+    font-size: 22px; font-weight: 800; letter-spacing: 0.1em; margin-bottom: 24px;
+    padding-bottom: 12px; border-bottom: 1px solid var(--card-border);
+  }
+  .struct-card.accent-card .struct-title {
+    color: var(--accent); border-bottom-color: var(--accent-border);
+  }
+  .struct-card:not(.accent-card) .struct-title {
+    color: var(--text-secondary);
+  }
+  .step-list { display: flex; flex-direction: column; gap: 16px; }
+  .step-item { display: flex; align-items: flex-start; gap: 14px; }
+  .step-dot {
+    width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 800; flex-shrink: 0; margin-top: 4px;
+  }
+  .struct-card.accent-card .step-dot {
+    background: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border);
+  }
+  .struct-card:not(.accent-card) .step-dot {
+    background: rgba(255, 255, 255, 0.06); color: var(--text-tertiary);
+  }
+  .step-content { font-size: 22px; font-weight: 600; color: var(--text-primary); }
+  .struct-card.accent-card .step-content { color: var(--text-primary); }
+  .struct-card:not(.accent-card) .step-content { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow bl"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">THE ARCHITECTURAL DIFFERENCE</div>
+    <h2 class="title-xl">
+      Do you have a<br>
+      <span class="accent-grad">framework?</span>
+    </h2>
+
+    <div class="struct-container">
+      <!-- Play-by-Play -->
+      <div class="struct-card">
+        <div class="struct-title">TELLING STORIES</div>
+        <div class="step-list">
+          <div class="step-item">
+            <span class="step-dot">✕</span>
+            <span class="step-content">This happened</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">✕</span>
+            <span class="step-content">Then this happened</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">✕</span>
+            <span class="step-content">Also this happened</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">✕</span>
+            <span class="step-content">The end (No takeaway)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Arc -->
+      <div class="struct-card accent-card">
+        <div class="struct-title">STORYTELLING ARC</div>
+        <div class="step-list">
+          <div class="step-item">
+            <span class="step-dot">1</span>
+            <span class="step-content">Target Audience</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">2</span>
+            <span class="step-content">Challenge / Problem</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">3</span>
+            <span class="step-content">Journey to Solving It</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">4</span>
+            <span class="step-content">Transformation</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">5</span>
+            <span class="step-content">Direct Application</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">A story without structure is noise. Arc builds tension and retention.</div>
+  </section>
+</div>
+</body>
+</html>

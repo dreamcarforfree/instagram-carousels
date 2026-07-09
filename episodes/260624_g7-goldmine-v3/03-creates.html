@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 Creates</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap');
+  :root { --accent:#0052FF; --bg:#F8FAFC; --text-primary:#0F172A; --text-secondary:#475569; --text-tertiary:#94A3B8; }
+  html,body{width:1080px;height:1350px;margin:0;padding:0;background:#F8FAFC;font-family:'Inter',sans-serif;overflow:hidden;}
+  .card{width:1080px;height:1350px;position:relative;background:#F8FAFC;overflow:hidden;box-sizing:border-box;}
+  .card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#F8FAFC 0%,#F1F5F9 100%);z-index:0;}
+  .card-header{position:absolute;top:56px;left:80px;right:80px;z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  .brand-lockup{display:flex;align-items:center;gap:16px;}
+  .brand-logo{height:48px;width:auto;}
+  .brand-name{font-size:24px;font-weight:800;color:#0F172A;letter-spacing:-0.02em;}
+  .tag{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:0.12em;}
+  .columns{position:absolute;top:160px;left:80px;right:80px;bottom:120px;display:grid;grid-template-columns:1fr 1fr;gap:56px;z-index:2;}
+  .col{display:flex;flex-direction:column;gap:28px;}
+  .col-header{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:800;line-height:1.15;color:#0F172A;}
+  .col-header span{display:inline-block;color:#FFFFFF;background:#0052FF;padding:6px 14px;border-radius:4px;}
+  .col-header.negative span{background:#64748B;}
+  .item{display:flex;align-items:flex-start;gap:18px;background:#FFFFFF;border:1px solid rgba(0,82,255,0.1);padding:22px;border-radius:12px;box-shadow:0 8px 24px rgba(0,34,84,0.04);}
+  .negative .item{border-color:rgba(100,116,139,0.12);}
+  .icon{width:52px;height:52px;flex-shrink:0;border-radius:10px;background:#E6F0FF;display:flex;align-items:center;justify-content:center;font-size:26px;}
+  .negative .icon{background:#F1F5F9;}
+  .item-text{flex:1;}
+  .item-title{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:800;color:#0F172A;margin-bottom:6px;}
+  .item-desc{font-size:20px;font-weight:600;line-height:1.35;color:#475569;}
+  .footer{position:absolute;bottom:48px;left:0;right:0;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;letter-spacing:0.1em;text-transform:uppercase;z-index:10;}
+  .page-number{position:absolute;top:56px;right:80px;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;z-index:10;}
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="brand-lockup"><img src="assets/logo.png" class="brand-logo" alt="Logo"><span class="brand-name">Aloha Dream Life</span></div>
+    <div class="tag">#G7GOLDMINE</div>
+  </header>
+  <div class="page-number">03</div>
+  <div class="columns">
+    <div class="col">
+      <div class="col-header"><span>Storytelling</span><br>creates:</div>
+      <div class="item"><div class="icon">🔗</div><div class="item-text"><div class="item-title">Connection</div><div class="item-desc">I can relate.</div></div></div>
+      <div class="item"><div class="icon">💡</div><div class="item-text"><div class="item-title">Clarity</div><div class="item-desc">Ah, this is how to solve my problem.</div></div></div>
+      <div class="item"><div class="icon">🤝</div><div class="item-text"><div class="item-title">Clients</div><div class="item-desc">I want to support this person/business!</div></div></div>
+    </div>
+    <div class="col negative">
+      <div class="col-header negative"><span>Telling Stories</span><br>creates:</div>
+      <div class="item"><div class="icon">❓</div><div class="item-text"><div class="item-title">Confusion</div><div class="item-desc">Ugh, why are you telling me this?</div></div></div>
+      <div class="item"><div class="icon">🫥</div><div class="item-text"><div class="item-title">“Okay… and?”</div><div class="item-desc">So what?</div></div></div>
+      <div class="item"><div class="icon">🦗</div><div class="item-text"><div class="item-title">Crickets</div><div class="item-desc">I don’t want to hear this rambling again.</div></div></div>
+    </div>
+  </div>
+  <div class="footer">@alohadreamlife</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+  /* Surfaces */
+  --bg: #FAFAFC;             /* Solid clean off-white */
+  --bg-elevated: #F0F0F5;    
+  --bg-card: #FFFFFF;        
+
+  /* Text */
+  --text-primary: #111111;   /* Charcoal black */
+  --text-secondary: #4E4E5A; /* Slate gray */
+  --text-tertiary: #8A8A96;  /* Light slate gray */
+
+  /* Accent — Electric Blue */
+  --accent: #0033FF;         /* Pure electric blue */
+  --accent-2: #0088FF;       
+  --accent-soft: #3366FF;    
+  --accent-bg: rgba(0, 51, 255, 0.04);
+  --accent-border: rgba(0, 51, 255, 0.20);
+  --accent-strong: rgba(0, 51, 255, 0.12);
+
+  /* Borders */
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-border-strong: rgba(0, 0, 0, 0.15);
+}
+
+.brand-dot {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+.badge {
+  background: var(--accent) !important;
+}
+
+/* Base style for solid cover */
+.card-solid {
+  background: var(--bg);
+  border: 12px solid var(--accent); /* Premium thick electric blue solid frame for high-status look */
+}
+
+.cover-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cover-badge {
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.cover-title {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  color: #111111;
+}
+
+.cover-title .accent {
+  color: var(--accent);
+}
+
+.swipe-hint {
+  margin-top: 50px;
+  font-size: 24px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* 1:1 Grid Overlay for structural depth */
+.grid-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 51, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 51, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 1:1 Overrides */
+.ratio-1x1 {
+  height: 1080px !important;
+  padding: 50px 64px 64px !important;
+}
+.ratio-1x1 .cover-title {
+  font-size: 72px !important; /* Scale down slightly for 1:1 box */
+}
+.ratio-1x1 .swipe-hint {
+  margin-top: 30px !important;
+}

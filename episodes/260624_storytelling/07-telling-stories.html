@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>07 · Telling Stories</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent: #FF7A45;
+    --accent-2: #FF4D6D;
+  }
+  .card-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .bullet-container { display: flex; flex-direction: column; gap: 20px; margin-top: 40px; }
+  .bullet-item {
+    display: flex; gap: 24px; padding: 30px 34px; border-radius: 20px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.02);
+    align-items: center;
+  }
+  .bullet-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px; font-weight: 700; color: var(--text-tertiary);
+    width: 50px; flex-shrink: 0;
+  }
+  .bullet-content { font-size: 26px; font-weight: 600; color: var(--text-secondary); line-height: 1.4; }
+  .bullet-content span { color: var(--text-tertiary); font-weight: 400; font-size: 22px; display: block; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow bl" style="background: radial-gradient(circle, var(--accent-2) 0%, transparent 70%); opacity: 0.1;"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#BrandStrategy</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="color: var(--bad-text);">THE WANNABE'S TRAP</div>
+    <h2 class="title-xl">
+      The Pitfalls of<br>
+      just <span class="accent-grad">telling stories</span>
+    </h2>
+
+    <div class="bullet-container">
+      <div class="bullet-item">
+        <span class="bullet-num">01</span>
+        <div class="bullet-content">
+          Gives a play-by-play they didn't ask for
+          <span>It lists boring, unfiltered events instead of curated lessons.</span>
+        </div>
+      </div>
+
+      <div class="bullet-item">
+        <span class="bullet-num">02</span>
+        <div class="bullet-content">
+          Leaves people thinking: &ldquo;What do you do?&rdquo;
+          <span>Cool story, but it fails to prove your actual business expertise.</span>
+        </div>
+      </div>
+
+      <div class="bullet-item">
+        <span class="bullet-num">03</span>
+        <div class="bullet-content">
+          Says: &ldquo;Let me tell you about my day.&rdquo;
+          <span>It generates likes from vanity, but zero paying clients.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner" style="border-color: var(--bad-border); background: var(--bad-bg); color: var(--bad-text);">Likes pay your ego. Stories with a purpose pay your bills.</div>
+  </section>
+</div>
+</body>
+</html>

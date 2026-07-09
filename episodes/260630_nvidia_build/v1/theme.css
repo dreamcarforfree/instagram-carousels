@@ -1,0 +1,95 @@
+:root {
+  /* Surfaces */
+  --bg: #FAFAFC;             /* Clean premium off-white/light gray */
+  --bg-elevated: #F0F0F5;    /* Slightly darker gray */
+  --bg-card: #FFFFFF;        /* Pure white for card cards/boxes */
+
+  /* Text */
+  --text-primary: #111111;   /* Rich charcoal black */
+  --text-secondary: #4E4E5A; /* Slate gray */
+  --text-tertiary: #8A8A96;  /* Light slate gray */
+
+  /* Accent — Electric Blue */
+  --accent: #0033FF;         /* Pure electric blue */
+  --accent-2: #0088FF;       /* Brighter electric blue/cyan */
+  --accent-soft: #3366FF;    /* Softer electric blue */
+  --accent-bg: rgba(0, 51, 255, 0.04);
+  --accent-border: rgba(0, 51, 255, 0.20);
+  --accent-strong: rgba(0, 51, 255, 0.12);
+
+  /* Borders */
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-border-strong: rgba(0, 0, 0, 0.15);
+}
+
+.brand-dot {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+.badge {
+  background: var(--accent) !important;
+}
+
+/* Custom styles for cover slides with background images */
+.card-cover {
+  width: 1080px;
+  height: 1350px;
+  padding: 64px 76px 76px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Ensure contrast for text on top of images */
+.cover-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cover-badge {
+  align-self: flex-start;
+  margin-bottom: 46px;
+}
+
+.cover-title {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  color: #111111;
+}
+
+.cover-title .accent {
+  color: var(--accent);
+}
+
+.swipe-hint {
+  margin-top: 60px;
+  font-size: 24px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Semi-transparent elegant card header overlay */
+.card-header-overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 600;
+  color: #111111;
+  position: relative;
+  z-index: 2;
+}

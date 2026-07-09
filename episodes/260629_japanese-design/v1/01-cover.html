@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+  body {
+    background: linear-gradient(135deg, #F0F0F5 0%, #E2E2EC 100%);
+  }
+  .cover-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .cover-badge {
+    align-self: flex-start;
+    margin-bottom: 46px;
+  }
+  .cover-title {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    color: #111111;
+  }
+  .swipe-hint {
+    margin-top: 60px;
+    font-size: 24px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  /* Elegant technical grid backdrop overlay */
+  .grid-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+      linear-gradient(rgba(0, 51, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 51, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grid-overlay"></div>
+  <div class="glow tr" style="opacity: 0.12;"></div>
+  <div class="glow bl" style="opacity: 0.12;"></div>
+
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label" style="color: #111111;">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#VisualSystem</div>
+  </header>
+
+  <section class="cover-hero">
+    <div class="cover-badge"><span class="badge">PREMIUM MINIMALISTIC BRANDING</span></div>
+    <h1 class="cover-title">
+      The 7 Japanese<br>
+      Principles of<br>
+      <span class="accent">Premium Design</span><br>
+      That Make a Difference
+    </h1>
+    <div class="swipe-hint">swipe →</div>
+  </section>
+</div>
+</body>
+</html>

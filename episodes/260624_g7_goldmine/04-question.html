@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04 The Question</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --accent:#0057FF; --accent-2:#00C8FF; --accent-soft:#1677FF;
+    --accent-bg:rgba(0,87,255,.075); --accent-border:rgba(0,87,255,.22);
+    --bg:#F7FAFF; --bg-elevated:#FFFFFF; --bg-card:#FFFFFF;
+    --text-primary:#08111F; --text-secondary:#405066; --text-tertiary:#8EA0B8;
+    --card-border:rgba(0,34,84,.10); --card-border-strong:rgba(0,87,255,.26);
+    --bad-text:#273142; --bad-bg:rgba(8,17,31,.045); --bad-border:rgba(8,17,31,.14);
+    --good-text:#0057FF; --good-bg:rgba(0,87,255,.075); --good-border:rgba(0,87,255,.26);
+  }
+  html,body{background:#F7FAFF;color:var(--text-primary);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  .card{padding:0;background:#F7FAFF;position:relative;width:1080px;height:1350px;overflow:hidden;}
+  .card::before{content:"STORYTELLING  /  TELLING STORIES  /  STORYTELLING  /  TELLING STORIES";position:absolute;left:-60px;top:210px;width:1220px;font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;letter-spacing:.16em;color:rgba(0,87,255,.035);transform:rotate(-8deg);z-index:0;white-space:nowrap;}
+  .horizon{position:absolute;left:0;top:674px;width:1080px;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,87,255,.15) 10%,#0057FF 50%,rgba(0,200,255,.20) 90%,transparent 100%);z-index:8;}
+  .horizon::after{content:"";position:absolute;left:76px;right:76px;top:-7px;height:16px;background:rgba(0,87,255,.035);filter:blur(8px);}
+  .card-header{position:absolute;top:52px;left:68px;right:68px;z-index:20;display:flex;align-items:center;justify-content:space-between;color:#637188;}
+  .brand-lockup{display:flex;align-items:center;gap:14px;font-weight:800;font-size:22px;letter-spacing:-.02em;color:#0C1728;}
+  .brand-lockup img{height:38px;width:auto;display:block;}
+  .tag{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:#8EA0B8;}
+  .half{position:absolute;left:0;width:1080px;height:675px;padding:128px 76px 72px;box-sizing:border-box;z-index:2;}
+  .top{top:0;background:linear-gradient(180deg,rgba(255,255,255,.86),rgba(247,250,255,.96));}
+  .bottom{top:675px;background:linear-gradient(180deg,#FFFFFF,#F3F7FF);}
+  .half-inner{height:100%;display:flex;flex-direction:column;justify-content:center;}
+  .cover-top{background:linear-gradient(90deg,rgba(247,250,255,.86) 0%,rgba(247,250,255,.60) 48%,rgba(247,250,255,.16) 100%),url('cover_bg.jpg') center/cover no-repeat;}
+  .cover-bottom{background:#FFFFFF;}
+  .eyebrow-mini{font-family:'Space Grotesk',sans-serif;color:#0057FF;font-size:22px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px;}
+  .hero-title{font-family:'Space Grotesk',sans-serif;font-size:94px;font-weight:700;line-height:.96;letter-spacing:-.055em;color:#08111F;text-transform:uppercase;}
+  .hero-title .vs{display:inline-block;font-size:34px;letter-spacing:.08em;color:#0057FF;margin:8px 0;text-transform:lowercase;}
+  .cover-question{font-family:'Space Grotesk',sans-serif;font-size:78px;font-weight:700;line-height:1.04;letter-spacing:-.045em;color:#08111F;max-width:850px;}
+  .cover-question .blue{color:#0057FF;}
+  .section-label{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;line-height:1;letter-spacing:.06em;text-transform:uppercase;color:#0057FF;margin-bottom:28px;}
+  .section-label.bad{color:#293447;}
+  .statement{font-size:54px;font-weight:800;line-height:1.15;letter-spacing:-.035em;max-width:900px;color:#08111F;}
+  .statement.small{font-size:49px;}
+  .simple-line{font-size:42px;font-weight:760;line-height:1.23;letter-spacing:-.026em;color:#08111F;max-width:900px;}
+  .muted{color:#405066;}
+  .pill{display:inline-flex;align-items:center;width:max-content;padding:12px 18px;border-radius:999px;background:rgba(0,87,255,.09);border:1px solid rgba(0,87,255,.22);color:#0057FF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px;}
+  .line-list{display:flex;flex-direction:column;gap:18px;}
+  .line-item{display:grid;grid-template-columns:190px 1fr;gap:22px;align-items:center;padding:18px 22px;border-radius:0;background:#fff;border:1px solid rgba(0,87,255,.16);box-shadow:0 12px 36px rgba(0,34,84,.045);}
+  .bottom .line-item{border-color:rgba(8,17,31,.12);background:rgba(255,255,255,.72);}
+  .key{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#0057FF;letter-spacing:-.02em;}
+  .bottom .key{color:#293447;}
+  .value{font-size:31px;font-weight:720;line-height:1.22;letter-spacing:-.02em;color:#0B1422;}
+  .question{font-size:68px;font-weight:850;line-height:1.08;letter-spacing:-.045em;color:#08111F;max-width:880px;}
+  .spine{display:flex;align-items:center;gap:11px;flex-wrap:wrap;}
+  .node{padding:18px 19px;border:1px solid rgba(0,87,255,.22);background:#fff;border-radius:0;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;color:#0B1422;box-shadow:0 10px 28px rgba(0,34,84,.04);}
+  .arrow{font-size:28px;font-weight:800;color:#0057FF;}
+  .chronology{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .flat-node{padding:18px 20px;border:1px solid rgba(8,17,31,.13);background:#fff;border-radius:0;font-size:25px;font-weight:730;color:#293447;}
+  .outcome-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .outcome{min-height:108px;border-radius:0;padding:22px;border:1px solid rgba(0,87,255,.18);background:#fff;display:flex;align-items:center;font-size:29px;font-weight:750;line-height:1.18;letter-spacing:-.02em;box-shadow:0 12px 32px rgba(0,34,84,.04);}
+  .bottom .outcome{border-color:rgba(8,17,31,.13);color:#293447;}
+  .ghost-word{position:absolute;right:56px;bottom:26px;font-family:'Space Grotesk',sans-serif;font-size:92px;font-weight:700;line-height:1;letter-spacing:-.07em;color:rgba(0,87,255,.055);z-index:1;pointer-events:none;text-transform:uppercase;}
+  .bottom .ghost-word{color:rgba(8,17,31,.045);}
+  .micro{margin-top:26px;font-size:24px;font-weight:650;color:#64748B;letter-spacing:-.01em;}
+  .slash{color:#0057FF;}
+</style>
+</head>
+<body>
+<div class="card">
+<header class="card-header">
+  <div class="brand-lockup"><img src="assets/aloha-dream-life-logo.svg" alt="Aloha Dream Life"> <span>Aloha Dream Life</span></div>
+  <div class="tag">#personalbrand</div>
+</header>
+<div class="horizon"></div>
+
+<section class="half top">
+  <div class="half-inner">
+    <div class="section-label">Storytelling asks:</div>
+    <div class="question">How does this help them?</div>
+  </div>
+  <div class="ghost-word">Help</div>
+</section>
+<section class="half bottom">
+  <div class="half-inner">
+    <div class="section-label bad">Telling Stories asks:</div>
+    <div class="question">What do I post today?</div>
+  </div>
+  <div class="ghost-word">Post</div>
+</section>
+
+</div>
+</body>
+</html>

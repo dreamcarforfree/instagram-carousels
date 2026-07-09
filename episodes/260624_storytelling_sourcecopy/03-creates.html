@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>03 Creates</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@700;800&display=swap');
+  :root{
+    --paper:#F6FAFF;
+    --paper-2:#EEF6FF;
+    --ink:#0057FF;
+    --ink-dark:#003EBA;
+    --ink-soft:#2B77FF;
+    --marker:#D9ECFF;
+    --marker-strong:#C3E0FF;
+    --ghost:#6F87A8;
+    --white:#FFFFFF;
+  }
+  html,body{width:1080px;height:1350px;margin:0;overflow:hidden;background:var(--paper);font-family:'Inter',Arial,sans-serif;color:var(--ink-dark);}
+  .card{width:1080px;height:1350px;position:relative;overflow:hidden;padding:0;background:
+    radial-gradient(circle at 10% 12%, rgba(0,87,255,.045), transparent 26%),
+    radial-gradient(circle at 88% 92%, rgba(0,200,255,.055), transparent 31%),
+    linear-gradient(180deg,var(--paper),var(--paper-2));display:block;}
+  .card::before{content:"";position:absolute;inset:0;opacity:.52;pointer-events:none;background-image:
+    radial-gradient(rgba(0,62,186,.10) .7px, transparent .8px),
+    linear-gradient(90deg, transparent 0 49.8%, rgba(0,87,255,.08) 50%, transparent 50.2% 100%);
+    background-size:22px 22px, 100% 100%;mix-blend-mode:multiply;}
+  .card::after{content:"";position:absolute;left:-80px;right:-80px;top:666px;height:18px;background:linear-gradient(90deg,transparent,rgba(0,87,255,.18),rgba(0,87,255,.34),rgba(0,87,255,.15),transparent);filter:blur(4px);opacity:.42;}
+  .paper-fold{position:absolute;left:0;right:0;top:674px;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,87,255,.25) 22%,rgba(0,87,255,.38) 50%,rgba(0,87,255,.18) 76%,transparent 100%);z-index:2;}
+  .ghost-text{position:absolute;left:96px;right:120px;top:738px;font-family:Georgia,serif;font-style:italic;font-size:28px;line-height:1.18;color:var(--ghost);opacity:.115;z-index:1;transform:rotate(-1deg);}
+  .footer{position:absolute;left:0;right:0;bottom:42px;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:800;letter-spacing:.16em;color:var(--ink);z-index:5;text-transform:uppercase;}
+  .footer.left{text-align:left;left:84px;right:auto;}
+  .content{position:absolute;left:84px;right:84px;top:120px;bottom:132px;z-index:4;}
+  .marker{display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone;background:linear-gradient(transparent 12%, var(--marker) 12% 89%, transparent 89%);padding:0 .10em;}
+  .label-marker{display:inline-block;background:var(--marker);padding:8px 15px 10px;font-family:'Space Grotesk',sans-serif;font-weight:800;color:var(--ink);line-height:1;}
+  h1,h2,p{margin:0;}
+  .blue{color:var(--ink);}
+  .small-note{font-size:26px;line-height:1.34;color:var(--ink-dark);opacity:.86;}
+  .big-title{font-family:'Space Grotesk',sans-serif;font-weight:800;text-transform:uppercase;color:var(--ink);letter-spacing:-.075em;line-height:.86;}
+  .section-title{font-family:'Space Grotesk',sans-serif;font-size:44px;line-height:1.04;font-weight:800;color:var(--ink);letter-spacing:-.03em;}
+  .body-text{font-size:36px;line-height:1.28;font-weight:500;color:var(--ink-dark);letter-spacing:-.018em;}
+  .body-text strong{font-weight:900;font-style:italic;color:var(--ink);}
+  .question-line{font-family:'Inter',sans-serif;font-size:46px;font-weight:500;line-height:1.18;color:var(--ink-dark);letter-spacing:-.03em;}
+  .canvas-note{position:absolute;font-family:Georgia,serif;font-style:italic;color:rgba(0,62,186,.11);font-size:28px;line-height:1.15;}
+  svg{overflow:visible;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="paper-fold"></div>
+  <div class="ghost-text">Connection, clarity, and clients are not accidents. They are the result of narrative architecture.</div>
+  <section class="content" style="top:88px;bottom:110px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:76px;height:100%;align-content:start;">
+      <div>
+        <h2 class="section-title" style="margin-bottom:48px;">Storytelling<br>creates:</h2>
+        <div class="icon-row">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M32 101c22-36 52-62 91-74"/><path d="M110 24h22v22"/><circle cx="37" cy="98" r="16"/><circle cx="79" cy="61" r="12"/><circle cx="123" cy="28" r="13"/></svg>
+          <div class="bar">Connection</div><p class="sub">I can relate.</p>
+        </div>
+        <div class="icon-row">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M55 92c-15-9-25-25-25-43 0-26 21-47 47-47s47 21 47 47c0 18-10 34-25 43"/><path d="M61 105h32M66 122h22"/><path d="M77 34v26l18-14"/><path d="M37 118c-14-7-24-19-30-35"/></svg>
+          <div class="bar">Clarity</div><p class="sub">Ah, this is how to solve my problem.</p>
+        </div>
+        <div class="icon-row last">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><circle cx="78" cy="45" r="22"/><path d="M38 121c4-25 20-41 40-41s36 16 40 41"/><circle cx="35" cy="58" r="14"/><circle cx="121" cy="58" r="14"/><path d="M11 120c2-19 12-31 26-35M145 120c-2-19-12-31-26-35"/><path d="M130 13l5 12 13 2-10 8 2 13-10-7-12 7 4-13-10-8 13-2 5-12z"/></svg>
+          <div class="bar">Clients</div><p class="sub">I want to support this person/business.</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title" style="margin-bottom:48px;">Telling Stories<br>creates:</h2>
+        <div class="icon-row">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><circle cx="78" cy="48" r="28"/><path d="M50 117c5-24 17-38 28-38s23 14 28 38"/><path d="M48 18c-10-3-19 1-24 9M108 18c10-3 19 1 24 9"/><path d="M64 50h.2M92 50h.2M66 69c10-7 16-7 26 0"/><path d="M20 74c0-14 9-21 19-25M136 74c0-14-9-21-19-25"/><path d="M121 87h.1M133 71c9-12 0-26-14-21"/></svg>
+          <div class="bar">Confusion</div><p class="sub">Ugh, why are you telling me this?</p>
+        </div>
+        <div class="icon-row">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M24 48c20-25 42-27 59-10 14 14 2 31-17 24-15-5-10-25 10-24 23 1 42 20 57 48"/><path d="M36 94c24 14 52 18 84 4"/><path d="M32 107l8-18M117 93l10 17"/></svg>
+          <div class="bar small">“Okay… and?”</div><p class="sub">So what?</p>
+        </div>
+        <div class="icon-row last">
+          <svg width="156" height="132" viewBox="0 0 156 132" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M30 88l35-30 36 16 29-20"/><path d="M65 58l-20-29M101 74l20 32M82 66l-4 40"/><circle cx="65" cy="58" r="10"/><circle cx="101" cy="74" r="10"/><path d="M31 88l-21 16M31 88l-8 28M130 54l15-16M130 54l18 8"/><path d="M75 42h23l24-18"/></svg>
+          <div class="bar">Crickets</div><p class="sub">I don’t want to hear this rambling again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>.icon-row{height:242px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}.icon-row svg{height:116px;margin-bottom:12px}.bar{width:100%;background:var(--marker);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:800;line-height:1;padding:14px 10px 16px}.bar.small{font-size:27px}.sub{font-size:21px;font-weight:700;line-height:1.22;color:var(--ink-dark);margin-top:12px;letter-spacing:-.018em}.last{height:220px}</style>
+  <div class="footer">@ALOHADREAMLIFE</div>
+</div>
+</body>
+</html>
