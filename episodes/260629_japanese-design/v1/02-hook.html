@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>02 Hook</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+  .hook-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    flex: 1;
+    justify-content: center;
+  }
+  .hook-row {
+    padding: 38px 44px;
+    border-radius: 22px;
+    border: 1px solid var(--card-border);
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hook-row.row-user {
+    background: #FFF5F5;
+    border-color: #FFA8A8;
+  }
+  .hook-row.row-architect {
+    background: #E7F5FF;
+    border-color: #A5D8FF;
+  }
+  .row-tag {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .row-user .row-tag { color: #E03131; }
+  .row-architect .row-tag { color: var(--accent); }
+  
+  .row-text {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.45;
+    color: var(--text-primary);
+  }
+  .row-desc {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label" style="color: #111111;">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#VisualSystem</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow" style="margin-bottom: 20px;">The Barrier</div>
+    <h2 class="title-lg" style="margin-bottom: 20px;">Why Your Visuals<br><span class="accent">Feel Cheap</span></h2>
+
+    <div class="hook-container">
+      <!-- Row 1: The User View -->
+      <div class="hook-row row-user">
+        <div class="row-tag">The User View</div>
+        <div class="row-text">"Let's make our graphics look clean by simply removing elements."</div>
+        <div class="row-desc">Flat minimalism</div>
+      </div>
+      
+      <!-- Row 2: The Architect View -->
+      <div class="hook-row row-architect">
+        <div class="row-tag">The Architect View</div>
+        <div class="row-text">"Design is not superficial decoration; it is the physical structure of your brand's logic."</div>
+        <div class="row-desc">Editorial Architecture</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Minimalism is merely removing elements. Premium design is about revealing assembled structures.</div>
+  </section>
+</div>
+</body>
+</html>
