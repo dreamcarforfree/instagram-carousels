@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>06 Navigating Context</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --accent: #0052FF;
+  --accent-2: #00C2FF;
+  --accent-soft: #2563EB;
+  --accent-bg: rgba(0, 82, 255, 0.04);
+  --accent-border: rgba(0, 82, 255, 0.12);
+  --accent-strong: rgba(0, 82, 255, 0.08);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --card-border-strong: rgba(0, 0, 0, 0.10);
+}
+.brand-dot {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+}
+.card-header-left .label {
+  color: var(--text-primary) !important;
+}
+
+  .context-box { display: flex; flex-direction: column; gap: 30px; margin-top: 40px; padding: 40px; border-radius: 20px; border: 1px solid var(--accent-border); background: var(--accent-bg); }
+  .context-box h3 { font-size: 32px; font-weight: 800; color: var(--accent); }
+  .context-box p { font-size: 25px; font-weight: 500; line-height: 1.5; color: var(--text-primary); }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#ProfessionalContext</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Context-Aware Intelligence</div>
+    <h2 class="title-lg">Navigating Professional <span class="accent">Context</span></h2>
+
+    <div class="context-box">
+      <h3>Understanding Relationship History</h3>
+      <p>Because the agent runs locally, it safely retains deep memory of my meeting transcripts, emails, and prior decisions across sessions.</p>
+      <p style="margin-top: -10px; border-top: 1px solid var(--accent-border); padding-top: 20px; font-weight: 600;">In high-stakes professional situations, it suggests the most effective, politically precise language to help me handle sensitive dynamics smoothly.</p>
+    </div>
+
+    <div class="bottom-banner">Unified local memory prevents context loss and builds professional authority.</div>
+  </section>
+</div>
+</body>
+</html>

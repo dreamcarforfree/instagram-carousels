@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --accent: #0052FF;
+  --accent-2: #00C2FF;
+  --accent-soft: #2563EB;
+  --accent-bg: rgba(0, 82, 255, 0.04);
+  --accent-border: rgba(0, 82, 255, 0.12);
+  --accent-strong: rgba(0, 82, 255, 0.08);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --card-border-strong: rgba(0, 0, 0, 0.10);
+}
+.brand-dot {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+}
+.card-header-left .label {
+  color: var(--text-primary) !important;
+}
+
+  .card {
+    background: linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.92)), url("cover-bg.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .cover-hero { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .cover-badge { align-self: flex-start; margin-bottom: 40px; }
+  .cover-title { font-size: 88px; font-weight: 900; line-height: 1.08; letter-spacing: -0.04em; color: var(--text-primary); }
+  .cover-sub { font-size: 30px; font-weight: 500; color: var(--text-secondary); margin-top: 30px; line-height: 1.45; letter-spacing: -0.01em; }
+  .cover-meta { display: flex; gap: 14px; align-items: center; margin-top: 50px; font-size: 22px; color: var(--text-tertiary); }
+  .cover-meta .dot { color: rgba(0,0,0,0.1); }
+  .swipe-hint { margin-top: 50px; font-size: 22px; color: var(--accent); font-weight: 700; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AI-Agent</div>
+  </header>
+
+  <section class="cover-hero">
+    <div class="cover-badge"><span class="badge-soft">PLAYBOOK</span></div>
+    <h1 class="cover-title">
+      The Proactive<br>
+      <span class="accent-grad">Daily Operating</span> Layer
+    </h1>
+    <p class="cover-sub">How I configured my own proactive AI agent to run my workspace, coordinate workflows, and handle daily operations—with zero coding.</p>
+    <div class="cover-meta">
+      <span>Automation</span><span class="dot">·</span>
+      <span>Leverage</span><span class="dot">·</span>
+      <span>No-Code</span>
+    </div>
+    <div class="swipe-hint">swipe →</div>
+  </section>
+</div>
+</body>
+</html>

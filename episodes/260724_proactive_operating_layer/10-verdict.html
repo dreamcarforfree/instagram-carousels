@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>10 The Verdict</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --accent: #0052FF;
+  --accent-2: #00C2FF;
+  --accent-soft: #2563EB;
+  --accent-bg: rgba(0, 82, 255, 0.04);
+  --accent-border: rgba(0, 82, 255, 0.12);
+  --accent-strong: rgba(0, 82, 255, 0.08);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --card-border-strong: rgba(0, 0, 0, 0.10);
+}
+.brand-dot {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+}
+.card-header-left .label {
+  color: var(--text-primary) !important;
+}
+
+  .card {
+    border: 2px solid var(--accent);
+    margin: 20px;
+    width: 1040px;
+    height: 1310px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 44px 56px 56px;
+  }
+  .card-header {
+    margin-bottom: 40px;
+  }
+  .verdict-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .verdict-title {
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    color: var(--text-primary);
+  }
+  .divider {
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 36px 0;
+    border-radius: 2px;
+  }
+  .verdict-desc {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 24px 50px;
+    background: var(--accent);
+    color: #FFFFFF !important;
+    border-radius: 999px;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    box-shadow: 0 10px 30px rgba(0, 82, 255, 0.2);
+  }
+  .legal-footer {
+    font-size: 16px;
+    color: var(--text-tertiary);
+    margin-top: 40px;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">HowToOpenClaw.ai</span>
+    </div>
+    <div class="card-header-right">#DailyLeverage</div>
+  </header>
+
+  <section class="verdict-body">
+    <div class="eyebrow">THE VERDICT</div>
+    <h2 class="verdict-title">
+      Build the System.<br>
+      Own Your <span class="accent-grad">Leverage</span>.
+    </h2>
+    <div class="divider"></div>
+    <p class="verdict-desc">
+      If a workflow can be written down step-by-step, it should be running autonomously in the background. Follow the plain-language sequence, copy-and-paste, and start delegating today.
+    </p>
+    <a href="#" class="cta-button">
+      💬 Comment "OpenClaw" below,<br>
+      <span style="font-size: 22px; font-weight: 500; opacity: 0.9;">to learn more about the full beginner-friendly workflow</span>
+    </a>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>02 The Core Shift</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  
+:root {
+  --bg: #FFFFFF;
+  --bg-elevated: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --accent: #0052FF;
+  --accent-2: #00C2FF;
+  --accent-soft: #2563EB;
+  --accent-bg: rgba(0, 82, 255, 0.04);
+  --accent-border: rgba(0, 82, 255, 0.12);
+  --accent-strong: rgba(0, 82, 255, 0.08);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --card-border-strong: rgba(0, 0, 0, 0.10);
+}
+.brand-dot {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+}
+.card-header-left .label {
+  color: var(--text-primary) !important;
+}
+
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .compare .box { min-height: 480px; display: flex; flex-direction: column; justify-content: space-between; }
+  .compare .box p { font-size: 25px; font-weight: 500; line-height: 1.45; color: var(--text-secondary); margin-top: 10px; }
+  .box-bad .tag { color: #E11D48; background: rgba(225, 29, 72, 0.08); }
+  .box-good .tag { color: var(--accent); background: var(--accent-bg); }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot">A</span>
+      <span class="label">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#CoreShift</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">The Philosophy</div>
+    <h2 class="title-lg">
+      Moving from Chatbot<br>
+      to <span class="accent">Active Operator</span>
+    </h2>
+
+    <div class="compare">
+      <div class="box" style="background: #FFF1F2; border-color: #FECDD3;">
+        <div>
+          <span class="tag" style="color: #E11D48; background: rgba(225, 29, 72, 0.08);">THE PASSIVE CHATBOT</span>
+          <p style="color: #9F1239; font-weight: 600;">Wait in a browser tab until you type a prompt, then reset between sessions. The system does nothing unless you initiate the next step.</p>
+        </div>
+      </div>
+      <div class="box" style="background: var(--accent-bg); border-color: var(--accent-border);">
+        <div>
+          <span class="tag" style="color: var(--accent); background: rgba(0, 82, 255, 0.08);">THE PROACTIVE AGENT</span>
+          <p style="color: var(--text-primary); font-weight: 600;">Lives in your machine, runs 24/7 in the background, preserves memory locally, and executes multi-step workflows autonomously.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">The transition from a text-generator to an active operator.</div>
+  </section>
+</div>
+</body>
+</html>
