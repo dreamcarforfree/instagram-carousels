@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04 Method 2</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --bg-elevated: #F0EFEA;
+    --bg-card: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #8A8A8A;
+    --accent: #0052FF;
+    --accent-2: #00A3FF;
+    --accent-soft: #4D88FF;
+    --accent-bg: rgba(0, 82, 255, 0.05);
+    --accent-border: rgba(0, 82, 255, 0.20);
+    --accent-strong: rgba(0, 82, 255, 0.12);
+    --card-border: rgba(0, 0, 0, 0.08);
+  }
+
+  .hd-title { margin-bottom: 34px; font-family: 'Poppins', sans-serif; }
+  .grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .cell-custom {
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--card-border);
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cell-custom.accent-cell {
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+  }
+  .cell-title {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+  }
+  .cell-desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2));">A</span>
+      <span class="label" style="color: var(--text-primary);">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AILeverage</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Method 02</div>
+    <h2 class="title-xl hd-title">
+      Value-First<br>
+      Digital Assets
+    </h2>
+
+    <div class="grid-2x2">
+      <div class="cell-custom">
+        <div class="cell-title">The Friction</div>
+        <div class="cell-desc">Generic digital guides, Notion planners, and wedding trackers fail because they are solutions hunting for a problem, rather than targeting a real pain point.</div>
+      </div>
+
+      <div class="cell-custom">
+        <div class="cell-title">The Leverage</div>
+        <div class="cell-desc">Deploy Claude to construct highly specific digital files that address proven, high-demand niches with absolute precision and clarity.</div>
+      </div>
+
+      <div class="cell-custom accent-cell" style="grid-column: span 2;">
+        <div class="cell-title" style="color: var(--accent);">The Arbitrage Mechanism</div>
+        <div class="cell-desc" style="color: var(--text-primary);">Scrape verified negative reviews of established competitor products to isolate exact functional complaints (e.g. "missing budget tracker"). Instruct Claude to design the precise structural solution.</div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">Solve the explicit complaints of your competitors' buyers.</div>
+  </section>
+</div>
+</body>
+</html>
