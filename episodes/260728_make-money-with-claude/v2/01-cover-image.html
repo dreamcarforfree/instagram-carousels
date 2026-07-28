@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover (Image Background)</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --bg-elevated: #F0EFEA;
+    --bg-card: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #8A8A8A;
+    --accent: #0052FF;
+    --accent-2: #00A3FF;
+    --accent-soft: #4D88FF;
+    --accent-bg: rgba(0, 82, 255, 0.05);
+    --accent-border: rgba(0, 82, 255, 0.20);
+    --accent-strong: rgba(0, 82, 255, 0.12);
+    --card-border: rgba(0, 0, 0, 0.08);
+  }
+  .cover-card {
+    background-image: url('claude-code-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0;
+  }
+  .overlay-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 28px;
+    padding: 56px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+  }
+</style>
+</head>
+<body>
+<div class="card cover-card">
+  <!-- Soft vignette edge shading to frame terminal background -->
+  <div style="position: absolute; inset: 0; background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.03) 100%);"></div>
+
+  <div class="overlay-container">
+    <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 24px;">
+      <svg viewBox="0 0 100 100" width="46" height="46" style="fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round;">
+        <path d="M25 35 L45 50 L25 65 M52 65 L75 65" />
+      </svg>
+      <span style="font-size: 14px; font-weight: 800; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase;">CLAUDE CODE • PLAYBOOK</span>
+    </div>
+
+    <h1 style="font-size: 56px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; color: var(--text-primary); font-family: 'Poppins', sans-serif;">
+      Make Money<br>
+      With Claude:<br>
+      <span class="accent-grad" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5 Proven Ways</span>
+    </h1>
+
+    <p style="font-size: 22px; font-weight: 500; color: var(--text-secondary); margin-top: 20px; line-height: 1.45;">How to bridge the gap between AI capabilities and real, existing market demand in 2026.</p>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 30px;">
+      <span style="font-size: 16px; font-weight: 600; color: var(--text-tertiary);">Aloha Dream Life</span>
+      <span style="font-size: 16px; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; text-transform: uppercase;">swipe →</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

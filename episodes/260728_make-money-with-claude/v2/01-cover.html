@@ -20,114 +20,41 @@
     --accent-strong: rgba(0, 82, 255, 0.12);
     --card-border: rgba(0, 0, 0, 0.08);
   }
-
-  /* Specific Cover Layout */
-  .cover-card {
-    background-image: url('cover-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 0; /* Clear default card padding to fit overlay */
-  }
-
-  .cover-overlay {
-    position: absolute;
-    inset: 48px;
-    background: rgba(250, 249, 246, 0.90);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 36px;
-    padding: 64px 76px 76px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
-  }
-
-  .cover-hero {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
-  }
-
-  .cover-badge {
-    align-self: flex-start;
-    margin-bottom: 46px;
-  }
-
-  .cover-title {
-    font-size: 82px;
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -0.035em;
-    color: var(--text-primary);
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .cover-sub {
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    margin-top: 34px;
-    line-height: 1.45;
-    letter-spacing: -0.01em;
-  }
-
-  .cover-meta {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-    margin-top: 54px;
-    font-size: 22px;
-    color: var(--text-tertiary);
-    font-weight: 600;
-  }
-
-  .cover-meta .dot {
-    color: rgba(0, 0, 0, 0.15);
-  }
-
-  .swipe-hint {
-    margin-top: 50px;
-    font-size: 22px;
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
 </style>
 </head>
 <body>
-<div class="card cover-card">
-  <div class="cover-overlay">
-    <header class="card-header">
-      <div class="card-header-left">
-        <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2));">A</span>
-        <span class="label" style="color: var(--text-primary); font-family: 'Space Grotesk', sans-serif;">Aloha Dream Life</span>
-      </div>
-      <div class="card-header-right" style="color: var(--text-tertiary);">#AILeverage</div>
-    </header>
+<div class="card" style="background-color: #FAF9F6; display: flex; flex-direction: column; justify-content: space-between; padding: 76px 76px 90px; border: 1px solid var(--card-border);">
+  <header class="card-header" style="margin-bottom: 40px;">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: var(--accent);">A</span>
+      <span class="label" style="color: var(--text-primary); font-family: 'Space Grotesk', sans-serif;">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right" style="color: var(--text-tertiary);">#AILeverage</div>
+  </header>
 
-    <section class="cover-hero">
-      <div class="cover-badge"><span class="badge" style="background: var(--accent); color: #fff;">PLAYBOOK</span></div>
-      <h1 class="cover-title">
-        Make Money<br>
-        With Claude:<br>
-        <span class="accent-grad" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5 Proven Ways</span><br>
-        to Start
-      </h1>
-      <p class="cover-sub">How to bridge the gap between AI capabilities and real, existing market demand in 2026.</p>
-      <div class="cover-meta">
-        <span>Software Loops</span><span class="dot">·</span>
-        <span>Digital Assets</span><span class="dot">·</span>
-        <span>Arbitrage</span>
-      </div>
-      <div class="swipe-hint">swipe →</div>
-    </section>
-  </div>
+  <section class="cover-hero" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+    <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 38px;">
+      <!-- Elegant high-status Claude Code CLI symbol -->
+      <svg viewBox="0 0 100 100" width="76" height="76" style="fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round;">
+        <path d="M25 35 L45 50 L25 65 M52 65 L75 65" />
+      </svg>
+      <div class="cover-badge"><span class="badge" style="background: var(--accent); color: #fff; font-size: 18px; font-weight: 800; padding: 8px 18px; border-radius: 30px; letter-spacing: 0.12em;">CLAUDE CODE</span></div>
+    </div>
+
+    <h1 class="cover-title" style="font-size: 82px; font-weight: 900; line-height: 1.1; letter-spacing: -0.035em; color: var(--text-primary); font-family: 'Poppins', sans-serif;">
+      Make Money<br>
+      With Claude:<br>
+      <span class="accent-grad" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5 Proven Ways</span><br>
+      to Start
+    </h1>
+    <p class="cover-sub" style="font-size: 30px; font-weight: 500; color: var(--text-secondary); margin-top: 34px; line-height: 1.45; letter-spacing: -0.01em;">How to bridge the gap between AI capabilities and real, existing market demand in 2026.</p>
+    <div class="cover-meta" style="display: flex; gap: 14px; align-items: center; margin-top: 54px; font-size: 22px; color: var(--text-tertiary); font-weight: 600;">
+      <span>Software Loops</span><span class="dot" style="color: rgba(0, 0, 0, 0.15);">·</span>
+      <span>Digital Assets</span><span class="dot" style="color: rgba(0, 0, 0, 0.15);">·</span>
+      <span>Arbitrage</span>
+    </div>
+    <div class="swipe-hint" style="margin-top: 50px; font-size: 22px; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">swipe →</div>
+  </section>
 </div>
 </body>
 </html>
