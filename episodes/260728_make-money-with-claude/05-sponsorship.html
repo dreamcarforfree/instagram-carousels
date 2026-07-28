@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>05 Method 3</title>
+<link rel="stylesheet" href="../../styles/carousel.css">
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --bg-elevated: #F0EFEA;
+    --bg-card: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #8A8A8A;
+    --accent: #0052FF;
+    --accent-2: #00A3FF;
+    --accent-soft: #4D88FF;
+    --accent-bg: rgba(0, 82, 255, 0.05);
+    --accent-border: rgba(0, 82, 255, 0.20);
+    --accent-strong: rgba(0, 82, 255, 0.12);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --bad-bg: rgba(220, 53, 69, 0.04);
+    --bad-border: rgba(220, 53, 69, 0.18);
+    --bad-text: #DC3545;
+    --good-bg: rgba(0, 82, 255, 0.04);
+    --good-border: rgba(0, 82, 255, 0.18);
+    --good-text: #0052FF;
+  }
+
+  .cmp-title { margin-bottom: 46px; font-family: 'Poppins', sans-serif; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .compare .box { min-height: 440px; display: flex; flex-direction: column; }
+  .box-bad .content {
+    display: flex; align-items: center; justify-content: center; flex: 1;
+    font-size: 30px; color: var(--bad-text); font-weight: 700; text-align: center; line-height: 1.35;
+  }
+  .kv-list { margin-top: 4px; display: flex; flex-direction: column; gap: 20px; }
+  .kv .k { font-size: 22px; font-weight: 800; color: var(--good-text); display: block; margin-bottom: 6px; letter-spacing: 0.05em; }
+  .kv .v { font-size: 25px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; line-height: 1.35; }
+</style>
+</head>
+<body>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-left">
+      <span class="brand-dot" style="background: linear-gradient(135deg, var(--accent), var(--accent-2));">A</span>
+      <span class="label" style="color: var(--text-primary);">Aloha Dream Life</span>
+    </div>
+    <div class="card-header-right">#AILeverage</div>
+  </header>
+
+  <section class="card-body">
+    <div class="eyebrow">Method 03</div>
+    <h2 class="title-xl cmp-title">
+      Concept-First<br>
+      <span class="accent-grad">Sponsorships</span>
+    </h2>
+
+    <div class="compare">
+      <div class="box box-bad">
+        <span class="tag">GENERIC DIARY</span>
+        <div class="content">"A day in my life raising kids" (No advertiser fit)</div>
+      </div>
+      <div class="box box-good">
+        <span class="tag">CONCEPT-FIRST ASSET</span>
+        <div class="kv-list">
+          <div class="kv"><span class="k">THE REFRAME</span><span class="v">"A parent sharing money-saving checklists & investing"</span></div>
+          <div class="kv"><span class="k">THE ALIGNMENT</span><span class="v">Fintech and banks want in the comment section immediately</span></div>
+          <div class="kv"><span class="k">THE OUTCOME</span><span class="v">Sponsorship contracts without massive scale</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">The concept sells, not art or scale. Brand sponsorship is a design problem.</div>
+  </section>
+</div>
+</body>
+</html>
