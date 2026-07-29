@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>01 Cover (Image)</title>
+<link rel="stylesheet" href="../../../styles/carousel.css">
+<style>
+  :root {
+    --bg-card: rgba(250, 249, 246, 0.78); /* Semi-transparent cream */
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #8A8A8A;
+    --accent: #0052FF;
+    --accent-2: #00A3FF;
+    --card-border: rgba(0, 0, 0, 0.08);
+  }
+  .hd-title { margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 54px; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: var(--text-primary); }
+</style>
+</head>
+<body>
+<div class="card" style="background: url('claude-image-cover.jpg') no-repeat center center; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0;">
+  <!-- Inner Frosted Container that respects the 70% negative space by focusing the layout in a clean central glass pane -->
+  <div style="width: 86%; height: 86%; background-color: var(--bg-card); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.4); box-shadow: 0 20px 50px rgba(0,0,0,0.06); padding: 56px 56px; display: flex; flex-direction: column; justify-content: space-between;">
+    
+    <header class="card-header" style="margin-bottom: 40px; border-bottom: none; padding: 0;">
+      <div class="card-header-left">
+        <span class="brand-dot" style="background: var(--accent);">A</span>
+        <span class="label" style="color: var(--text-primary); font-family: 'Space Grotesk', sans-serif;">Aloha Dream Life</span>
+      </div>
+      <div class="card-header-right" style="color: var(--text-tertiary); font-weight: 700;">#AILeverage</div>
+    </header>
+
+    <section class="cover-hero" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+      <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 30px;">
+        <svg viewBox="0 0 100 100" width="60" height="60" style="fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round;">
+          <path d="M25 35 L45 50 L25 65 M52 65 L75 65" />
+        </svg>
+        <div class="cover-badge"><span class="badge" style="background: var(--accent); color: #fff; font-size: 16px; font-weight: 800; padding: 6px 14px; border-radius: 30px; letter-spacing: 0.12em;">ALOHA DREAM LIFE • PLAYBOOK</span></div>
+      </div>
+
+      <h1 class="cover-title" style="font-size: 68px; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; color: var(--text-primary); font-family: 'Poppins', sans-serif; margin-bottom: 24px;">
+        Claude AI Monetization:<br>
+        <span class="accent-grad" style="background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5 Real-World</span><br>
+        Revenue Streams
+      </h1>
+      <p class="cover-sub" style="font-size: 24px; font-weight: 500; color: var(--text-secondary); line-height: 1.45; letter-spacing: -0.01em;">Below are the five methods that held up—places where real capital landed in real accounts, or where someone is actively making money right now.</p>
+      
+      <div class="swipe-hint" style="margin-top: 48px; font-size: 20px; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">swipe →</div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
